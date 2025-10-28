@@ -1,0 +1,999 @@
+{
+  "version": "1.0",
+  "generatedAt": "2025-10-28T09:58:23.262Z",
+  "totalTemplates": 35,
+  "templates": [
+    {
+      "id": "充值与订阅_001",
+      "category": "充值与订阅",
+      "scenario": "恢复购买+提供信息",
+      "keywords": [
+        "充值与订阅",
+        "恢复购买+提供信息",
+        "subscription",
+        "purchase",
+        "restore",
+        "account",
+        "profile",
+        "feedback"
+      ],
+      "languages": {
+        "en": "Dear user,\n\nWe are sincerely sorry about the bad experience. You do not need to pay again. Please try to restore your subscription by clicking Restore in the upper right corner of the subscription page.\nAfter restore, if the subscription still remain inactive, please log out your account to see whether the subscription activated under another account. If you have another device, please try to check on it.\nIf the subscription or top-up still stay inactive after you tried the steps above, please provide following information, so we can check status of your account.\n\n1. UID in FlareFlow (check it on the Profile page)\n2. If you pay in Google, please provide a screenshot of your GooglePay order number which starts with GPA (check in your email from Google)\n3. If you purchased by ApplePay, Please provide a screenshot of your ApplePay order (check in your email from Apple)\n\nPlease provide information as much as you can. Once we reach the detail of your account, we will reply you via E-mail. Thank you for your feedback.\n\nBest Regards\nFlareFlow",
+        "pt": "Prezado usuário,\nPedimos sinceras desculpas pelo inconveniente. Você não precisa pagar novamente. Tente restaurar sua assinatura tocando em \"Restaurar\" no canto superior direito da página de assinatura.\nSe permanecer inativa, faça logoff para verificar se a assinatura está em outra conta. Se possível, verifique também em outro dispositivo.\nSe o problema persistir, forneça as seguintes informações para investigarmos:\n1. Seu UID do FlareFlow (na página de Perfil)\n2. Para Google Pay: Uma captura de tela do número do pedido (iniciando com GPA) do e-mail do Google.\n3. Para Apple Pay: Uma captura de tela do pedido da Apple Pay do e-mail da Apple.\nForneça o máximo de detalhes possível. Investigaremos e responderemos por e-mail. Agradecemos seu feedback.\nAtenciosamente,\nFlareFlow",
+        "es": "Estimado usuario,\nLamentamos sinceramente las molestias. No necesita pagar nuevamente. Intente restaurar su suscripción tocando \"Restaurar\" en la esquina superior derecha de la página de suscripción.\nSi sigue inactiva después de restaurar, cierre sesión para verificar si la suscripción está en otra cuenta. También puede comprobarlo en otro dispositivo si tiene uno.\nSi el problema persiste, proporcione la siguiente información para que podamos investigar:\n1. Su UID de FlareFlow (desde la página de Perfil)\n2. Para Google Pay: Una captura de pantalla de su número de pedido (que comienza con GPA) de su correo de Google.\n3. Para Apple Pay: Una captura de pantalla de su pedido de Apple Pay de su correo de Apple.\nProporcione la mayor cantidad de detalles posible. Investigaremos y le responderemos por correo electrónico. Gracias por sus comentarios.\nAtentamente,\nFlareFlow",
+        "fr": "Cher utilisateur,\nNous nous excusons sincèrement pour ce désagrément. Vous n'avez pas besoin de payer à nouveau. Veuillez essayer de restaurer votre abonnement en appuyant sur \"Restaurer\" dans le coin supérieur droit de la page d'abonnement.\nSi il reste inactif après restauration, veuillez vous déconnecter pour vérifier si l'abonnement est sous un autre compte. Essayez également de vérifier sur un autre appareil si disponible.\nSi le problème persiste, veuillez fournir les informations suivantes pour que nous puissions enquêter :\n1. Votre UID FlareFlow (depuis la page Profil)\n2. Pour Google Pay : Une capture d'écran de votre numéro de commande (commençant par GPA) de votre email Google.\n3. Pour Apple Pay : Une capture d'écran de votre commande Apple Pay de votre email Apple.\nVeuillez fournir autant de détails que possible. Nous enquêterons et répondrons par email. Merci pour vos commentaires.\nCordialement,\nFlareFlow",
+        "id": "Pengguna yang terhormat,\nKami dengan tulus meminta maaf atas ketidaknyamanannya. Anda tidak perlu membayar lagi. Silakan coba pulihkan langganan Anda dengan mengetuk \"Pulihkan\" di sudut kanan atas halaman langganan.\nJika masih tidak aktif setelah dipulihkan, harap logout untuk memeriksa apakah langganan berada di bawah akun lain. Juga, coba periksa di perangkat lain jika tersedia.\nJika masalah berlanjut, berikan informasi berikut agar kami dapat menyelidiki:\n1. UID FlareFlow Anda (dari halaman Profil)\n2. Untuk Google Pay: Screenshot nomor pesanan Anda (dimulai dengan GPA) dari email Google Anda.\n3. Untuk Apple Pay: Screenshot pesanan Apple Pay Anda dari email Apple Anda.\nHarap berikan detail sebanyak mungkin. Kami akan menyelidiki dan membalas via email. Terima kasih atas masukan Anda.\nHormat kami,\nFlareFlow",
+        "th": "เรียนผู้ใช้\nเราขออภัยอย่างจริงใจสำหรับความไม่สะดวก คุณไม่จำเป็นต้องชำระเงินอีกครั้ง กรุณาลองกู้คืนการสมัครสมาชิกของคุณโดยแตะ \"กู้คืน\" ที่มุมขวาบนของหน้าสมัครสมาชิก\nหากยังไม่ทำงานหลังจากกู้คืนแล้ว กรุณาออกจากระบบเพื่อตรวจสอบว่าการสมัครสมาชิกอยู่ภายใต้บัญชีอื่นหรือไม่ และโปรดลองตรวจสอบบนอุปกรณ์อื่นหากมี\nหากปัญหายังคงมีอยู่ กรุณาให้ข้อมูลต่อไปนี้เพื่อให้เราสามารถตรวจสอบได้\n1. UID FlareFlow ของคุณ (จากหน้าโปรไฟล์)\n2. สำหรับ Google Pay: ภาพหน้าจอของหมายเลขคำสั่งซื้อของคุณ (ขึ้นต้นด้วย GPA) จากอีเมล Google ของคุณ\n3. สำหรับ Apple Pay: ภาพหน้าจอของคำสั่งซื้อ Apple Pay จากอีเมล Apple ของคุณ\nกรุณาให้รายละเอียดมากที่สุดเท่าที่จะเป็นไปได้ เราจะตรวจสอบและตอบกลับทางอีเมล ขอขอบคุณสำหรับความคิดเห็นของคุณ\nขอแสดงความนับถือ\nFlareFlow",
+        "ko": "안녕하세요 회원님,\n불편을 끼쳐 드려 진심으로 사과드립니다. 다시 결제하실 필요 없습니다. 구독 페이지 우측 상단의 \"복원\"을 탭하여 구독을 복원해 보세요.\n복원 후에도 구독이 비활성화 상태라면, 로그아웃하여 다른 계정에 구독이 연결되어 있는지 확인해 주세요. 가능하다면 다른 기기에서도 확인해 보시기 바랍니다.\n문제가 지속될 경우, 조사를 위해 다음 정보를 제공해 주세요:\n1. FlareFlow UID (프로필 페이지에서 확인)\n2. Google Pay 결제 시: Google 이메일의 주문 번호(GPA로 시작) 스크린샷\n3. Apple Pay 결제 시: Apple 이메일의 Apple Pay 주문 내역 스크린샷\n가능한 한 자세한 정보를 제공해 주시기 바랍니다. 조사 후 이메일로 회신드리겠습니다. 피드백 감사드립니다.\n감사합니다,\nFlareFlow",
+        "ja": "ユーザー各位\nご不便をおかけし誠に申し訳ございません。再度お支払いいただく必要はございません。購読ページの右上にある「復元」をタップして、購読を復元してください。\n復元後も有効にならない場合は、ログアウトして別のアカウントで購読が有効になっていないかご確認ください。また、可能であれば別のデバイスでもご確認ください。\n問題が解決しない場合は、調査いたしますので以下の情報をご提供ください：\n1. FlareFlowのUID（プロフィールページで確認）\n2. Google Payご利用の場合：Googleからのメールにある注文番号（GPAで始まる）のスクリーンショット\n3. Apple Payご利用の場合：AppleからのメールにあるApple Payの注文のスクリーンショット\n可能な限り詳細な情報をご提供ください。調査の上、メールでご連絡いたします。ご意見ありがとうございます。\n敬具\nFlareFlow",
+        "it": "Gentile utente,\nCi scusiamo sinceramente per l'inconveniente. Non è necessario pagare di nuovo. Provi a ripristinare l'abbonamento toccando \"Ripristina\" nell'angolo in alto a destra della pagina dell'abbonamento.\nSe rimane inattivo dopo il ripristino, esca dall'account per verificare se l'abbonamento è sotto un altro account. Inoltre, se disponibile, provi a controllare su un dispositivo diverso.\nSe il problema persiste, fornisca le seguenti informazioni in modo che possiamo indagare:\n1. Il suo UID FlareFlow (dalla pagina Profilo)\n2. Per Google Pay: Uno screenshot del numero dell'ordine (che inizia con GPA) dall'email di Google.\n3. Per Apple Pay: Uno screenshot dell'ordine Apple Pay dall'email di Apple.\nFornisca quanti più dettagli possibile. Indagheremo e risponderemo via email. Grazie per il feedback.\nCordiali saluti,\nFlareFlow",
+        "de": "Sehr geehrter Nutzer,\nWir entschuldigen uns aufrichtig für die Unannehmlichkeiten. Sie müssen nicht erneut bezahlen. Bitte versuchen Sie, Ihr Abonnement wiederherzustellen, indem Sie oben rechts auf der Abonnement-Seite auf \"Wiederherstellen\" tippen.\nWenn es nach der Wiederherstellung noch inaktiv ist, loggen Sie sich bitte aus, um zu prüfen, ob das Abonnement unter einem anderen Konto läuft. Wenn verfügbar, prüfen Sie es bitte auch auf einem anderen Gerät.\nWenn das Problem weiterhin besteht, teilen Sie uns bitte die folgenden Informationen mit, damit wir nachforschen können:\n1. Ihre FlareFlow-UID (von der Profilseite)\n2. Für Google Pay: Einen Screenshot Ihrer Bestellnummer (beginnt mit GPA) aus Ihrer Google-E-Mail.\n3. Für Apple Pay: Einen Screenshot Ihrer Apple Pay-Bestellung aus Ihrer Apple-E-Mail.\nBitte teilen Sie uns so viele Details wie möglich mit. Wir werden der Sache nachgehen und Ihnen per E-Mail antworten. Vielen Dank für Ihr Feedback.\nMit freundlichen Grüßen,\nFlareFlow",
+        "ms": "Pengguna yang dihormati,\nKami memohon maaf atas kesulitan yang dialami. Anda tidak perlu bayar lagi. Sila cuba pulihkan langganan anda dengan mengetik \"Pulihkan\" di penjuru kanan atas halaman langganan.\nJika ia masih tidak aktif selepas pemulihan, sila log keluar untuk menyemak sama ada langganan berada di bawah akaun lain. Juga, cuba semak pada peranti lain jika ada.\nJika isu berterusan, sila berikan maklumat berikut supaya kami boleh siasat:\n1. UID FlareFlow anda (dari halaman Profil)\n2. Untuk Google Pay: Tangkapan skrin nombor pesanan anda (bermula dengan GPA) dari e-mel Google anda.\n3. Untuk Apple Pay: Tangkapan skrin pesanan Apple Pay anda dari e-mel Apple anda.\nSila berikan sebanyak mungkin butiran. Kami akan siasat dan balas melalui e-mel. Terima kasih atas maklum balas anda.\nYang ikhlas,\nFlareFlow",
+        "sw": "Mteja wa heshimi,\nTunaomba radhi kwa usumbufu huo. Huhitaji kulipa tena. Tafadhali jaribu kurejesha usajili wako kwa kubonyeza \"Rejesha\" kwenye kona ya juu kulia ya ukurasa wa usajili.\nIkiwa bado haujaandikwa baada ya kurejesha, tafadhali ingia nje ili kuangalia ikiwa usajili uko chini ya akaunti nyingine. Pia, jaribu kuangalia kwenye kifaa kingine ikiwa kinapatikana.\nIkiwa shida inaendelea, tafadhali toa taarifa zifuatazo ili tuweze kuchunguza:\n1. UID yako ya FlareFlow (kutoka kwa ukurasa wa Wasifu)\n2. Kwa Google Pay: Skrini ya nambari ya agizo lako (inayoanza na GPA) kutoka kwa barua pepe yako ya Google.\n3. Kwa Apple Pay: Skrini ya agizo lako la Apple Pay kutoka kwa barua pepe yako ya Apple.\nTafadhali toa maelezo mazito kadiri awezekanavyo. Tutachunguza na kujibu kupitia barua pepe. Asante kwa maoni yako.\nKwa heshima,\nFlareFlow",
+        "nl": "Geachte gebruiker,\nOnze oprechte excuses voor het ongemak. U hoeft niet opnieuw te betalen. Probeer uw abonnement te herstellen door op \"Herstellen\" te tikken in de rechterbovenhoek van de abonnementspagina.\nAls het na herstel nog inactief is, log dan uit om te controleren of het abonnement onder een ander account valt. Controleer het ook op een ander apparaat, indien beschikbaar.\nAls het probleem aanhoudt, verstrekt u dan de volgende informatie zodat wij een onderzoek kunnen instellen:\n1. Uw FlareFlow UID (van de Profielpagina)\n2. Voor Google Pay: Een screenshot van uw bestelnummer (beginnend met GPA) uit uw Google-e-mail.\n3. Voor Apple Pay: Een screenshot van uw Apple Pay-bestelling uit uw Apple-e-mail.\nGelieve zoveel mogelijk details te verstrekken. Wij zullen onderzoek doen en per e-mail antwoorden. Bedankt voor uw feedback.\nMet vriendelijke groet,\nFlareFlow",
+        "ar": "عزيزي المستخدم،\nنعتذر بشدة عن الإزعاج. لا تحتاج إلى الدفع مرة أخرى. يرجى محاولة استعادة اشتراكك بالنقر على \"استعادة\" في الزاوية اليمنى العليا من صفحة الاشتراك.\nإذا بقي غير نشط بعد الاستعادة، يرجى تسجيل الخروج للتحقق مما إذا كان الاشتراك تحت حساب آخر. أيضًا، حاول التحقق على جهاز مختلف إذا كان متاحًا.\nإذا استمرت المشكلة، يرجى تقديم المعلومات التالية حتى نتمكن من التحقق:\n1. معرف FlareFlow الخاص بك (من صفحة الملف الشخصي)\n2. لـ Google Pay: لقطة شاشة لرقم طلبك (يبدأ بـ GPA) من بريد Google الإلكتروني الخاص بك.\n3. لـ Apple Pay: لقطة شاشة لطلب Apple Pay الخاص بك من بريد Apple الإلكتروني الخاص بك.\nيرجى تقديم أكبر قدر ممكن من التفاصيل. سنقوم بالتحقق والرد عبر البريد الإلكتروني. شكرًا على ملاحظاتك.\nأطيب التحيات،\nFlareFlow",
+        "da": "Kære bruger,\nVi undskylder oprigtigt for ulejligheden. Du behøver ikke at betale igen. Prøv at gendanne dit abonnement ved at trykke på \"Gendan\" i øverste højre hjørne af abonnementssiden.\nHvis det stadig er inaktivt efter gendannelse, log venligst ud for at kontrollere, om abonnementet er under en anden konto. Prøv også at tjekke på en anden enhed, hvis tilgængelig.\nHvis problemet fortsætter, bedes du oplyse følgende oplysninger, så vi kan undersøge det:\n1. Din FlareFlow UID (fra Profilsiden)\n2. For Google Pay: Et screenshot af din ordrenummer (begyndende med GPA) fra din Google-e-mail.\n3. For Apple Pay: Et screenshot af din Apple Pay-ordrer fra din Apple-e-mail.\nAngiv venligst så mange detaljer som muligt. Vi vil undersøge det og svare via e-mail. Tak for din feedback.\nMed venlig hilsen,\nFlareFlow"
+      }
+    },
+    {
+      "id": "信息收集与跟进_002",
+      "category": "信息收集与跟进",
+      "scenario": "询问信息 (带具体条目)",
+      "keywords": [
+        "信息收集与跟进",
+        "询问信息 (带具体条目)",
+        "profile",
+        "problem",
+        "feedback"
+      ],
+      "languages": {
+        "en": "Dear user, \nwe are sorry for the inconvenience caused. We value your feedback. Could you provide more detailed information to help us troubleshoot your problem?\n1. Your UID in FlareFlow (check it on the Profile page).\n2. A screenshot or screen recording of your Google Pay/Apple Pay order number.\nThe more information, the more helpful it is for us to locate the problem. Thank you for your feedback.\nSincerely,\nFlareFlow",
+        "pt": "Prezado usuário, lamentamos pelo inconveniente causado. Valorizamos seu feedback. Você poderia fornecer informações mais detalhadas para nos ajudar a solucionar seu problema?\n1. Seu UID no FlareFlow (verifique na página do Perfil).\n2. Uma captura de tela ou gravação de tela do número do pedido do Google Pay/Apple Pay.\nQuanto mais informações, mais útil será para nós localizar o problema. Obrigado pelo seu feedback.\nAtenciosamente,\nFlareFlow",
+        "es": "Estimado usuario, lamentamos las molestias causadas. Valoramos sus comentarios. ¿Podría proporcionar información más detallada para ayudarnos a solucionar su problema?\n1. Su UID en FlareFlow (compruébelo en la página de Perfil).\n2. Una captura de pantalla o grabación de pantalla de su número de pedido de Google Pay/Apple Pay.\nCuanta más información, más útil nos será para localizar el problema. Gracias por sus comentarios.\nAtentamente,\nFlareFlow",
+        "fr": "Cher utilisateur, nous sommes désolés pour le désagrément causé. Nous valorisons vos commentaires. Pourriez-vous fournir des informations plus détaillées pour nous aider à résoudre votre problème ?\n1. Votre UID dans FlareFlow (vérifiez-le sur la page Profil).\n2. Une capture d'écran ou un enregistrement d'écran de votre numéro de commande Google Pay/Apple Pay.\nPlus nous avons d'informations, plus il nous est utile de localiser le problème. Merci pour vos commentaires.\nCordialement,\nFlareFlow",
+        "id": "Pengguna yang terhormat, kami minta maaf atas ketidaknyamanan yang ditimbulkan. Kami menghargai masukan Anda. Bisakah Anda memberikan informasi yang lebih detail untuk membantu kami memecahkan masalah Anda?\n1. UID Anda di FlareFlow (periksa di halaman Profil).\n2. Screenshot atau rekaman layar dari nomor pesanan Google Pay/Apple Pay Anda.\nSemakin banyak informasi, semakin membantu bagi kami untuk menemukan masalahnya. Terima kasih atas masukan Anda.\nHormat kami,\nFlareFlow",
+        "th": "เรียนผู้ใช้ เราขออภัยในความไม่สะดวกที่เกิดขึ้น เราตั้งค่าข้อเสนอแนะของคุณ คุณสามารถให้ข้อมูลโดยละเอียดเพิ่มเติมเพื่อช่วยเราแก้ไขปัญหาของคุณได้ไหม?\n1. UID ของคุณใน FlareFlow (ตรวจสอบได้ในหน้าโปรไฟล์)\n2. ภาพหน้าจอหรือการบันทึกหน้าจอของหมายเลขคำสั่งซื้อ Google Pay/Apple Pay ของคุณ\nยิ่งมีข้อมูลมากเท่าไหร่ ก็ยิ่งมีประโยชน์สำหรับเราในการระบุปัญหามากขึ้นเท่านั้น ขอบคุณสำหรับข้อเสนอแนะ\nขอแสดงความนับถือ\nFlareFlow",
+        "ko": "안녕하세요 회원님, 불편을 끼쳐 드려 죄송합니다. 소중한 피드백 감사드립니다. 문제 해결을 위해 보다 자세한 정보를 제공해 주시겠어요?\n1. FlareFlow 내 UID (프로필 페이지에서 확인)\n2. Google Pay/Apple Pay 주문 번호의 스크린샷 또는 화면 녹화\n정보가 많을수록 문제를 파악하는 데 더 도움이 됩니다. 피드백 감사드립니다.\n감사합니다,\nFlareFlow",
+        "ja": "ユーザー各位、ご不便をおかけし申し訳ございません。皆様のフィードバックを大切にしています。問題のトラブルシューティングのため、より詳細な情報を提供していただけませんか？\n1. FlareFlowのUID（プロフィールページで確認）\n2. Google Pay/Apple Payの注文番号のスクリーンショットまたは画面録画\n情報が多ければ多いほど、問題の特定に役立ちます。ご意見ありがとうございます。\n敬具\nFlareFlow",
+        "it": "Gentile utente, ci scusiamo per l'inconveniente causato. Valorizziamo il suo feedback. Potrebbe fornire informazioni più dettagliate per aiutarci a risolvere il suo problema?\n1. Il suo UID in FlareFlow (lo verifichi nella pagina Profilo).\n2. Uno screenshot o una registrazione dello schermo del numero del suo ordine Google Pay/Apple Pay.\nPiù informazioni fornisce, più ci è utile per individuare il problema. Grazie per il feedback.\nCordiali saluti,\nFlareFlow",
+        "de": "Sehr geehrter Nutzer, wir entschuldigen uns für die verursachten Unannehmlichkeiten. Wir schätzen Ihr Feedback. Könnten Sie uns detailliertere Informationen zur Verfügung stellen, um uns bei der Fehlerbehebung zu helfen?\n1. Ihre UID in FlareFlow (überprüfen Sie sie auf der Profilseite).\n2. Einen Screenshot oder eine Bildschirmaufnahme Ihrer Google Pay/Apple Pay-Bestellnummer.\nJe mehr Informationen, desto hilfreicher ist es für uns, das Problem zu lokalisieren. Vielen Dank für Ihr Feedback.\nMit freundlichen Grüßen,\nFlareFlow",
+        "ms": "Pengguna yang dihormati, kami memohon maaf atas kesulitan yang disebabkan. Kami menghargai maklum balas anda. Bolehkah anda berikan maklumat yang lebih terperinci untuk membantu kami menyelesaikan masalah anda?\n1. UID anda dalam FlareFlow (semak di halaman Profil).\n2. Tangkapan skrin atau rakaman skrin nombor pesanan Google Pay/Apple Pay anda.\nLebih banyak maklumat, lebih membantu untuk kami cari masalah. Terima kasih atas maklum balas anda.\nYang ikhlas,\nFlareFlow",
+        "sw": "Mteja mpendwa, tunaomba radhi kwa usumbufu uliosababishwa. Tunathamini maoni yako. Je, unaweza kutoa taarifa za kina zaidi ili kutusaidia kutatua shida yako?\n1. UID yako katika FlareFlow (angalia kwenye ukurasa wa Wasifu).\n2. Skrini au kurekodi skrini ya nambari ya agizo lako la Google Pay/Apple Pay.\nTaarifa zaidi, inasaidia zaidi kwa sisi kuelezea shida. Asante kwa maoni yako.\nKwa heshima,\nFlareFlow",
+        "nl": "Geachte gebruiker, het spijt ons voor het veroorzaakte ongemak. Wij waarderen uw feedback. Kunt u meer gedetailleerde informatie verstrekken om ons te helpen uw probleem op te lossen?\n1. Uw UID in FlareFlow (controleer deze op de Profielpagina).\n2. Een screenshot of schermopname van uw Google Pay/Apple Pay-ordernummer.\nHoe meer informatie, hoe nuttiger het voor ons is om het probleem te lokaliseren. Bedankt voor uw feedback.\nMet vriendelijke groet,\nFlareFlow",
+        "ar": "عزيزي المستخدم، نحن آسفون للإزعاج الذي تسببنا فيه. نحن نقدر ملاحظاتك. هل يمكنك تقديم معلومات more تفصيلية لمساعدتنا في استكشاف مشكلتك وإصلاحها؟\n1. UID الخاص بك في FlareFlow (تحقق منه على صفحة الملف الشخصي).\n2. لقطة شاشة أو تسجيل شاشة لرقم طلب Google Pay/Apple Pay الخاص بك.\nكلما زادت المعلومات، كلما كان more مفيدًا لنا في تحديد المشكلة. شكرًا على ملاحظاتك.\nأطيب التحيات،\nFlareFlow",
+        "da": "Kære bruger, vi beklager den forårsagede ulejlighed. Vi værdsætter din feedback. Kunne du give mere detaljerede oplysninger for at hjælpe os med at fejlfinde dit problem?\n1. Dit UID i FlareFlow (tjek det på Profilsiden).\n2. Et screenshot eller skærmoptagelse af dit Google Pay/Apple Pay ordrenummer.\nJo mere information, jo mere hjælpsomt er det for os at lokalisere problemet. Tak for din feedback.\nMed venlig hilsen,\nFlareFlow"
+      }
+    },
+    {
+      "id": "信息收集与跟进_003",
+      "category": "信息收集与跟进",
+      "scenario": "要求提供订单ID",
+      "keywords": [
+        "信息收集与跟进",
+        "要求提供订单id"
+      ],
+      "languages": {
+        "en": "Dear user, we know from your attachment that you have paid. But we need your order ID. Please check your email from Apple/Google patiently.\n\nSincerely,\nFlareFlow",
+        "pt": "Prezado usuário, sabemos pelo seu anexo que você pagou. Mas precisamos do seu ID do pedido. Por favor, verifique seu e-mail da Apple/Google com paciência.\n\nAtenciosamente,\nFlareFlow",
+        "es": "Estimado usuario, sabemos por su archivo adjunto que ha pagado. Pero necesitamos su ID de pedido. Por favor, revise su correo electrónico de Apple/Google con paciencia.\n\nAtentamente,\nFlareFlow",
+        "fr": "Cher utilisateur, nous savons grâce à votre pièce jointe que vous avez payé. Mais nous avons besoin de votre numéro de commande. Veuillez consulter patiemment votre email d'Apple/Google.\n\nCordialement,\nFlareFlow",
+        "id": "Pengguna yang terhormat, kami tahu dari lampiran Anda bahwa Anda telah membayar. Tetapi kami membutuhkan ID pesanan Anda. Harap periksa email Anda dari Apple/Google dengan sabar.\n\nHormat kami,\nFlareFlow",
+        "th": "เรียนผู้ใช้ เราทราบจากไฟล์แนบของคุณว่าคุณได้ชำระเงินแล้ว แต่เราต้องการรหัสคำสั่งซื้อ (order ID) ของคุณ กรุณาตรวจสอบอีเมลจาก Apple/Google ของคุณอย่างละเอียด\n\nขอแสดงความนับถือ\nFlareFlow",
+        "ko": "안녕하세요 회원님, 첨부파일을 통해 결제가 이루어진 것은 확인했습니다. 하지만 주문번호(ID)가 필요합니다. Apple/Google에서 보낸 이메을을仔细히 확인해 주시기 바랍니다.\n\n감사합니다,\nFlareFlow",
+        "ja": "ユーザー各位、添付ファイルからお支払いが完了したことを確認いたしました。しかし、注文IDが必要です。Apple/Googleから送信されたメールをよくご確認ください。\n\n敬具\nFlareFlow",
+        "it": "Gentile utente, dall'allegato abbiamo visto che ha pagato. Ma abbiamo bisogno del suo ID ordine. La preghiamo di controllare con pazienza la sua email da Apple/Google.\n\nCordiali saluti,\nFlareFlow",
+        "de": "Sehr geehrter Nutzer, wir haben aus Ihrem Anhang ersehen, dass Sie bezahlt haben. Aber wir benötigen Ihre Bestell-ID. Bitte überprüfen Sie geduldig Ihre E-Mail von Apple/Google.\n\nMit freundlichen Grüßen,\nFlareFlow",
+        "ms": "Pengguna yang dihormati, kami tahu dari lampiran anda bahawa anda telah membayar. Tetapi kami memerlukan ID pesanan anda. Sila periksa e-mel anda dari Apple/Google dengan sabar.\n\nYang ikhlas,\nFlareFlow",
+        "sw": "Mteja mpendwa, tunajua kutoka kwa kiambatanisho chako kuwa umelipa. Lakini tunahitaji Kitambulisho chako cha Agizo. Tafadhali angalia barua pepe yako kutoka kwa Apple/Google kwa subira.\n\nKwa heshima,\nFlareFlow",
+        "nl": "Geachte gebruiker, we zien uit uw bijlage dat u heeft betaald. Maar we hebben uw Order-ID nodig. Controleer alstublieft geduldig uw e-mail van Apple/Google.\n\nMet vriendelijke groet,\nFlareFlow",
+        "ar": "عزيزي المستخدم، نعلم من خلال المرفق أنك قمت بالدفع. لكننا نحتاج معرف الطلب (order ID) الخاص بك. يرجى التحقق من بريدك الإلكتروني من Apple/Google بصبر.\n\nبإخلاص،\nFlareFlow",
+        "da": "Kære bruger, vi kan se af din vedhæftede fil, at du har betalt. Men vi har brug for din ordre-ID. Venligst tjek din e-mail fra Apple/Google omhyggeligt.\n\nMed venlig hilsen,\nFlareFlow"
+      }
+    },
+    {
+      "id": "信息收集与跟进_004",
+      "category": "信息收集与跟进",
+      "scenario": "询问详细信息 (通用)",
+      "keywords": [
+        "信息收集与跟进",
+        "询问详细信息 (通用)",
+        "issue",
+        "feedback"
+      ],
+      "languages": {
+        "en": "Dear User, we apologize for the poor experience. Please describe your issue in detail so we can better resolve it. We appreciate your feedback.\nSincerely,\nFlareFlow",
+        "pt": "Prezado Usuário, pedimos desculpas pela experiência ruim. Descreva seu problema em detalhes para que possamos resolvê-lo melhor. Agradecemos seu feedback.\nAtenciosamente,\nFlareFlow",
+        "es": "Estimado Usuario, le pedimos disculpas por la mala experiencia. Describa su problema en detalle para que podamos resolverlo mejor. Agradecemos sus comentarios.\nAtentamente,\nFlareFlow",
+        "fr": "Cher Utilisateur, nous nous excusons pour la mauvaise expérience. Veuillez décrire votre problème en détail afin que nous puissions mieux le résoudre. Nous apprécions vos commentaires.\nCordialement,\nFlareFlow",
+        "id": "Yang Terhormat, kami minta maaf atas pengalaman yang buruk. Jelaskan masalah Anda secara detail agar kami dapat menyelesaikannya dengan lebih baik. Kami menghargai masukan Anda.\nHormat kami,\nFlareFlow",
+        "th": "เรียนผู้ใช้ เราขออภัยในประสบการณ์ที่ไม่ดี กรุณาอธิบายปัญหาของคุณโดยละเอียดเพื่อให้เราสามารถแก้ไขได้ดีขึ้น เราขอขอบคุณสำหรับข้อเสนอแนะ\nขอแสดงความนับถือ\nFlareFlow",
+        "ko": "안녕하세요 회원님, 불편한 점 양해 부탁드립니다. 문제를 더 잘 해결할 수 있도록 자세히 설명해 주시기 바랍니다. 소중한 피드백 감사드립니다.\n감사합니다,\nFlareFlow",
+        "ja": "ユーザー各位、ご不便をおかけし申し訳ございません。問題をよりよく解決できるように、詳細を説明してください。ご意見ありがとうございます。\n敬具\nFlareFlow",
+        "it": "Gentile Utente, ci scusiamo per la scarsa esperienza. Descriva il suo problema in dettaglio in modo che possiamo risolverlo meglio. Apprezziamo il suo feedback.\nCordiali saluti,\nFlareFlow",
+        "de": "Sehr geehrter Benutzer, wir entschuldigen uns für die schlechte Erfahrung. Bitte beschreiben Sie Ihr Problem im Detail, damit wir es besser lösen können. Wir schätzen Ihr Feedback.\nMit freundlichen Grüßen,\nFlareFlow",
+        "ms": "Pengguna yang dihormati, kami memohon maaf atas pengalaman tidak memuaskan. Sila terangkan isu anda secara terperinci supaya kami dapat selesaikannya dengan lebih baik. Kami menghargai maklum balas anda.\nYang ikhlas,\nFlareFlow",
+        "sw": "Mteja Mpendwa, tunaomba radhi kwa uzoefu duni. Tafadhali elezea tatizo lako kwa undani ili tuweze kulitatua vyema. Tunashukuru kwa maoni yako.\nKwa heshima,\nFlareFlow",
+        "nl": "Geachte Gebruiker, onze excuses voor de slechte ervaring. Gelieve uw probleem gedetailleerd te beschrijven, zodat wij het beter kunnen oplossen. Wij waarderen uw feedback.\nMet vriendelijke groet,\nFlareFlow",
+        "ar": "عزيزي المستخدم، نعتذر عن التجربة السيئة. يرجى وصف مشكلتك بالتفصيل حتى نتمكن من حلها بشكل أفضل. نحن نقدر ملاحظاتك.\nأطيب التحيات،\nFlareFlow",
+        "da": "Kære Bruger, vi undskylder for den dårlige oplevelse. Beskriv venligst dit problem i detaljer, så vi kan løse det bedre. Vi sætter pris på din feedback.\nMed venlig hilsen,\nFlareFlow"
+      }
+    },
+    {
+      "id": "退款相关_005",
+      "category": "退款相关",
+      "scenario": "用户自行取消连续订阅",
+      "keywords": [
+        "退款相关",
+        "用户自行取消连续订阅",
+        "subscription",
+        "payment",
+        "profile",
+        "cancel"
+      ],
+      "languages": {
+        "en": "Dear user, \nwe sincerely apologize for the inconvenience. We are unable to cancel your subscription directly. Please cancel it yourself in Google Play or the App Store.\nGoogle Play/App Store: Tap your profile icon (top-right corner) -> Select \"Payments & subscriptions\" -> Subscriptions -> Choose your FlareFlow subscription -> Tap \"Cancel subscription\".\nRegards,\nFlareFlow",
+        "pt": "Prezado usuário, pedimos sinceras desculpas pelo inconveniente. Não podemos cancelar sua assinatura diretamente. Cancele você mesmo no Google Play ou na App Store.\nGoogle Play/App Store: Toque no ícone do seu perfil (canto superior direito) -> Selecione \"Pagamentos e assinaturas\" -> Assinaturas -> Escolha sua assinatura do FlareFlow -> Toque em \"Cancelar assinatura\".\nAtenciosamente,\nFlareFlow",
+        "es": "Estimado usuario, le pedimos sinceras disculpas por las molestias. No podemos cancelar su suscripción directamente. Por favor, cancélela usted mismo en Google Play o en la App Store.\nGoogle Play/App Store: Toque el icono de su perfil (esquina superior derecha) -> Seleccione \"Pagos y suscripciones\" -> Suscripciones -> Elija su suscripción a FlareFlow -> Toque \"Cancelar suscripción\".\nAtentamente,\nFlareFlow",
+        "fr": "Cher utilisateur, nous nous excusons sincèrement pour ce désagrément. Nous ne sommes pas en mesure d'annuler votre abonnement directement. Veuillez l'annuler vous-même dans Google Play ou l'App Store.\nGoogle Play/App Store : Appuyez sur l'icône de votre profil (coin supérieur droit) -> Sélectionnez \"Paiements et abonnements\" -> Abonnements -> Choisissez votre abonnement FlareFlow -> Appuyez sur \"Annuler l'abonnement\".\nCordialement,\nFlareFlow",
+        "id": "Pengguna yang terhormat, kami dengan tulus meminta maaf atas ketidaknyamanannya. Kami tidak dapat membatalkan langganan Anda secara langsung. Silakan batalkan sendiri di Google Play atau App Store.\nGoogle Play/App Store: Ketuk ikon profil Anda (pojok kanan atas) -> Pilih \"Pembayaran & langganan\" -> Langganan -> Pilih langganan FlareFlow Anda -> Ketuk \"Batalkan langganan\".\nHormat kami,\nFlareFlow",
+        "th": "เรียนผู้ใช้ เราขออภัยอย่างจริงใจสำหรับความไม่สะดวก เราไม่สามารถยกเลิกการสมัครสมาชิกของคุณโดยตรงได้ กรุณายกเลิกด้วยตนเองใน Google Play หรือ App Store\nGoogle Play/App Store: แตะไอคอนโปรไฟล์ของคุณ (มุมขวาบน) -> เลือก \"การชำระเงินและการสมัครสมาชิก\" -> การสมัครสมาชิก -> เลือกการสมัครสมาชิก FlareFlow ของคุณ -> แตะ \"ยกเลิกการสมัครสมาชิก\"\nขอแสดงความนับถือ\nFlareFlow",
+        "ko": "안녕하세요 회원님, 불편을 끼쳐 드려 진심으로 사과드립니다. 당사에서는 구독을 직접 취소할 수 없습니다. Google Play 또는 App Store에서 직접 취소해 주시기 바랍니다.\nGoogle Play/App Store: 프로필 아이콘(우측 상단) 탭 -> \"결제 및 구독\" 선택 -> 구독 -> FlareFlow 구독 선택 -> \"구독 취소\" 탭\n감사합니다,\nFlareFlow",
+        "ja": "ユーザー各位、ご不便をおかけし誠に申し訳ございません。当社ではサブスクリプションを直接キャンセルすることはできません。Google PlayまたはApp Storeでご自身でキャンセルしてください。\nGoogle Play/App Store：プロフィールアイコン（右上）をタップ -> 「支払いとサブスクリプション」を選択 -> サブスクリプション -> FlareFlowのサブスクリプションを選択 -> 「サブスクリプションをキャンセル」をタップ\n敬具\nFlareFlow",
+        "it": "Gentile utente, ci scusiamo sinceramente per l'inconveniente. Non siamo in grado di cancellare l'abbonamento direttamente. La preghiamo di cancellarlo personalmente su Google Play o sull'App Store.\nGoogle Play/App Store: Tocchi l'icona del suo profilo (in alto a destra) -> Selezioni \"Pagamenti e abbonamenti\" -> Abbonamenti -> Scelga il suo abbonamento FlareFlow -> Tocchi \"Annulla abbonamento\".\nCordiali saluti,\nFlareFlow",
+        "de": "Sehr geehrter Nutzer, wir entschuldigen uns aufrichtig für die Unannehmlichkeiten. Wir können Ihr Abonnement nicht direkt kündigen. Bitte kündigen Sie es selbst in Google Play oder im App Store.\nGoogle Play/App Store: Tippen Sie auf Ihr Profilsymbol (oben rechts) -> Wählen Sie \"Zahlungen & Abonnements\" -> Abonnements -> Wählen Sie Ihr FlareFlow-Abonnement -> Tippen Sie auf \"Abonnement kündigen\".\nMit freundlichen Grüßen,\nFlareFlow",
+        "ms": "Pengguna yang dihormati, kami dengan ikhlas memohon maaf atas kesulitan yang dialami. Kami tidak mampu membatalkan langganan anda secara langsung. Sila batalkannya sendiri dalam Google Play atau App Store.\nGoogle Play/App Store: Ketik ikon profil anda (penjuru kanan atas) -> Pilih \"Pembayaran & langganan\" -> Langganan -> Pilih langganan FlareFlow anda -> Ketik \"Batalkan langganan\".\nYang ikhlas,\nFlareFlow",
+        "sw": "Mteja mpendwa, tunaomba radhi kwa usumbufu huu. Hatuwezi kufuta usajili wako moja kwa moja. Tafadhali ufute mwenyewe kwenye Google Play au Duka la Programu.\nGoogle Play/Duka la Programu: Gonga ikoni ya wasifu wako (kona ya juu kulia) -> Chagua \"Malipo na usajili\" -> Usajili -> Chagua usajili wako wa FlareFlow -> Gonga \"Futa usajili\".\nKwa heshima,\nFlareFlow",
+        "nl": "Geachte gebruiker, onze oprechte excuses voor het ongemak. Wij kunnen uw abonnement niet direct annuleren. Gelieve het zelf te annuleren in Google Play of de App Store.\nGoogle Play/App Store: Tik op uw profielpictogram (rechtsboven) -> Selecteer \"Betalingen en abonnementen\" -> Abonnementen -> Kies uw FlareFlow-abonnement -> Tik op \"Abonnement opzeggen\".\nMet vriendelijke groet,\nFlareFlow",
+        "ar": "عزيزي المستخدم، نعتذر بشدة عن الإزعاج. لا يمكننا إلغاء اشتراكك مباشرة. يرجى إلغاؤه بنفسك في Google Play أو App Store.\nGoogle Play/App Store: انقر على أيقونة ملفك الشخصي (أعلى اليمين) -> حدد \"المدفوعات والاشتراكات\" -> الاشتراكات -> اختر اشتراك FlareFlow الخاص بك -> انقر على \"إلغاء الاشتراك\".\nأطيب التحيات،\nFlareFlow",
+        "da": "Kære bruger, vi undskylder oprigtigt for ulejligheden. Vi kan ikke annullere dit abonnement direkte. Annuller venligst selv i Google Play eller App Store.\nGoogle Play/App Store: Tryk på din profilikon (øverst til højre) -> Vælg \"Betalinger og abonnementer\" -> Abonnementer -> Vælg dit FlareFlow-abonnement -> Tryk \"Annuller abonnement\".\nMed venlig hilsen,\nFlareFlow"
+      }
+    },
+    {
+      "id": "退款相关_006",
+      "category": "退款相关",
+      "scenario": "用户申请退款",
+      "keywords": [
+        "退款相关",
+        "用户申请退款",
+        "payment",
+        "refund"
+      ],
+      "languages": {
+        "en": "Dear user, \nWe are sincerely sorry about the bad experience.If you have any questions ,for your rights, you can try to apply for a refund from the payment service provider (through Google Play or Apple Pay). We cannot guarantee whether the refund will be successful. Please consult the relevant payment platform staff for the specific refund process.\n\nsincerely\nFlareflow",
+        "pt": "Prezado usuário, pedimos sinceras desculpas pelo inconveniente. Para proteger seus direitos, você pode tentar solicitar um reembolso ao provedor de serviços de pagamento (através do Google Play ou Apple Pay). Observe que não podemos garantir o sucesso do reembolso. Para o processo específico de reembolso, consulte a equipe de suporte da plataforma de pagamento relevante.\nAtenciosamente,\nFlareFlow",
+        "es": "Estimado usuario, le pedimos sinceras disculpas por las molestias. Para proteger sus derechos, puede intentar solicitar un reembolso al proveedor de servicios de pago (a través de Google Play o Apple Pay). Tenga en cuenta que no podemos garantizar el éxito del reembolso. Para el proceso específico de reembolso, consulte al equipo de soporte de la plataforma de pago correspondiente.\nAtentamente,\nFlareFlow",
+        "fr": "Cher utilisateur, nous nous excusons sincèrement pour ce désagrément. Pour protéger vos droits, vous pouvez essayer de demander un remboursement au fournisseur de services de paiement (via Google Play ou Apple Pay). Veuillez noter que nous ne pouvons pas garantir le succès du remboursement. Pour la procédure de remboursement spécifique, veuillez consulter l'équipe d'assistance de la plateforme de paiement concernée.\nCordialement,\nFlareFlow",
+        "id": "Pengguna yang terhormat, kami dengan tulus meminta maaf atas ketidaknyamanannya. Untuk melindungi hak Anda, Anda dapat mencoba mengajukan pengembalian dana ke penyedia layanan pembayaran (melalui Google Play atau Apple Pay). Harap dicatat bahwa kami tidak dapat menjamin keberhasilan pengembalian dana. Untuk proses pengembalian dana tertentu, silakan hubungi tim dukungan platform pembayaran yang relevan.\nHormat kami,\nFlareFlow",
+        "th": "เรียนผู้ใช้ เราขออภัยอย่างจริงใจสำหรับความไม่สะดวก เพื่อปกป้องสิทธิของคุณ คุณสามารถลองขอเงินคืนจากผู้ให้บริการชำระเงิน (ผ่าน Google Play หรือ Apple Pay) โปรดทราบว่าเราไม่สามารถรับประกันความสำเร็จของการขอเงินคืน สำหรับกระบวนการขอเงินคืนเฉพาะ กรุณาติดต่อทีมสนับสนุนของแพลตฟอร์มการชำระเงินที่เกี่ยวข้อง\nขอแสดงความนับถือ\nFlareFlow",
+        "ko": "안녕하세요 회원님, 불편을 끼쳐 드려 진심으로 사과드립니다. 회원님의 권리를 보호하기 위해 결제 서비스 공급자(Google Play 또는 Apple Pay)에 환불을 요청하실 수 있습니다. 단, 환불 성공을 보장할 수 없음을 양지해 주시기 바랍니다. 구체적인 환불 절차는 해당 결제 플랫폼의 지원 팀에 문의해 주시기 바랍니다.\n감사합니다,\nFlareFlow",
+        "ja": "ユーザー各位、ご不便をおかけし誠に申し訳ございません。お客様の権利を保護するため、決済サービスプロバイダー（Google PlayまたはApple Pay経由）に返金を申請することができます。なお、返金の成功は保証できません。具体的な返金プロセスについては、関連する決済プラットフォームのサポートチームにお問い合わせください。\n敬具\nFlareFlow",
+        "it": "Gentile utente, ci scusiamo sinceramente per l'inconveniente. Per proteggere i suoi diritti, può provare a richiedere un rimborso al fornitore del servizio di pagamento (tramite Google Play o Apple Pay). Si prega di notare che non possiamo garantire l'esito positivo del rimborso. Per la procedura specifica di rimborso, la preghiamo di consultare il team di supporto della piattaforma di pagamento pertinente.\nCordiali saluti,\nFlareFlow",
+        "de": "Sehr geehrter Nutzer, wir entschuldigen uns aufrichtig für die Unannehmlichkeiten. Um Ihre Rechte zu schützen, können Sie versuchen, eine Erstattung beim Zahlungsdienstleister (über Google Play oder Apple Pay) zu beantragen. Bitte beachten Sie, dass wir den Erfolg der Erstattung nicht garantieren können. Für das spezifische Erstattungsverfahren wenden Sie sich bitte an den Support des jeweiligen Zahlungsplattform.\nMit freundlichen Grüßen,\nFlareFlow",
+        "ms": "Pengguna yang dihormati, kami dengan ikhlas memohon maaf atas kesulitan yang dialami. Untuk melindungi hak anda, anda boleh cuba memohon bayaran balik daripada pembekal perkhidmatan pembayaran (melalui Google Play atau Apple Pay). Sila ambil perhatian bahawa kami tidak boleh menjamin kejayaan bayaran balik. Untuk proses bayaran balik tertentu, sila rujuk pasukan sokongan platform pembayaran yang berkaitan.\nYang ikhlas,\nFlareFlow",
+        "sw": "Mteja mpendwa, tunaomba radhi kwa usumbufu huu. Ili kulinda haki zako, unaweza kujaribu kuomba fidia kwa mtoa huduma ya malipo (kupitia Google Play au Apple Pay). Tafadhali kumbuka kuwa hatuwezi kuhakikisha mafanikio ya fidia. Kwa mchakato maalum wa fidia, tafadhali wasiliana na timu ya usaidizi wa jukwaa la malipo husika.\nKwa heshima,\nFlareFlow",
+        "nl": "Geachte gebruiker, onze oprechte excuses voor het ongemak. Om uw rechten te beschermen, kunt u proberen een terugbetaling aan te vragen bij de betalingsdienstverlener (via Google Play of Apple Pay). Houd er rekening mee dat wij het slagen van de terugbetaling niet kunnen garanderen. Voor het specifieke terugbetalingsproces, gelieve contact op te nemen met het ondersteuningsteam van het desbetreffende betalingsplatform.\nMet vriendelijke groet,\nFlareFlow",
+        "ar": "عزيزي المستخدم، نعتذر بشدة عن الإزعاج. لحماية حقوقك، يمكنك محاولة طلب استرداد الأموال من مزود خدمة الدفع (من خلال Google Play أو Apple Pay). يرجى ملاحظة أننا لا نستطيع ضمان نجاح الاسترداد. للحصول على عملية الاسترداد المحددة، يرجى استشارة فريق دعم منصة الدفع ذات الصلة.\nأطيب التحيات،\nFlareFlow",
+        "da": "Kære bruger, vi undskylder oprigtigt for ulejligheden. For at beskytte dine rettigheder kan du prøve at anmode om en refundering fra betalingstjenesteudbyderen (gennem Google Play eller Apple Pay). Vær opmærksom på, at vi ikke kan garanere refunderingens succes. For den specifikke refunderingproces, venligst konsulter den relevante betalingsplatforms supportteam.\nMed venlig hilsen,\nFlareFlow"
+      }
+    },
+    {
+      "id": "功能与活动_007",
+      "category": "功能与活动",
+      "scenario": "看广告（次数或者未获得奖励）",
+      "keywords": [
+        "功能与活动",
+        "看广告（次数或者未获得奖励）",
+        "feedback"
+      ],
+      "languages": {
+        "en": "Dear user,\nThank you for your feedback. You can unlock episodes and earn rewards by watching ads daily or logging in to watch them. However, there's a limit to how many times you can earn rewards by watching ads. You'll unlock episodes when an \"×\" appears in the upper right corner after watching an ad. You can also unlock episodes by subscribing or purchasing coins. We're also preparing more quests for the upcoming version to help you earn even more rewards.\n\nSincerely\nFlareFlow",
+        "pt": "Prezado usuário,\nAgradecemos o seu feedback. Você pode desbloquear episódios e ganhar recompensas assistindo a anúncios diariamente ou fazendo login para assisti-los. No entanto, há um limite para quantas vezes você pode ganhar recompensas assistindo a anúncios. Você desbloqueará episódios quando um \"×\" aparecer no canto superior direito após assistir a um anúncio. Você também pode desbloquear episódios assinando ou comprando moedas. Também estamos preparando mais missões para a próxima versão para ajudá-lo a ganhar ainda mais recompensas.\n\nAtenciosamente\nFlareFlow",
+        "es": "Estimado usuario,\nGracias por sus comentarios. Puede desbloquear episodios y ganar recompensas viendo anuncios a diario o iniciando sesión para verlos. Sin embargo, hay un límite en la cantidad de veces que puede ganar recompensas viendo anuncios. Desbloqueará episodios cuando aparezca una \"×\" en la esquina superior derecha después de ver un anuncio. También puede desbloquear episodios suscribiéndose o comprando monedas. También estamos preparando más misiones para la próxima versión para ayudarle a ganar aún más recompensas.\n\nAtentamente\nFlareFlow",
+        "fr": "Cher utilisateur,\nMerci pour vos commentaires. Vous pouvez débloquer des épisodes et gagner des récompenses en regardant des publicités quotidiennement ou en vous connectant pour les regarder. Cependant, il y a une limite au nombre de fois où vous pouvez gagner des récompenses en regardant des publicités. Vous débloquerez des épisodes lorsqu'un \"×\" apparaîtra dans le coin supérieur droit après avoir regardé une publicité. Vous pouvez également débloquer des épisodes en vous abonnant ou en achetant des pièces. Nous préparons également plus de quêtes pour la version à venir pour vous aider à gagner encore plus de récompenses.\n\nCordialement\nFlareFlow",
+        "id": "Pengguna yang terhormat,\nTerima kasih atas masukan Anda. Anda dapat membuka kunci episode dan mendapatkan hadiah dengan menonton iklan setiap hari atau login untuk menontonnya. Namun, ada batasan berapa kali Anda dapat memperoleh hadiah dengan menonton iklan. Anda akan membuka kunci episode ketika tanda \"×\" muncul di sudut kanan atas setelah menonton iklan. Anda juga dapat membuka kunci episode dengan berlangganan atau membeli koin. Kami juga menyiapkan lebih banyak misi untuk versi mendatang untuk membantu Anda memperoleh lebih banyak hadiah.\n\nHormat kami\nFlareFlow",
+        "th": "เรียนผู้ใช้\nขอบคุณสำหรับข้อเสนอแนะของคุณ คุณสามารถปลดล็อคตอนและรับรางวัลโดยการดูโฆษณาประจำวันหรือเข้าสู่ระบบเพื่อดูโฆษณา อย่างไรก็ตาม มีขีดจำกัดจำนวนครั้งที่คุณสามารถรับรางวัลโดยการดูโฆษณา คุณจะปลดล็อคตอนเมื่อเครื่องหมาย \"×\" ปรากฏที่มุมขวาบนหลังจากดูโฆษณา คุณยังสามารถปลดล็อคตอนโดยการสมัครสมาชิกหรือซื้อเหรียญได้ นอกจากนี้เรายังกำลังเตรียมเควสเพิ่มเติมสำหรับเวอร์ชันถัดไปเพื่อช่วยให้คุณได้รับรางวัลมากขึ้นอีกด้วย\n\nขอแสดงความนับถือ\nFlareFlow",
+        "ko": "안녕하세요 회원님,\n피드백을 보내주셔서 감사합니다. 매일 광고를 시청하거나 로그인하여 에피소드를 잠금 해제하고 보상을 획득할 수 있습니다. 다만, 광고 시청을 통한 보상 획득에는 횟수 제한이 있습니다. 광고 시청 후 화면 우측 상단에 \"×\" 표시가 나타나면 에피소드가 잠금 해제됩니다. 구독을 하거나 코인을 구매하여 에피소드를 잠금 해제할 수도 있습니다. 또한 더 많은 보상을 얻을 수 있도록 다음 버전에서는 더 많은 퀘스트를 준비 중입니다.\n감사합니다,\nFlareFlow",
+        "ja": "ユーザー各位\nフィードバックありがとうございます。毎日広告を視聴するか、ログインして広告を視聴することで、エピソードのロックを解除して報酬を獲得できます。ただし、広告視聴で報酬を獲得できる回数には制限があります。広告視聴後、右上隅に「×」が表示されるとエピソードがアンロックされます。また、サブスクリプションやコインの購入によってもエピソードをアンロックできます。今後のバージョンでは、さらに多くの報酬を獲得できるよう、より多くのクエストも準備中です。\n\n敬具\nFlareFlow",
+        "it": "Gentile utente,\nGrazie per il suo feedback. Può sbloccare episodi e guadagnare ricompense guardando annunci giornalmente o accedendo per guardarli. Tuttavia, c'è un limite al numero di volte in cui puoi guadagnare ricompense guardando annunci. Sbloccherai gli episodi quando una \"×\" appare nell'angolo in alto a destra dopo aver guardato un annuncio. Puoi anche sbloccare episodi abbonandoti o acquistando monete. Stiamo anche preparando più missioni per la prossima versione per aiutarti a guadagnare ancora più ricompense.\n\nCordiali saluti\nFlareFlow",
+        "de": "Sehr geehrter Nutzer,\nVielen Dank für Ihr Feedback. Sie können Folgen freischalten und Belohnungen verdienen, indem Sie täglich Werbung ansehen oder sich anmelden, um sie anzusehen. Allerdings gibt es eine Grenze, wie oft Sie durch das Ansehen von Werbung Belohnungen verdienen können. Sie entsperren Folgen, wenn nach dem Ansehen einer Werbung ein \"×\" in der oberen rechten Ecke erscheint. Sie können Folgen auch durch ein Abonnement oder den Kauf von Münzen freischalten. Wir bereiten auch weitere Aufgaben für die kommende Version vor, um Ihnen zu helfen, noch mehr Belohnungen zu verdienen.\n\nMit freundlichen Grüßen\nFlareFlow",
+        "ms": "Pengguna yang dihormati,\nTerima kasih atas maklum balas anda. Anda boleh buka kunci episod dan dapatkan ganjaran dengan menonton iklan setiap hari atau log masuk untuk menontonnya. Walau bagaimanapun, terdapat had untuk berapa kali anda boleh dapatkan ganjaran dengan menonton iklan. Anda akan buka kunci episod apabila \"×\" muncul di penjuru kanan atas selepas menonton iklan. Anda juga boleh buka kunci episod dengan melanggan atau membeli syiling. Kami juga menyediakan lebih banyak misi untuk versi akan datang untuk membantu anda peroleh lebih banyak ganjaran.\n\nYang ikhlas\nFlareFlow",
+        "sw": "Mteja mpendwa,\nAsante kwa maoni yako. Unaweza kufungua sehemu na kupata zawadi kwa kutazama matangazo kila siku au kuingia ili kuzitazama. Hata hivyo, kuna kikomo cha idadi ya mara unaweza kupata zawadi kwa kutazama matangazo. Utafungua sehemu wakati \"×\" itaonekana kwenye kona ya juu kulia baada ya kutazama tangazo. Unaweza pia kufungua sehemu kwa kujiunga au kununua sarafu. Tunajiandaa pia kwa misheni zaidi kwa toleo lijalo kukusaidia kupata zawadi zaidi.\n\nKwa heshima\nFlareFlow",
+        "nl": "Geachte gebruiker,\nBedankt voor uw feedback. U kunt afleveringen ontgrendelen en beloningen verdienen door dagelijks advertenties te bekijken of in te loggen om ze te bekijken. Er is echter een limiet aan het aantal keren dat u beloningen kunt verdienen met het bekijken van advertenties. U ontgrendelt afleveringen wanneer een \"×\" verschijnt in de rechterbovenhoek na het bekijken van een advertentie. U kunt afleveringen ook ontgrendelen door u te abonneren of munten te kopen. We bereiden ook meer quests voor de komende versie voor om u te helpen nog meer beloningen te verdienen.\n\nMet vriendelijke groet\nFlareFlow",
+        "ar": "عزيزي المستخدم،\nشكرًا على ملاحظاتك. يمكنك فتح الحلقات وكسب المكافآت من خلال مشاهدة الإعلانات يوميًا أو تسجيل الدخول لمشاهدتها. ومع ذلك، هناك حد لعدد المرات التي يمكنك فيها كسب المكافآت من خلال مشاهدة الإعلانات. ستفتح الحلقات عندما تظهر \"×\" في الزاوية اليمنى العليا بعد مشاهدة إعلان. يمكنك أيضًا فتح الحلقات عن طريق الاشتراك أو شراء العملات. نحن نعد أيضًا المزيد من المهام للإصدار القادم لمساعدتك على كسب المزيد من المكافآت.\n\nبإخلاص\nFlareFlow",
+        "da": "Kære bruger,\nTak for din feedback. Du kan låse episoder op og optjene belønninger ved at se annoncer dagligt eller logge ind for at se dem. Der er dog en grænse for, hvor mange gange du kan optjene belønninger ved at se annoncer. Du låser episoder op, när et \"×\" vises i øverste højre hjørne efter at have set en annonce. Du kan også låse episoder op ved at abonnere eller købe mønter. Vi forbereder også flere quests til den kommende version for at hjælpe dig med at optjene endnu flere belønninger.\n\nMed venlig hilsen\nFlareFlow"
+      }
+    },
+    {
+      "id": "查询与状态确认_008",
+      "category": "查询与状态确认",
+      "scenario": "在排查中",
+      "keywords": [
+        "查询与状态确认",
+        "在排查中",
+        "issue",
+        "feedback"
+      ],
+      "languages": {
+        "en": "Dear user, thank you for your feedback. We are working hard to investigate the issue. Thank you for your patience. If you have any questions, you can continue to contact us via email.\nRegards,\nFlareFlow",
+        "pt": "Prezado usuário, agradecemos seu feedback. Estamos trabalhando duro para investigar o problema. Agradecemos sua paciência. Se você tiver alguma dúvida, pode continuar nos contatando por e-mail.\nAtenciosamente,\nFlareFlow",
+        "es": "Estimado usuario, gracias por sus comentarios. Estamos trabajando arduamente para investigar el problema. Gracias por su paciencia. Si tiene alguna pregunta, puede continuar contactándonos por correo electrónico.\nAtentamente,\nFlareFlow",
+        "fr": "Cher utilisateur, merci pour vos commentaires. Nous travaillons dur pour enquêter sur le problème. Merci pour votre patience. Si vous avez des questions, vous pouvez continuer à nous contacter par e-mail.\nCordialement,\nFlareFlow",
+        "id": "Pengguna yang terhormat, terima kasih atas masukan Anda. Kami bekerja keras untuk menyelidiki masalahnya. Terima kasih atas kesabaran Anda. Jika Anda memiliki pertanyaan, Anda dapat terus menghubungi kami via email.\nHormat kami,\nFlareFlow",
+        "th": "เรียนผู้ใช้ ขอบคุณสำหรับข้อเสนอแนะ เรากำลังทำงานอย่างหนักเพื่อตรวจสอบปัญหา ขอบคุณสำหรับความอดทนของคุณ หากคุณมีคำถามใดๆ คุณสามารถติดต่อเราต่อไปทางอีเมล\nขอแสดงความนับถือ\nFlareFlow",
+        "ko": "안녕하세요 회원님, 피드백 감사드립니다. 문제를 열심히 조사하고 있습니다. 양해해 주셔서 감사합니다. 궁금한 점이 있으시면 이메일을 통해 계속 문의해 주시기 바랍니다.\n감사합니다,\nFlareFlow",
+        "ja": "ユーザー各位、フィードバックありがとうございます。問題を調査中です。ご理解いただきありがとうございます。ご質問がございましたら、引き続きメールでお問い合わせください。\n敬具\nFlareFlow",
+        "it": "Gentile utente, grazie per il suo feedback. Stiamo lavorando sodo per investigare sul problema. Grazie per la sua pazienza. Se ha domande, può continuare a contattarci via email.\nCordiali saluti,\nFlareFlow",
+        "de": "Sehr geehrter Nutzer, vielen Dank für Ihr Feedback. Wir arbeiten hart daran, das Problem zu untersuchen. Vielen Dank für Ihre Geduld. Wenn Sie Fragen haben, können Sie uns weiterhin per E-Mail kontaktieren.\nMit freundlichen Grüßen,\nFlareFlow",
+        "ms": "Pengguna yang dihormati, terima kasih atas maklum balas anda. Kami bekerja keras untuk menyiasat isu tersebut. Terima kasih atas kesabaran anda. Jika anda mempunyai sebarang pertanyaan, anda boleh terus hubungi kami melalui e-mel.\nYang ikhlas,\nFlareFlow",
+        "sw": "Mteja mpendwa, asante kwa maoni yako. Tunafanya kazi kwa bidii kuchunguza suala hilo. Asante kwa subira yako. Ikiwa una maswali, unaweza kuendelea kuwasiliana nasi kupitia barua pepe.\nKwa heshima,\nFlareFlow",
+        "nl": "Geachte gebruiker, bedankt voor uw feedback. Wij werken hard om het probleem te onderzoeken. Dank u voor uw geduld. Als u vragen heeft, kunt u contact met ons opnemen via e-mail.\nMet vriendelijke groet,\nFlareFlow",
+        "ar": "عزيزي المستخدم، شكرًا على ملاحظاتك. نحن نعمل بجد للتحقيق في المشكلة. شكرًا لك على صبرك. إذا كان لديك أي أسئلة، يمكنك متابعة الاتصال بنا عبر البريد الإلكتروني.\nأطيب التحيات،\nFlareFlow",
+        "da": "Kære bruger, tak for din feedback. Vi arbejder hårdt på at undersøge problemet. Tak for din tålmodighed. Hvis du har spørgsmål, kan du fortsætte med at kontakte os via e-mail.\nMed venlig hilsen,\nFlareFlow"
+      }
+    },
+    {
+      "id": "问题解决与关闭_009",
+      "category": "问题解决与关闭",
+      "scenario": "感谢支持",
+      "keywords": [
+        "问题解决与关闭",
+        "感谢支持"
+      ],
+      "languages": {
+        "en": "Dear user, thank you for your support and recognition. We sincerely appreciate hearing that. If you like our app and episodes, please give us a five-star rating in the store.\nRegards,\nFlareFlow",
+        "pt": "Prezado usuário, agradecemos seu apoio e reconhecimento. Nós sinceramente apreciamos ouvir isso. Se você gosta do nosso aplicativo e episódios, por favor, nos dê uma classificação de cinco estrelas na loja.\nAtenciosamente,\nFlareFlow",
+        "es": "Estimado usuario, gracias por su apoyo y reconocimiento. Lo apreciamos sinceramente. Si le gusta nuestra aplicación y los episodios, por favor, dénos una calificación de cinco estrellas en la tienda.\nAtentamente,\nFlareFlow",
+        "fr": "Cher utilisateur, merci pour votre soutien et votre reconnaissance. Nous l'apprécions sincèrement. Si vous aimez notre application et les épisodes, veuillez nous donner une note de cinq étoiles dans le magasin.\nCordialement,\nFlareFlow",
+        "id": "Pengguna yang terhormat, terima kasih atas dukungan dan pengakuan Anda. Kami sangat menghargai mendengarnya. Jika Anda menyukai aplikasi dan episode kami, tolong beri kami peringkat bintang lima di toko.\nHormat kami,\nFlareFlow",
+        "th": "เรียนผู้ใช้ ขอบคุณสำหรับการสนับสนุนและการยอมรับ เราขอขอบคุณอย่างจริงใจที่ได้ยินเช่นนั้น หากคุณชอบแอปและตอนของเรา กรุณาให้เราคะแนนห้าดาวในสโตร์\nขอแสดงความนับถือ\nFlareFlow",
+        "ko": "안녕하세요 회원님, 지원과 인정에 감사드립니다. 진심으로 감사하게 생각합니다. 저희 앱과 에피소드를 좋아하신다면, 스토어에 별 5개 평점을 부여해 주시기 바랍니다.\n감사합니다,\nFlareFlow",
+        "ja": "ユーザー各位、ご支援とご認識に感謝いたします。心より感謝申し上げます。当社のアプリとエピソードをお気に召しましたら、ストアで5つ星の評価をいただけますと幸いです。\n敬具\nFlareFlow",
+        "it": "Gentile utente, grazie per il suo supporto e riconoscimento. Lo apprezziamo sinceramente. Se le piace la nostra app e gli episodi, la preghiamo di darci una valutazione a cinque stelle nel negozio.\nCordiali saluti,\nFlareFlow",
+        "de": "Sehr geehrter Nutzer, vielen Dank für Ihre Unterstützung und Anerkennung. Wir schätzen das sehr. Wenn Sie unsere App und die Folgen mögen, geben Sie uns bitte eine Fünf-Sterne-Bewertung im Store.\nMit freundlichen Grüßen,\nFlareFlow",
+        "ms": "Pengguna yang dihormati, terima kasih atas sokongan dan pengiktirafan anda. Kami amat menghargainya. Jika anda suka apl dan episod kami, tolong beri kami penarafan lima bintang di kedai.\nYang ikhlas,\nFlareFlow",
+        "sw": "Mteja mpendwa, asante kwa msaada wako na kutambua. Tunathamini sana kusikia hilo. Ikiwa unapenda programu yetu na sehemu, tafadhali tupa ukadiriaji wa nyota tano kwenye duka.\nKwa heshima,\nFlareFlow",
+        "nl": "Geachte gebruiker, bedankt voor uw steun en erkenning. Wij stellen het oprecht te horen. Als u onze app en afleveringen leuk vindt, geef ons dan alstublieft een vijfsterrenbeoordeling in de winkel.\nMet vriendelijke groet,\nFlareFlow",
+        "ar": "عزيزي المستخدم، شكرًا على دعمكواعترافك. نحن نقدر بصدق سماع ذلك. إذا أعجبك التطبيق والحلقات، يرجى منحنا تقييمًا بخمس نجوم في المتجر.\nأطيب التحيات،\nFlareFlow",
+        "da": "Kære bruger, tak for din støtte og anerkendelse. Vi sætter virkelig pris på at høre det. Hvis du kan lide vores app og episoder, bedes du give os en fem-stjernet vurdering i butikken.\nMed venlig hilsen,\nFlareFlow"
+      }
+    },
+    {
+      "id": "问题解决与关闭_010",
+      "category": "问题解决与关闭",
+      "scenario": "感谢建议",
+      "keywords": [
+        "问题解决与关闭",
+        "感谢建议",
+        "feature",
+        "suggestion"
+      ],
+      "languages": {
+        "en": "Dear user, thank you for your suggestion. We are actively developing this feature. If you like our app, it would be a great encouragement for us if you could give us a five-star rating in the store.\nRegards,\nFlareFlow",
+        "pt": "Prezado usuário, agradecemos sua sugestão. Estamos desenvolvendo ativamente esse recurso. Se você gosta do nosso aplicativo, seria um grande incentivo para nós se você pudesse nos dar uma classificação de cinco estrelas na loja.\nAtenciosamente,\nFlareFlow",
+        "es": "Estimado usuario, gracias por su sugerencia. Estamos desarrollando activamente esta función. Si le gusta nuestra aplicación, sería un gran aliento para nosotros si pudiera darnos una calificación de cinco estrellas en la tienda.\nAtentamente,\nFlareFlow",
+        "fr": "Cher utilisateur, merci pour votre suggestion. Nous développons activement cette fonctionnalité. Si vous aimez notre application, ce serait un grand encouragement pour nous si vous pouviez nous donner une note de cinq étoiles dans le magasin.\nCordialement,\nFlareFlow",
+        "id": "Pengguna yang terhormat, terima kasih atas saran Anda. Kami secara aktif mengembangkan fitur ini. Jika Anda menyukai aplikasi kami, itu akan menjadi dorongan besar bagi kami jika Anda dapat memberi kami peringkat bintang lima di toko.\nHormat kami,\nFlareFlow",
+        "th": "เรียนผู้ใช้ ขอบคุณสำหรับข้อเสนอแนะ เรากำลังพัฒนาคุณลักษณะนี้อย่างแข็งขัน หากคุณชอบแอปของเรา การให้คะแนนห้าดาวในสโตร์จะเป็นกำลังใจอย่างมากสำหรับเรา\nขอแสดงความนับถือ\nFlareFlow",
+        "ko": "안녕하세요 회원님, 제안 감사드립니다. 해당 기능을 적극적으로 개발 중에 있습니다. 저희 앱을 좋아하신다면, 스토어에 별 5개 평점을 주시면 큰 격려가 됩니다.\n감사합니다,\nFlareFlow",
+        "ja": "ユーザー各位、ご提案ありがとうございます。この機能を積極的に開発中です。当社のアプリをご気に入りいただけましたら、ストアで5つ星の評価をいただけますと大変励みになります。\n敬具\nFlareFlow",
+        "it": "Gentile utente, grazie per il suo suggerimento. Stiamo sviluppando attivamente questa funzionalità. Se le piace la nostra app, sarebbe un grande incoraggiamento per noi se potesse darci una valutazione a cinque stelle nel negozio.\nCordiali saluti,\nFlareFlow",
+        "de": "Sehr geehrter Nutzer, vielen Dank für Ihren Vorschlag. Wir entwickeln diese Funktion aktiv. Wenn Sie unsere App mögen, wäre es eine große Ermutigung für uns, wenn Sie uns eine Fünf-Sterne-Bewertung im Store geben könnten.\nMit freundlichen Grüßen,\nFlareFlow",
+        "ms": "Pengguna yang dihormati, terima kasih atas cadangan anda. Kami sedang aktif membangunkan ciri ini. Jika anda suka apl kami, ia akan menjadi galakan yang besar untuk kami jika anda boleh beri kami penarafan lima bintang di kedai.\nYang ikhlas,\nFlareFlow",
+        "sw": "Mteja mpendwa, asante kwa pendekezo lako. Tunakuza kikamilifu kipengele hiki. Ikiwa unapenda programu yetu, itakuwa ni msukumo mkubwa kwetu kama ungetupa ukadiriaji wa nyota tano kwenye duka.\nKwa heshima,\nFlareFlow",
+        "nl": "Geachte gebruiker, bedankt voor uw suggestie. We ontwikkelen deze functie actief. Als u onze app leuk vindt, zou het een grote aanmoediging voor ons zijn als u ons een vijfsterrenbeoordeling in de winkel zou kunnen geven.\nMet vriendelijke groet,\nFlareFlow",
+        "ar": "عزيزي المستخدم، شكرًا على اقتراحك. نحن نطور هذه الميزة بنشاط. إذا أعجبك تطبيقنا، فسيكون تشجيعًا كبيرًا لنا إذا could تمنحنا تقييمًا بخمس نجوم في المتجر.\nأطيب التحيات،\nFlareFlow",
+        "da": "Kære bruger, tak for dit forslag. Vi udvikler aktivt denne funktion. Hvis du kan lide vores app, ville det være en stor opmuntring for os, hvis du kunne give os en fem-stjernet vurdering i butikken.\nMed venlig hilsen,\nFlareFlow"
+      }
+    },
+    {
+      "id": "问题解决与关闭_011",
+      "category": "问题解决与关闭",
+      "scenario": "问题得到解决",
+      "keywords": [
+        "问题解决与关闭",
+        "问题得到解决",
+        "problem",
+        "feedback"
+      ],
+      "languages": {
+        "en": "Dear user, we are sorry for the inconvenience caused to you and are glad that our service has solved your problem. If you have any questions during your continued use, please continue to provide us with feedback, and we will respond actively.\nRegards,\nFlareFlow",
+        "pt": "Prezado usuário, lamentamos pelo inconveniente causado e estamos felizes que nosso serviço tenha resolvido seu problema. Se você tiver alguma dúvida durante o uso contínuo, continue nos fornecendo feedback, e responderemos ativamente.\nAtenciosamente,\nFlareFlow",
+        "es": "Estimado usuario, lamentamos las molestias causadas y nos alegramos de que nuestro servicio haya resuelto su problema. Si tiene alguna pregunta durante su uso continuo, continúe proporcionándonos sus comentarios, y responderemos activamente.\nAtentamente,\nFlareFlow",
+        "fr": "Cher utilisateur, nous sommes désolés pour le désagrément causé et sommes ravis que notre service ait résolu votre problème. Si vous avez des questions lors de votre utilisation continue, veuillez continuer à nous faire part de vos commentaires, et nous y répondrons activement.\nCordialement,\nFlareFlow",
+        "id": "Pengguna yang terhormat, kami minta maaf atas ketidaknyamanan yang ditimbulkan dan senang bahwa layanan kami telah menyelesaikan masalah Anda. Jika Anda memiliki pertanyaan selama penggunaan berlanjut, silakan terus berikan masukan kepada kami, dan kami akan merespons secara aktif.\nHormat kami,\nFlareFlow",
+        "th": "เรียนผู้ใช้ เราขออภัยในความไม่สะดวกที่เกิดขึ้นและดีใจที่บริการของเราได้แก้ไขปัญหาของคุณแล้ว หากคุณมีคำถามใดๆ ในการใช้งานต่อไป กรุณาให้ข้อเสนอแนะเราต่อไป และเราจะตอบกลับอย่างแข็งขัน\nขอแสดงความนับถือ\nFlareFlow",
+        "ko": "안녕하세요 회원님, 불편을 끼쳐 드려 죄송하며, 저희 서비스로 문제가 해결되어 기쁘게 생각합니다. 앞으로 사용 중 궁금한 점이 있으시면 계속 피드백을 주시기 바랍니다. 저희는 적극적으로 응대하겠습니다.\n감사합니다,\nFlareFlow",
+        "ja": "ユーザー各位、ご不便をおかけし申し訳ございません。当社のサービスで問題が解決したことを嬉しく思います。今後ご利用中にご質問がございましたら、引き続きフィードバックをお寄せください。積極的に対応いたします。\n敬具\nFlareFlow",
+        "it": "Gentile utente, ci scusiamo per l'inconveniente causato e siamo lieti che il nostro servizio abbia risolto il suo problema. Se ha domande durante il suo continuo utilizzo, continui a fornirci feedback, e risponderemo attivamente.\nCordiali saluti,\nFlareFlow",
+        "de": "Sehr geehrter Nutzer, wir entschuldigen uns für die verursachten Unannehmlichkeiten und freuen uns, dass unser Service Ihr Problem gelöst hat. Wenn Sie während der weiteren Nutzung Fragen haben, teilen Sie uns diese bitte weiterhin mit, und wir werden aktiv antworten.\nMit freundlichen Grüßen,\nFlareFlow",
+        "ms": "Pengguna yang dihormati, kami memohon maaf atas kesulitan yang disebabkan dan gembira bahawa perkhidmatan kami telah menyelesaikan masalah anda. Jika anda mempunyai sebarang pertanyaan semasa penggunaan berterusan, sila terus beri kami maklum balas, dan kami akan bertindak balas secara aktif.\nYang ikhlas,\nFlareFlow",
+        "sw": "Mteja mpendwa, tunaomba radhi kwa usumbufu uliosababishwa na tunafurahi kwamba huduma yetu imetatua shida yako. Ikiwa una maswali wakati wa matumizi ya kuendelea, tafadhali endelea kutupa maoni, na tutajibu kikamilifu.\nKwa heshima,\nFlareFlow",
+        "nl": "Geachte gebruiker, het spijt ons voor het veroorzaakte ongemak en we zijn blij dat onze service uw probleem heeft opgelost. Als u tijdens verder gebruik vragen heeft, blijf ons dan feedback geven, en wij zullen actief reageren.\nMet vriendelijke groet,\nFlareFlow",
+        "ar": "عزيزي المستخدم، نحن آسفون للإزعاج الذي تسببنا فيه ويسعدنا أن خدمتنا قد حلت مشكلتك. إذا كان لديك any أسئلة during استخدامك المستمر، يرجى متابعة تزويدنا بالملاحظات، وسنرد بنشاط.\nأطيب التحيات،\nFlareFlow",
+        "da": "Kære bruger, vi beklager den forårsagede ulejlighed og er glade for, at vores service har løst dit problem. Hvis du har spørgsmål under din fortsatte brug, bedes du fortsætte med at give os feedback, og vi vil reagere aktivt.\nMed venlig hilsen,\nFlareFlow"
+      }
+    },
+    {
+      "id": "退款相关_012",
+      "category": "退款相关",
+      "scenario": "取消订阅与退款说明 (通用版)",
+      "keywords": [
+        "退款相关",
+        "取消订阅与退款说明 (通用版)",
+        "subscription",
+        "payment",
+        "refund",
+        "profile",
+        "request",
+        "cancel"
+      ],
+      "languages": {
+        "en": "Dear user, We sincerely apologize for the inconvenience you've experienced. Our subscriptions are weekly or monthly. You can cancel auto-renewal anytime. 【Google Play/App Store: Tap profile icon → \"Payments & subscriptions\" → Subscriptions → Choose FlareFlow subscription → \"Cancel subscription\".】 For the current period's charge, we cannot provide direct refunds as services were available. To protect your rights, you may request a refund from your payment provider (Google Play/Apple Pay). We cannot guarantee approval. Contact their support for specific policies. Sincerely, FlareFlow",
+        "pt": "Prezado usuário, Pedimos desculpas pelo inconveniente. Nossas assinaturas são semanais ou mensais. Você pode cancelar a renovação automática a qualquer momento. 【Google Play/App Store: Toque no ícone do perfil → \"Pagamentos e assinaturas\" → Assinaturas → Escolha a assinatura FlareFlow → \"Cancelar assinatura\".】 Não podemos reembolsar o período atual, pois os serviços estavam disponíveis. Para proteger seus direitos, solicite um reembolso ao seu provedor de pagamento (Google Play/Apple Pay). Não garantimos aprovação. Contate o suporte deles para políticas específicas. Atenciosamente, FlareFlow",
+        "es": "Estimado usuario, Lamentamos las molestias. Nuestras suscripciones son semanales o mensuales. Puede cancelar la renovación automática en cualquier momento. 【Google Play/App Store: Toque el icono de perfil → \"Pagos y suscripciones\" → Suscripciones → Elija suscripción FlareFlow → \"Cancelar suscripción\".】 No podemos reembolsar el período actual, ya que los servicios estaban disponibles. Para proteger sus derechos, solicite un reembolso a su proveedor de pago (Google Play/Apple Pay). No garantizamos la aprobación. Contacte a su soporte para políticas específicas. Atentamente, FlareFlow",
+        "fr": "Cher utilisateur, Nous nous excusons pour le désagrément. Nos abonnements sont hebdomadaires ou mensuels. Vous pouvez annuler le renouvellement automatique à tout moment. 【Google Play/App Store : Appuyez sur l'icône de profil → \"Paiements et abonnements\" → Abonnements → Choisissez l'abonnement FlareFlow → \"Annuler l'abonnement\".】 Nous ne pouvons pas rembourser la période en cours, car les services étaient disponibles. Pour protéger vos droits, demandez un remboursement à votre fournisseur de paiement (Google Play/Apple Pay). Nous ne garantissons pas l'approbation. Contactez leur support pour les politiques spécifiques. Cordialement, FlareFlow",
+        "id": "Pengguna yang terhormat, Kami meminta maaf atas ketidaknyamanannya. Langganan kami mingguan atau bulanan. Anda dapat membatalkan perpanjangan otomatis kapan saja. 【Google Play/App Store: Ketuk ikon profil → \"Pembayaran & langganan\" → Langganan → Pilih langganan FlareFlow → \"Batalkan langganan\".】 Kami tidak dapat mengembalikan dana untuk periode berjalan, karena layanan telah tersedia. Untuk melindungi hak Anda, minta pengembalian dana ke penyedia pembayaran (Google Play/Apple Pay). Kami tidak menjamin disetujui. Hubungi dukungan mereka untuk kebijakan spesifik. Hormat kami, FlareFlow",
+        "th": "เรียนผู้ใช้ เราขออภัยในความไม่สะดวก การสมัครสมาชิกของเรามีทั้งรายสัปดาห์และรายเดือน คุณสามารถยกเลิกการต่ออายุอัตโนมัติได้ทุกเวลา 【Google Play/App Store: แตะไอคอนโปรไฟล์ → \"การชำระเงินและการสมัครสมาชิก\" → การสมัครสมาชิก → เลือกการสมัครสมาชิก FlareFlow → \"ยกเลิกการสมัครสมาชิก\"】 เราไม่สามารถคืนเงินสำหรับงวดปัจจุบันได้ เนื่องจากบริการได้ให้ใช้แล้ว เพื่อปกป้องสิทธิ์ของคุณ คุณสามารถขอเงินคืนจากผู้ให้บริการชำระเงิน (Google Play/Apple Pay) เราไม่รับประกันการอนุมัติ โปรดติดต่อฝ่ายสนับสนุนของพวกเขาสำหรับนโยบายเฉพาะ ขอแสดงความนับถือ FlareFlow",
+        "ko": "안녕하세요 회원님, 불편을 끼쳐 죄송합니다. 저희 구독은 주간/월간입니다. 자동 결제는 언제든지 취소하실 수 있습니다. 【Google Play/App Store: 프로필 아이콘 → \"결제 및 구독\" → 구독 → FlareFlow 구독 선택 → \"구독 취소\"】 이미 서비스를 이용하실 수 있었던 현재 결제 주기에 대해서는 직접 환불이 어렵습니다. 권리를 보호하려면 결제 사업자(Google Play/Apple Pay)에 환불을 요청하십시오. 승인을 보장하지 않습니다. 정책은 해당 지원 팀에 문의하십시오. 감사합니다, FlareFlow",
+        "ja": "ユーザー各位、ご不便をおかけし申し訳ございません。サブスクリプションは週単位または月単位です。自動更新はいつでもキャンセルできます。【Google Play/App Store：プロフィールアイコン→「支払いとサブスクリプション」→サブスクリプション→FlareFlowサブスクリプションを選択→「サブスクリプションをキャンセル」】サービスはご利用いただけていたため、現在の期間の料金は返金できません。権利保護のため、支払いプロバイダー（Google Play/Apple Pay）に返金を請求してください。承認は保証できません。詳細なポリシーはサポートにお問い合わせください。敬具 FlareFlow",
+        "it": "Gentile utente, Ci scusiamo per l'inconveniente. I nostri abbonamenti sono settimanali o mensili. Puoi disattivare il rinnovo automatico in qualsiasi momento. 【Google Play/App Store: Tocca l'icona del profilo → \"Pagamenti e abbonamenti\" → Abbonamenti → Scegli abbonamento FlareFlow → \"Annulla abbonamento\".】 Non possiamo rimborsare il periodo corrente, poiché il servizio era disponibile. Per proteggere i tuoi diritti, richiedi un rimborso al fornitore di pagamento (Google Play/Apple Pay). Non garantiamo l'approvazione. Contatta il loro supporto per le politiche specifiche. Cordiali saluti, FlareFlow",
+        "de": "Sehr geehrter Nutzer, Wir entschuldigen uns für die Unannehmlichkeiten. Unsere Abos sind wöchentlich oder monatlich. Sie können die automatische Verlängerung jederzeit kündigen. 【Google Play/App Store: Tippen Sie auf Profilsymbol → \"Zahlungen & Abos\" → Abos → Wählen Sie FlareFlow-Abo → \"Abonnement kündigen\".】 Wir können die aktuelle Periode nicht erstatten, da der Service verfügbar war. Um Ihre Rechte zu schützen, fordern Sie eine Erstattung bei Ihrem Zahlungsanbieter an (Google Play/Apple Pay). Wir garantieren keine Genehmigung. Wenden Sie sich an deren Support für spezifische Richtlinien. Mit freundlichen Grüßen, FlareFlow",
+        "ms": "Pengguna yang dihormati, Kami memohon maaf atas kesulitan. Langganan kami adalah mingguan atau bulanan. Anda boleh batalkan pembaharuan auto bila-bila masa. 【Google Play/App Store: Ketik ikon profil → \"Pembayaran & langganan\" → Langganan → Pilih langganan FlareFlow → \"Batalkan langganan\".】 Kami tidak boleh bayar balik untuk tempoh semasa, kerana perkhidmatan telah disediakan. Untuk lindungi hak anda, minta bayaran balik daripada pembekal pembayaran (Google Play/Apple Pay). Kami tidak jamin kelulusan. Hubungi sokongan mereka untuk polisi khusus. Yang ikhlas, FlareFlow",
+        "sw": "Mteja mpendwa, Tunaomba radhi kwa usumbufu. Usajili wetu ni wa kila wiki au mwezi. Unaweza kufuta ufuatiliaji otomatiki wakati wowote. 【Google Play/App Store: Guba ikoni ya wasifu → \"Malipo na usajili\" → Usajili → Chagua usajili wa FlareFlow → \"Futa usajili\".】 Hatuwezi kufidia kipindi cha sasa, kwa sababu huduma ilikuwepo. Ili kulinda haki zako, omba fidia kwa mtoa huduma ya malipo (Google Play/Apple Pay). Hatuhakikishi idhini. Wasiliana na msaada wao kwa sera maalum. Kwa heshima, FlareFlow",
+        "nl": "Geachte gebruiker, Onze excuses voor het ongemak. Onze abonnementen zijn wekelijks of maandelijks. U kunt automatisch verlengen altijd annuleren. 【Google Play/App Store: Tik op profielpictogram → \"Betalingen en abonnementen\" → Abonnementen → Kies FlareFlow-abonnement → \"Abonnement opzeggen\".】 We kunnen de huidige periode niet terugbetalen, omdat de service beschikbaar was. Bescherm uw rechten door een refund aan te vragen bij uw betalingsprovider (Google Play/Apple Pay). We garanderen geen goedkeuring. Neem contact op met hun support voor specifiek beleid. Met vriendelijke groet, FlareFlow",
+        "ar": "عزيزي المستخدم،\n\nنعتذر عن أي إزعاج واجهته. اشتراكاتنا متاحة بشكل أسبوعي أو شهري. يمكنك إلغاء التجديد التلقائي في أي وقت من خلال اتباع الخطوات التالية:\n\n【Google Play/App Store:\nانقر على أيقونة الملف الشخصي (في الزاوية اليمنى العليا) → اختر \"المدفوعات والاشتراكات\" → الاشتراكات → اختر اشتراك FlareFlow → انقر على \"إلغاء الاشتراك\".】\n\nبخصوص المبلغ المدفوع للفترة الحالية (سواء كانت أسبوعية أو شهرية)، لا يمكننا تقديم استرداد مباشر حيث أن الخدمة كانت متاحة للاستخدام خلال هذه الفترة.\n\nلحماية حقوقك، إذا كنت ترغب في المطالبة باسترداد المبلغ، يمكنك التواصل مباشرة مع مزود خدمة الدفع (عبر Google Play أو Apple Pay). يرجى ملاحظة أننا لا نستطيع ضمان نتيجة طلبات الاسترداد هذه. للاطلاع على السياسات والإجراءات المحددة للاسترداد، نوصي بالتواصل مع فريق دعم منصة الدفع المعنية.\n\nمع خالص التقدير،\nFlareFlow",
+        "da": "Kære bruger, Undskyld ulejligheden. Vores abonnementer er ugentlige eller månedlige. Du kan annullere auto-fornyelse når som helst. 【Google Play/App Store: Tryk på profilikon → \"Betalinger og abonnementer\" → Abonnementer → Vælg FlareFlow-abonnement → \"Annuller abonnement\".】 Vi kan ikke refundere den nuværende periode, da servicen var tilgængelig. Beskyt dine rettigheder ved at anmode om refundering fra din betalingsudbyder (Google Play/Apple Pay). Vi garanterer ikke godkendelse. Kontakt deres support for specifikke politikker. Med venlig hilsen, FlareFlow"
+      }
+    },
+    {
+      "id": "充值与订阅_013",
+      "category": "充值与订阅",
+      "scenario": "查询到在另一个设备到账",
+      "keywords": [
+        "充值与订阅",
+        "查询到在另一个设备到账",
+        "subscription"
+      ],
+      "languages": {
+        "en": "Dear user, after careful confirmation, we detected that you have used another device with UID: [UID Number]. The current subscription or recharge has been received on this device. Please check it on your other device.\nRegards,\nFlareFlow",
+        "pt": "Prezado usuário, após cuidadosa confirmação, detectamos que você usou outro dispositivo com UID: [Número UID]. A assinatura ou recarga atual foi recebida neste dispositivo. Verifique-o em seu outro dispositivo.\nAtenciosamente,\nFlareFlow",
+        "es": "Estimado usuario, tras una cuidadosa confirmación, hemos detectado que ha utilizado otro dispositivo con UID: [Número UID]. La suscripción o recarga actual se ha recibido en este dispositivo. Por favor, compruébelo en su otro dispositivo.\nAtentamente,\nFlareFlow",
+        "fr": "Cher utilisateur, après vérification minutieuse, nous avons détecté que vous avez utilisé un autre appareil avec l'UID : [Numéro UID]. L'abonnement ou recharge actuel a été reçu sur cet appareil. Veuillez le vérifier sur votre autre appareil.\nCordialement,\nFlareFlow",
+        "id": "Pengguna yang terhormat, setelah konfirmasi yang cermat, kami mendeteksi bahwa Anda telah menggunakan perangkat lain dengan UID: [Nomor UID]. Langganan atau isi ulang saat ini telah diterima di perangkat ini. Silakan periksa di perangkat lain Anda.\nHormat kami,\nFlareFlow",
+        "th": "เรียนผู้ใช้ หลังจากยืนยันอย่างรอบคอบแล้ว เราตรวจพบว่าคุณได้ใช้อุปกรณ์อื่นที่มี UID: [หมายเลข UID] การสมัครสมาชิกหรือการเติมเงินปัจจุบันได้รับบนอุปกรณ์นี้แล้ว กรุณาตรวจสอบบนอุปกรณ์อื่นของคุณ\nขอแสดงความนับถือ\nFlareFlow",
+        "ko": "안녕하세요 회원님, 확인 결과 UID: [UID 번호]가 있는 다른 기기를 사용하신 것으로 확인되었습니다. 현재 구독 또는 충전은 해당 기기에서 받으셨습니다. 다른 기기에서 확인해 주시기 바랍니다.\n감사합니다,\nFlareFlow",
+        "ja": "ユーザー各位、慎重に確認した結果、UID: [UID番号] の別のデバイスを使用されていることを検出しました。現在のサブスクリプションまたはチャージはこのデバイスで受け取られています。他のデバイスでご確認ください。\n敬具\nFlareFlow",
+        "it": "Gentile utente, dopo un'attenta conferma, abbiamo rilevato che ha utilizzato un altro dispositivo con UID: [Numero UID]. L'abbonamento o la ricarica attuale è stata ricevuta su questo dispositivo. La preghiamo di controllarlo sul suo altro dispositivo.\nCordiali saluti,\nFlareFlow",
+        "de": "Sehr geehrter Nutzer, nach sorgfältiger Überprüfung haben wir festgestellt, dass Sie ein anderes Gerät mit der UID: [UID-Nummer] verwendet haben. Das aktuelle Abonnement oder die Aufladung wurde auf diesem Gerät empfangen. Bitte überprüfen Sie es auf Ihrem anderen Gerät.\nMit freundlichen Grüßen,\nFlareFlow",
+        "ms": "Pengguna yang dihormati, setelah pengesahan yang teliti, kami mengesan bahawa anda telah menggunakan peranti lain dengan UID: [Nombor UID]. Langganan atau top-up semasa telah diterima pada peranti ini. Sila semak pada peranti lain anda.\nYang ikhlas,\nFlareFlow",
+        "sw": "Mteja mpendwa, baada ya uthibitisho makini, tumegundua kuwa umetumia kifaa kingine na UID: [Nambari ya UID]. Usajili au malipo ya sasa imepokelewa kwenye kifaa hiki. Tafadhali uangalie kwenye kifaa chako kingine.\nKwa heshima,\nFlareFlow",
+        "nl": "Geachte gebruiker, na zorgvuldige bevestiging hebben wij vastgesteld dat u een ander apparaat heeft gebruikt met UID: [UID-nummer]. Het huidige abonnement of de opwaardering is op dit apparaat ontvangen. Controleer het alstublieft op uw andere apparaat.\nMet vriendelijke groet,\nFlareFlow",
+        "ar": "عزيزي المستخدم، بعد التأكيد الدقيق، اكتشفنا أنك استخدمت جهازًا آخر مع UID: [رقم UID]. تم استلام الاشتراك أو الشحن الحالي على هذا الجهاز. يرجى التحقق منه على جهازك الآخر.\nأطيب التحيات،\nFlareFlow",
+        "da": "Kære bruger, efter omhyggelig bekræftelse har vi konstateret, at du har brugt en anden enhed med UID: [UID-nummer]. Den aktuelle abonnement eller genopfyldning er blevet modtaget på denne enhed. Kontroller venligst på din anden enhed.\nMed venlig hilsen,\nFlareFlow"
+      }
+    },
+    {
+      "id": "充值与订阅_014",
+      "category": "充值与订阅",
+      "scenario": "补单/确认已到账",
+      "keywords": [
+        "充值与订阅",
+        "补单/确认已到账",
+        "subscription"
+      ],
+      "languages": {
+        "en": "Dear user, the recharge/subscription has been received. Please refresh the page and try again.\nRegards,\nFlareFlow",
+        "pt": "Prezado usuário, a recarga/assinatura foi recebida. Atualize a página e tente novamente.\nAtenciosamente,\nFlareFlow",
+        "es": "Estimado usuario, se ha recibido la recarga/suscripción. Actualice la página e inténtelo de nuevo.\nAtentamente,\nFlareFlow",
+        "fr": "Cher utilisateur, la recharge/l'abonnement a été reçu. Veuillez actualiser la page et réessayer.\nCordialement,\nFlareFlow",
+        "id": "Pengguna yang terhormat, isi ulang/langganan telah diterima. Silakan segarkan halaman dan coba lagi.\nHormat kami,\nFlareFlow",
+        "th": "เรียนผู้ใช้ การเติมเงิน/การสมัครสมาชิกได้รับแล้ว กรุณารีเฟรชหน้าและลองอีกครั้ง\nขอแสดงความนับถือ\nFlareFlow",
+        "ko": "안녕하세요 회원님, 충전/구독이 완료되었습니다. 페이지를 새로 고침 후 다시 시도해 주세요.\n감사합니다,\nFlareFlow",
+        "ja": "ユーザー各位、チャージ/サブスクリプションが反映されました。ページを更新して再度お試しください。\n敬具\nFlareFlow",
+        "it": "Gentile utente, la ricarica/abbonamento è stata ricevuta. Si prega di aggiornare la pagina e riprovare.\nCordiali saluti,\nFlareFlow",
+        "de": "Sehr geehrter Nutzer, die Aufladung/das Abonnement wurde empfangen. Bitte aktualisieren Sie die Seite und versuchen Sie es erneut.\nMit freundlichen Grüßen,\nFlareFlow",
+        "ms": "Pengguna yang dihormati, top-up/langganan telah diterima. Sila muat semula halaman dan cuba lagi.\nYang ikhlas,\nFlareFlow",
+        "sw": "Mteja mpendwa, malipo/usajili umepokelewa. Tafadhali onyesha upya ukurasa na ujaribu tena.\nKwa heshima,\nFlareFlow",
+        "nl": "Geachte gebruiker, de opwaardering/het abonnement is ontvangen. Vernieuw de pagina en probeer het opnieuw.\nMet vriendelijke groet,\nFlareFlow",
+        "ar": "عزيزي المستخدم، تم استلام الشحن/الاشتراك. يرجى تحديث الصفحة والمحاولة مرة أخرى.\nأطيب التحيات،\nFlareFlow",
+        "da": "Kære bruger, genopfyldningen/abonnementet er modtaget. Opdater venligst siden og prøv igen.\nMed venlig hilsen,\nFlareFlow"
+      }
+    },
+    {
+      "id": "退款相关_015",
+      "category": "退款相关",
+      "scenario": "经排查建议退款",
+      "keywords": [
+        "退款相关",
+        "经排查建议退款",
+        "subscription",
+        "refund",
+        "issue",
+        "request",
+        "feedback"
+      ],
+      "languages": {
+        "en": "Dear user, \nwe sincerely apologize for the inconvenience. Considering the period you were unable to enjoy the benefits, to protect your rights, we recommend you request a refund for your subscription via Google Play or Apple Pay. After the refund is processed, you can resubscribe to enjoy all the benefits of the latest version. If you encounter any issues, please continue to provide us with feedback, and we will respond promptly.\nSincerely,\nFlareFlow",
+        "pt": "Prezado usuário, pedimos sinceras desculpas pelo inconveniente. Considerando o período em que você não pôde usufruir dos benefícios, para proteger seus direitos, recomendamos que solicite um reembolso de sua assinatura via Google Play ou Apple Pay. Após o processamento do reembolso, você pode reassinar para desfrutar de todos os benefícios da versão mais recente. Se encontrar problemas, continue nos enviando feedback, e responderemos prontamente.\nAtenciosamente,\nFlareFlow",
+        "es": "Estimado usuario, le pedimos sinceras disculpas por las molestias. Teniendo en cuenta el período en el que no pudo disfrutar de los beneficios, para proteger sus derechos, le recomendamos que solicite un reembolso de su suscripción a través de Google Play o Apple Pay. Una vez procesado el reembolso, puede volver a suscribirse para disfrutar de todas las ventajas de la última versión. Si encuentra algún problema, continúe proporcionándonos sus comentarios y le responderemos rápidamente.\nAtentamente,\nFlareFlow",
+        "fr": "Cher utilisateur, nous nous excusons sincèrement pour ce désagrément. Compte tenu de la période pendant laquelle vous n'avez pas pu profiter des avantages, pour protéger vos droits, nous vous recommandons de demander un remboursement de votre abonnement via Google Play ou Apple Pay. Après le traitement du remboursement, vous pouvez vous réabonner pour profiter de tous les avantages de la dernière version. Si vous rencontrez des problèmes, veuillez continuer à nous faire part de vos commentaires et nous y répondrons rapidement.\nCordialement,\nFlareFlow",
+        "id": "Pengguna yang terhormat, kami dengan tulus meminta maaf atas ketidaknyamanannya. Mempertimbangkan periode di mana Anda tidak dapat menikmati manfaatnya, untuk melindungi hak Anda, kami sarankan Anda meminta pengembalian dana untuk langganan Anda melalui Google Play atau Apple Pay. Setelah pengembalian dana diproses, Anda dapat berlangganan kembali untuk menikmati semua manfaat dari versi terbaru. Jika Anda mengalami masalah, silakan terus berikan masukan kepada kami, dan kami akan merespons dengan cepat.\nHormat kami,\nFlareFlow",
+        "th": "เรียนผู้ใช้ เราขออภัยอย่างจริงใจสำหรับความไม่สะดวก เมื่อพิจารณาถึงช่วงเวลาที่คุณไม่สามารถใช้ประโยชน์ได้ เพื่อปกป้องสิทธิของคุณ เราขอแนะนำให้คุณขอเงินคืนสำหรับการสมัครสมาชิกผ่าน Google Play หรือ Apple Pay หลังจากดำเนินการคืนเงินแล้ว คุณสามารถสมัครสมาชิกอีกครั้งเพื่อเพลิดเพลินกับประโยชน์ทั้งหมดของเวอร์ชันล่าสุด หากคุณพบปัญหาใดๆ กรุณาให้ข้อเสนอแนะเราต่อไป และเราจะตอบกลับโดยเร็ว\nขอแสดงความนับถือ\nFlareFlow",
+        "ko": "안녕하세요 회원님, 불편을 끼쳐 드려 진심으로 사과드립니다. 혜택을享受하실 수 없었던 기간을 고려하여, 회원님의 권리를 보호하기 위해 Google Play 또는 Apple Pay를 통해 구독 금액을 환불 요청하시기를 권장합니다. 환불 처리 후 최신 버전의 모든 혜택을享受하시려면 재구독하시면 됩니다. 문제가 있으시면 계속해서 피드백을 주시면 신속히 답변드리겠습니다.\n감사합니다,\nFlareFlow",
+        "ja": "ユーザー各位、ご不便をおかけし誠に申し訳ございません。特典を利用できなかった期間を考慮し、お客様の権利を保護するため、Google PlayまたはApple Pay経由でサブスクリプションの返金を請求されることをお勧めします。返金処理後、最新バージョンのすべての特典を享受するために再購読できます。問題が発生した場合は、引き続きフィードバックをお寄せください。迅速に対応いたします。\n敬具\nFlareFlow",
+        "it": "Gentile utente, ci scusiamo sinceramente per l'inconveniente. Considerando il periodo in cui non ha potuto godere dei benefici, per proteggere i suoi diritti, le raccomandiamo di richiedere un rimborso per il suo abbonamento tramite Google Play o Apple Pay. Una volta elaborato il rimborso, può sottoscrivere nuovamente l'abbonamento per godere di tutti i vantaggi dell'ultima versione. Se incontra problemi, continui a fornirci feedback e risponderemo prontamente.\nCordiali saluti,\nFlareFlow",
+        "de": "Sehr geehrter Nutzer, wir entschuldigen uns aufrichtig für die Unannehmlichkeiten. In Anbetracht der Zeit, in der Sie die Vorteile nicht nutzen konnten, empfehlen wir Ihnen zum Schutz Ihrer Rechte, eine Erstattung für Ihr Abonnement über Google Play oder Apple Pay zu beantragen. Nach Bearbeitung der Erstattung können Sie sich erneut anmelden, um alle Vorteile der neuesten Version zu genießen. Wenn Sie auf Probleme stoßen, teilen Sie uns diese bitte weiterhin mit, und wir werden umgehend antworten.\nMit freundlichen Grüßen,\nFlareFlow",
+        "ms": "Pengguna yang dihormati, kami dengan ikhlas memohon maaf atas kesulitan yang dialami. Memandangkan tempoh anda tidak dapat menikmati manfaat, untuk melindungi hak anda, kami mengesyorkan anda meminta bayaran balik untuk langganan anda melalui Google Play atau Apple Pay. Selepas bayaran balik diproses, anda boleh melanggan semula untuk menikmati semua manfaat versi terkini. Jika anda menghadapi sebarang isu, sila terus berikan maklum balas kepada kami, dan kami akan bertindak balas dengan segera.\nYang ikhlas,\nFlareFlow",
+        "sw": "Mteja mpendwa, tunaomba radhi kwa usumbufu huu. Kwa kuzingatia kipindi huku hukuweza kufurahia faida, ili kulinda haki zako, tunakupendekeza uombe fidia kwa usajili wako kupitia Google Play au Apple Pay. Baada ya fidia kutayarishwa, unaweza kujiunga tena ili kufurahia faida zote za toleo la hivi karibuni. Ukikuta matatizo yoyote, tafadhali endelea kutupa maoni, na tutajibu haraka.\nKwa heshima,\nFlareFlow",
+        "nl": "Geachte gebruiker, onze oprechte excuses voor het ongemak. Gezien de periode waarin u niet van de voordelen kon genieten, raden wij u aan om een terugbetaling voor uw abonnement aan te vragen via Google Play of Apple Pay om uw rechten te beschermen. Nadat de terugbetaling is verwerkt, kunt u zich opnieuw abonneren om te genieten van alle voordelen van de nieuwste versie. Als u problemen tegenkomt, blijf ons dan feedback geven, en wij zullen prompt reageren.\nMet vriendelijke groet,\nFlareFlow",
+        "ar": "عزيزي المستخدم، نعتذر بشدة عن الإزعاج. نظرًا لفترة عدم تمكنك من الاستفادة من المزايا، لحماية حقوقك، نوصيك بطلب استرداد اشتراكك عبر Google Play أو Apple Pay. بعد معالجة الاسترداد، يمكنك إعادة الاشتراك للاستمتاع بجميع مزايا أحدث إصدار. إذا واجهت أي مشاكل، يرجى متابعة تزويدنا بالملاحظات وسنرد عليك على الفور.\nأطيب التحيات،\nFlareFlow",
+        "da": "Kære bruger, vi undskylder oprigtigt for ulejligheden. I betragtning af den periode, hvor du ikke kunne nyde fordelene, anbefaler vi for at beskytte dine rettigheder, at du anmoder om en refundering af dit abonnement via Google Play eller Apple Pay. Efter refunderingen er behandlet, kan du abonnere igen for at nyde alle fordelene ved den nyeste version. Hvis du støder på problemer, fortsæt venligst med at give os feedback, og vi vil svare prompte.\nMed venlig hilsen,\nFlareFlow"
+      }
+    },
+    {
+      "id": "退款相关_016",
+      "category": "退款相关",
+      "scenario": "查询到订单已退款",
+      "keywords": [
+        "退款相关",
+        "查询到订单已退款",
+        "refund",
+        "feedback"
+      ],
+      "languages": {
+        "en": "Dear User, thank you for your feedback. After checking, your order has been refunded. If you have any further questions, please feel free to contact us via email.\nSincerely,\nFlareFlow",
+        "pt": "Prezado Usuário, agradecemos seu feedback. Após verificação, seu pedido foi reembolsado. Se tiver mais alguma dúvida, sinta-se à vontade para nos contatar por e-mail.\nAtenciosamente,\nFlareFlow",
+        "es": "Estimado Usuario, gracias por sus comentarios. Después de comprobarlo, su pedido ha sido reembolsado. Si tiene más preguntas, no dude en contactarnos por correo electrónico.\nAtentamente,\nFlareFlow",
+        "fr": "Cher Utilisateur, merci pour vos commentaires. Après vérification, votre commande a été remboursée. Si vous avez d'autres questions, n'hésitez pas à nous contacter par e-mail.\nCordialement,\nFlareFlow",
+        "id": "Yang Terhormat, terima kasih atas masukan Anda. Setelah diperiksa, pesanan Anda telah dikembalikan. Jika Anda memiliki pertanyaan lebih lanjut, jangan ragu untuk menghubungi kami via email.\nHormat kami,\nFlareFlow",
+        "th": "เรียนผู้ใช้ ขอบคุณสำหรับข้อเสนอแนะ หลังจากตรวจสอบแล้ว คำสั่งซื้อของคุณได้รับการคืนเงินแล้ว หากคุณมีคำถามเพิ่มเติม กรุณาติดต่อเราทางอีเมล\nขอแสดงความนับถือ\nFlareFlow",
+        "ko": "안녕하세요 회원님, 피드백 감사드립니다. 확인 결과, 주문하신 내역은 이미 환불 처리되었습니다. 추가 문의사항이 있으시면 이메일을 통해 언제든지 연락 주시기 바랍니다.\n감사합니다,\nFlareFlow",
+        "ja": "ユーザー各位、フィードバックありがとうございます。確認したところ、ご注文は返金済みです。ご質問がございましたら、メールでお気軽にお問い合わせください。\n敬具\nFlareFlow",
+        "it": "Gentile Utente, grazie per il suo feedback. Dopo aver verificato, il suo ordine è stato rimborsato. Se ha ulteriori domande, non esiti a contattarci via email.\nCordiali saluti,\nFlareFlow",
+        "de": "Sehr geehrter Benutzer, vielen Dank für Ihr Feedback. Nach Überprüfung wurde Ihre Bestellung erstattet. Wenn Sie weitere Fragen haben, können Sie uns gerne per E-Mail kontaktieren.\nMit freundlichen Grüßen,\nFlareFlow",
+        "ms": "Pengguna yang dihormati, terima kasih atas maklum balas anda. Selepas disemak, pesanan anda telah dibayar balik. Jika anda mempunyai sebarang pertanyaan lanjut, sila hubungi kami melalui e-mel.\nYang ikhlas,\nFlareFlow",
+        "sw": "Mteja Mpendwa, asante kwa maoni yako. Baada ya kuangalia, agizo lako limefidiwa. Ikiwa una maswali zaidi, tafadhali jisikie huru kuwasiliana nasi kupitia barua pepe.\nKwa heshima,\nFlareFlow",
+        "nl": "Geachte Gebruiker, bedankt voor uw feedback. Na controle is gebleken dat uw bestelling is terugbetaald. Mocht u nog vragen hebben, aarzel dan niet om contact met ons op te nemen via e-mail.\nMet vriendelijke groet,\nFlareFlow",
+        "ar": "عزيزي المستخدم، شكرًا على ملاحظاتك. بعد التحقق، تم استرداد طلبك. إذا كان لديك أي أسئلة أخرى، فلا تتردد في الاتصال بنا عبر البريد الإلكتروني.\nأطيب التحيات،\nFlareFlow",
+        "da": "Kære Bruger, tak for din feedback. Efter tjek kan vi oplyse, at din ordre er blevet refunderet. Hvis du har yderligere spørgsmål, er du velkommen til at kontakte os via e-mail.\nMed venlig hilsen,\nFlareFlow"
+      }
+    },
+    {
+      "id": "退款相关_017",
+      "category": "退款相关",
+      "scenario": "未查询到购买记录，建议退款",
+      "keywords": [
+        "退款相关",
+        "未查询到购买记录，建议退款",
+        "purchase",
+        "refund",
+        "request",
+        "feedback"
+      ],
+      "languages": {
+        "en": "Dear user, thank you for your feedback. We have not found any record of a successful purchase. To protect your rights, we recommend you request a refund via Google Play or Apple Pay. Afterwards, you can resubscribe to enjoy the membership benefits. If you have any questions, please continue to contact us via email.\nRegards,\nFlareFlow",
+        "pt": "Prezado usuário, agradecemos seu feedback. Não encontramos nenhum registro de uma compra bem-sucedida. Para proteger seus direitos, recomendamos que solicite um reembolso via Google Play ou Apple Pay. Posteriormente, você pode reassinar para desfrutar dos benefícios de assinatura. Se tiver alguma dúvida, continue nos contatando por e-mail.\nAtenciosamente,\nFlareFlow",
+        "es": "Estimado usuario, gracias por sus comentarios. No hemos encontrado ningún registro de una compra exitosa. Para proteger sus derechos, le recomendamos que solicite un reembolso a través de Google Play o Apple Pay. Posteriormente, puede volver a suscribirse para disfrutar de los beneficios de membresía. Si tiene alguna pregunta, continúe contactándonos por correo electrónico.\nAtentamente,\nFlareFlow",
+        "fr": "Cher utilisateur, merci pour vos commentaires. Nous n'avons trouvé aucun enregistrement d'achat réussi. Pour protéger vos droits, nous vous recommandons de demander un remboursement via Google Play ou Apple Pay. Ensuite, vous pouvez vous réabonner pour profiter des avantages d'abonnement. Si vous avez des questions, veuillez continuer à nous contacter par e-mail.\nCordialement,\nFlareFlow",
+        "id": "Pengguna yang terhormat, terima kasih atas masukan Anda. Kami tidak menemukan catatan pembelian yang berhasil. Untuk melindungi hak Anda, kami sarankan Anda meminta pengembalian dana via Google Play atau Apple Pay. Setelah itu, Anda dapat berlangganan kembali untuk menikmati manfaat keanggotaan. Jika Anda memiliki pertanyaan, silakan terus hubungi kami via email.\nHormat kami,\nFlareFlow",
+        "th": "เรียนผู้ใช้ ขอบคุณสำหรับข้อเสนอแนะ เราไม่พบบันทึกการซื้อที่สำเร็จ เพื่อปกป้องสิทธิของคุณ เราขอแนะนำให้คุณขอเงินคืนผ่าน Google Play หรือ Apple Pay หลังจากนั้น คุณสามารถสมัครสมาชิกอีกครั้งเพื่อเพลิดเพลินกับสิทธิประโยชน์สมาชิก หากคุณมีคำถามใดๆ กรุณาติดต่อเราต่อไปทางอีเมล\nขอแสดงความนับถือ\nFlareFlow",
+        "ko": "안녕하세요 회원님, 피드백 감사드립니다. 성공적인 구매 기록을 찾지 못했습니다. 회원님의 권리를 보호하기 위해 Google Play 또는 Apple Pay를 통해 환불을 요청하시기를 권장합니다. 이후 멤버십 혜택을享受하시려면 재구독하시면 됩니다. 궁금한 점이 있으시면 이메일을 통해 계속 문의해 주시기 바랍니다.\n감사합니다,\nFlareFlow",
+        "ja": "ユーザー各位、フィードバックありがとうございます。正常な購入記録は見つかりませんでした。お客様の権利を保護するため、Google PlayまたはApple Pay経由で返金を請求されることをお勧めします。その後、再購読してメンバーシップ特典をお楽しみください。ご質問がございましたら、引き続きメールでお問い合わせください。\n敬具\nFlareFlow",
+        "it": "Gentile utente, grazie per il suo feedback. Non abbiamo trovato alcuna registrazione di un acquisto effettuato con successo. Per proteggere i suoi diritti, le raccomandiamo di richiedere un rimborso tramite Google Play o Apple Pay. Successivamente, può sottoscrivere nuovamente l'abbonamento per godere dei vantaggi di iscrizione. Se ha domande, continui a contattarci via email.\nCordiali saluti,\nFlareFlow",
+        "de": "Sehr geehrter Nutzer, vielen Dank für Ihr Feedback. Wir haben keinen Nachweis über einen erfolgreichen Kauf gefunden. Um Ihre Rechte zu schützen, empfehlen wir Ihnen, eine Erstattung über Google Play oder Apple Pay zu beantragen. Anschließend können Sie sich erneut anmelden, um die Mitgliedschaftsvorteile zu nutzen. Wenn Sie Fragen haben, wenden Sie sich bitte weiterhin per E-Mail an uns.\nMit freundlichen Grüßen,\nFlareFlow",
+        "ms": "Pengguna yang dihormati, terima kasih atas maklum balas anda. Kami tidak menemui sebarang rekod pembelian yang berjaya. Untuk melindungi hak anda, kami mengesyorkan anda meminta bayaran balik melalui Google Play atau Apple Pay. Selepas itu, anda boleh melanggan semula untuk menikmati manfaat keahlian. Jika anda mempunyai sebarang pertanyaan, sila terus hubungi kami melalui e-mel.\nYang ikhlas,\nFlareFlow",
+        "sw": "Mteja mpendwa, asante kwa maoni yako. Hatukupata rekodi yoyote ya ununuzi uliofanikiwa. Ili kulinda haki zako, tunakupendekeza uombe fidia kupitia Google Play au Apple Pay. Baadaye, unaweza kujiunga tena ili kufurahia faida za uanachama. Ikiwa una maswali, tafadhali endelea kuwasiliana nasi kupitia barua pepe.\nKwa heshima,\nFlareFlow",
+        "nl": "Geachte gebruiker, bedankt voor uw feedback. Wij hebben geen record van een succesvolle aankoop gevonden. Om uw rechten te beschermen, raden wij u aan een terugbetaling aan te vragen via Google Play of Apple Pay. Daarna kunt u zich opnieuw abonneren om te genieten van de lidmaatschapsvoordelen. Als u vragen heeft, kunt u contact met ons opnemen via e-mail.\nMet vriendelijke groet,\nFlareFlow",
+        "ar": "عزيزي المستخدم، شكرًا على ملاحظاتك. لم نعثر على أي سجل لشراء ناجح. لحماية حقوقك، نوصيك بطلب استرداد الأموال عبر Google Play أو Apple Pay. بعد ذلك، يمكنك إعادة الاشتراك للاستمتاع بمزايا العضوية. إذا كان لديك أي أسئلة، يرجى متابعة الاتصال بنا عبر البريد الإلكتروني.\nأطيب التحيات،\nFlareFlow",
+        "da": "Kære bruger, tak for din feedback. Vi har ikke fundet nogen optegnelse over et succesfuldt køb. For at beskytte dine rettigheder anbefaler vi, at du anmoder om en refundering via Google Play eller Apple Pay. Bagefter kan du abonnere igen for at nyde medlemsfordelene. Hvis du har spørgsmål, bedes du fortsætte med at kontakte os via e-mail.\nMed venlig hilsen,\nFlareFlow"
+      }
+    },
+    {
+      "id": "账户与登录_018",
+      "category": "账户与登录",
+      "scenario": "多UID导致数据不同步 (通用解释版)",
+      "keywords": [
+        "账户与登录",
+        "多uid导致数据不同步 (通用解释版)",
+        "subscription",
+        "account",
+        "login",
+        "issue"
+      ],
+      "languages": {
+        "en": "Dear user, In our system, your account data—including subscriptions, recharge records, and viewing history—is linked to your unique UID. Please note that your UID may change if you log in using a different method (e.g., switching between Google Sign-In and Facebook Login) or switch to a different device. When this happens, it can appear that your subscription hasn't been credited or that your viewing history has been cleared, as you are effectively accessing a different account. If you're experiencing this issue, we recommend checking if you might be using multiple UIDs. You can often resolve this by ensuring you log in with the same method and account you originally used. Sincerely, FlareFlow",
+        "pt": "Prezado usuário, Em nosso sistema, os dados da sua conta—incluindo assinaturas, registros de recarga e histórico de visualização—estão vinculados ao seu UID exclusivo. Observe que seu UID pode mudar se você fizer login usando um método diferente (por exemplo, alternando entre Login do Google e Login do Facebook) ou trocar para um dispositivo diferente. Quando isso acontece, pode parecer que sua assinatura não foi creditada ou que seu histórico de visualização foi limpo, pois você está efetivamente acessando uma conta diferente. Se você está enfrentando esse problema, recomendamos verificar se pode estar usando vários UIDs. Você pode resolver isso garantindo que faz login com o mesmo método e conta que usou originalmente. Atenciosamente, FlareFlow",
+        "es": "Estimado usuario, En nuestro sistema, los datos de su cuenta—incluidas suscripciones, registros de recarga e historial de visualización—están vinculados a su UID único. Tenga en cuenta que su UID puede cambiar si inicia sesión usando un método diferente (por ejemplo, cambiando entre Inicio de sesión de Google e Inicio de sesión de Facebook) o si cambia a un dispositivo diferente. Cuando esto sucede, puede parecer que su suscripción no se ha acreditado o que su historial de visualización se ha borrado, ya que está accediendo efectivamente a una cuenta diferente. Si experimenta este problema, le recomendamos que verifique si podría estar usando múltiples UID. A menudo puede resolverlo asegurándose de iniciar sesión con el mismo método y cuenta que utilizó originalmente. Atentamente, FlareFlow",
+        "fr": "Cher utilisateur, Dans notre système, les données de votre compte—y compris les abonnements, les historiques de recharge et l'historique de visionnage—sont liées à votre UID unique. Veuillez noter que votre UID peut changer si vous vous connectez en utilisant une méthode différente (par exemple, en passant de la Connexion Google à la Connexion Facebook) ou si vous changez d'appareil. Lorsque cela se produit, il peut sembler que votre abonnement n'a pas été crédité ou que votre historique de visionnage a été effacé, car vous accédez en réalité à un compte différent. Si vous rencontrez ce problème, nous vous recommandons de vérifier si vous utilisez plusieurs UID. Vous pouvez souvent le résoudre en vous assurant de vous connecter avec la même méthode et le même compte que vous avez utilisés à l'origine. Cordialement, FlareFlow",
+        "id": "Pengguna yang terhormat, Di sistem kami, data akun Anda—termasuk langganan, catatan isi ulang, dan riwayat tontonan—tertaut ke UID unik Anda. Harap diperhatikan bahwa UID Anda dapat berubah jika Anda login menggunakan metode yang berbeda (misalnya, beralih antara Login Google dan Login Facebook) atau beralih ke perangkat yang berbeda. Saat ini terjadi, mungkin tampak seolah-olah langganan Anda belum dikreditkan atau riwayat tontonan Anda telah terhapus, karena Anda pada dasarnya mengakses akun yang berbeda. Jika Anda mengalami masalah ini, kami sarankan untuk memeriksa apakah Anda mungkin menggunakan beberapa UID. Anda sering kali dapat mengatasinya dengan memastikan untuk login dengan metode dan akun yang sama yang awalnya Anda gunakan. Hormat kami, FlareFlow",
+        "th": "เรียนผู้ใช้ ในระบบของเรา ข้อมูลบัญชีของคุณ—รวมถึงการสมัครสมาชิก บันทึกการเติมเงิน และประวัติการดู—ถูกเชื่อมโยงกับ UID ที่ไม่ซ้ำของคุณ โปรดทราบว่า UID ของคุณอาจเปลี่ยนแปลงหากคุณเข้าสู่ระบบโดยใช้วิธีการอื่น (เช่น สลับระหว่างการลงชื่อเข้าใช้ Google และการลงชื่อเข้าใช้ Facebook) หรือเปลี่ยนไปใช้อุปกรณ์อื่น เมื่อ發生这种情况 อาจดูเหมือนว่าการสมัครสมาชิกของคุณยังไม่ได้รับเครดิตหรือประวัติการดูของคุณถูกล้าง เนื่องจากคุณกำลังเข้าถึงบัญชีอื่นอย่างมีประสิทธิภาพ หากคุณกำลังประสบกับปัญหานี้ เราขอแนะนำให้ตรวจสอบว่าคุณอาจกำลังใช้ UID หลายรายการหรือไม่ คุณมักจะแก้ไขได้โดย确保ว่าคุณเข้าสู่ระบบด้วยวิธีการและบัญชีเดียวกับที่คุณใช้ในเบื้องต้น ขอแสดงความนับถือ FlareFlow",
+        "ko": "Dear user, In our system, your account data—including subscriptions, recharge records, and viewing history—is linked to your unique UID. Please note that your UID may change if you log in using a different method (e.g., switching between Google Sign-In and Facebook Login) or switch to a different device. When this happens, it can appear that your subscription hasn't been credited or that your viewing history has been cleared, as you are effectively accessing a different account. If you're experiencing this issue, we recommend checking if you might be using multiple UIDs. You can often resolve this by ensuring you log in with the same method and account you originally used. Sincerely, FlareFlow",
+        "ja": "ユーザー各位、当システムでは、サブスクリプション、チャージ記録、視聴履歴などのアカウントデータは、お客様の固有のUIDに紐づいています。別の方法（GoogleサインインとFacebookログインの切り替えなど）でログインしたり、別のデバイスに切り替えたりすると、UIDが変更される可能性があることにご注意ください。これが発生すると、実質的に別のアカウントにアクセスしている状態となるため、サブスクリプションが反映されていない、または視聴履歴が消去されたように見えることがあります。この問題が発生している場合は、複数のUIDを使用している可能性がないかご確認ください。元々使用していた同じ方法とアカウントでログインすることで解決できる場合がよくあります。敬具 FlareFlow",
+        "it": "Gentile utente, Nel nostro sistema, i dati del tuo account—inclusi abbonamenti, record di ricarica e cronologia di visualizzazione—sono collegati al tuo UID univoco. Tieni presente che il tuo UID potrebbe cambiare se accedi utilizzando un metodo diverso (ad esempio, passando da Accesso Google a Accesso Facebook) o se passi a un dispositivo diverso. Quando ciò accade, potrebbe sembrare che il tuo abbonamento non sia stato accreditato o che la tua cronologia di visualizzazione sia stata cancellata, poiché stai effettivamente accedendo a un account diverso. Se riscontri questo problema, ti consigliamo di verificare se stai utilizzando più UID. Puoi spesso risolverlo assicurandoti di accedere con lo stesso metodo e account che hai utilizzato originariamente. Cordiali saluti, FlareFlow",
+        "de": "Sehr geehrter Nutzer, In unserem System sind Ihre Kontodaten—einschließlich Abonnements, Aufladehistorie und Wiedergabeverlauf—mit Ihrer eindeutigen UID verknüpft. Bitte beachten Sie, dass sich Ihre UID ändern kann, wenn Sie sich mit einer anderen Methode anmelden (z. B. Wechsel zwischen Google Sign-In und Facebook Login) oder auf ein anderes Gerät wechseln. In diesem Fall kann es scheinen, als ob Ihr Abonnement nicht gutgeschrieben wurde oder Ihr Wiedergabeverlauf gelöscht wurde, da Sie effektiv auf ein anderes Konto zugreifen. Wenn Sie dieses Problem haben, empfehlen wir zu prüfen, ob Sie möglicherweise mehrere UIDs verwenden. Sie können dies oft beheben, indem Sie sich mit derselben Methode und demselben Konto anmelden, das Sie ursprünglich verwendet haben. Mit freundlichen Grüßen, FlareFlow",
+        "ms": "Pengguna yang dihormati, Dalam sistem kami, data akaun anda—termasuk langganan, rekod top-up, dan sejarah tontonan—dikaitkan dengan UID unik anda. Sila ambil perhatian bahawa UID anda mungkin berubah jika anda log masuk menggunakan kaedah berbeza (cth. menukar antara Log Masuk Google dan Log Masuk Facebook) atau menukar peranti berbeza. Apabila ini berlaku, ia mungkin kelihatan seolah-olah langganan anda belum dikreditkan atau sejarah tontonan anda telah dipadam, kerana anda sebenarnya mengakses akaun berbeza. Jika anda alami isu ini, kami syorkan semak sama ada anda mungkin menggunakan berbilang UID. Anda selalunya boleh selesaikannya dengan memastikan anda log masuk dengan kaedah dan akaun sama yang anda gunakan asalnya. Yang ikhlas, FlareFlow",
+        "sw": "Mteja mpendwa, Katika mfumo wetu, data ya akaunti yako—ikiwa ni pamoja na usajili, rekodi za kuchaja, na historia ya kutazama—inahusishwa na UID yako ya kipekee. Tafadhali kumbuka kuwa UID yako inaweza kubadilika ikiwa utaingia kwa kutumia njia tofauti (mfano, kubadilisha kati ya Kuingia kwa Google na Kuingia kwa Facebook) au kubadilisha kwenye kifaa tofauti. Wakati hii itatokea, inaweza kuonekana kana kwamba usajili wako haujalipwa au historia yako ya kutazama imefutwa, kwani unafikia akaunti tofauti kwa ufanisi. Ikiwa unapata shida hii, tunapendekeza uangalie ikiwa unaweza kutumia UID nyingi. Mara nyingi unaweza kutatua hili kwa kuhakikisha unaingia kwa njia na akaunti ile ile uliyotumia hapo awali. Kwa heshima, FlareFlow",
+        "nl": "Geachte gebruiker, In ons systeem zijn uw accountgegevens—inclusief abonnementen, opwaardeergeschiedenis en kijkhistorie—gekoppeld aan uw unieke UID. Houd er rekening mee dat uw UID kan veranderen als u inlogt met een andere methode (bijv. schakelen tussen Google Sign-In en Facebook Login) of van apparaat wisselt. Wanneer dit gebeurt, kan het lijken alsof uw abonnement niet is bijgeschreven of uw kijkgeschiedenis is gewist, omdat u in feite toegang hebt tot een ander account. Als u dit probleem ervaart, raden we aan te controleren of u mogelijk meerdere UID's gebruikt. U kunt dit vaak oplossen door ervoor te zorgen dat u inlogt met dezelfde methode en hetzelfde account dat u oorspronkelijk gebruikte. Met vriendelijke groet, FlareFlow",
+        "ar": "عزيزي المستخدم، في نظامنا، ترتبط بيانات حسابك—بما في ذلك الاشتراكات وسجلات الشحن وسجل المشاهدة—بمعرف المستخدم الفريد (UID) الخاص بك. يرجى ملاحظة أن معرف المستخدم (UID) الخاص بك قد يتغير إذا قمت بتسجيل الدخول باستخدام طريقة مختلفة (على سبيل المثال، التبديل بين تسجيل الدخول عبر Google وتسجيل الدخول عبر Facebook) أو التبديل إلى جهاز مختلف. عندما يحدث هذا، قد يبدو كما لو أن اشتراكك لم يُضاف أو أن سجل المشاهدة الخاص بك قد تم مسحه، لأنك في الواقع تصل إلى حساب مختلف. إذا كنت تواجه هذه المشكلة، نوصي بالتحقق مما إذا كنت تستخدم عدة UIDs. يمكنك غالبًا حل هذه المشكلة من خلال التأكد من تسجيل الدخول باستخدام نفس الطريقة والحساب الذي استخدمته في الأصل. بإخلاص، FlareFlow",
+        "da": "Kære bruger, I vores system er dine kontodata—herunder abonnementer, genopfyldningsposter og visningshistorik—knyttet til din unikke UID. Vær opmærksom på, at din UID kan ændre sig, hvis du logger på med en anden metode (f.eks. skifter mellem Google Sign-In og Facebook Login) eller skifter til en anden enhed. Når dette sker, kan det se ud som om, at dit abonnement ikke er blevet krediteret, eller at din visningshistorik er blevet slettet, da du faktisk får adgang til en anden konto. Hvis du oplever dette problem, anbefaler vi at kontrollere, om du muligvis bruger flere UID'er. Du kan ofte løse dette ved at sikre, at du logger på med den samme metode og konto, som du oprindeligt brugte. Med venlig hilsen, FlareFlow"
+      }
+    },
+    {
+      "id": "内容与功能_019",
+      "category": "内容与功能",
+      "scenario": "字幕问题",
+      "keywords": [
+        "内容与功能",
+        "字幕问题",
+        "issue",
+        "problem",
+        "feedback"
+      ],
+      "languages": {
+        "en": "Dear user, thank you for your feedback. We sincerely apologize for the inconvenience. To address the subtitle issue, please help us by providing the following information: the title and episode number of the drama with the problem.\nRegards,\nFlareFlow",
+        "pt": "Prezado usuário, agradecemos seu feedback. Pedimos sinceras desculpas pelo inconveniente. Para resolver o problema da legenda, ajude-nos fornecendo as seguintes informações: o título e o número do episódio do drama com o problema.\nAtenciosamente,\nFlareFlow",
+        "es": "Estimado usuario, gracias por sus comentarios. Lamentamos sinceramente las molestias. Para solucionar el problema de los subtítulos, ayúdenos proporcionando la siguiente información: el título y el número de episodio del drama con el problema.\nAtentamente,\nFlareFlow",
+        "fr": "Cher utilisateur, merci pour vos commentaires. Nous nous excusons sincèrement pour ce désagrément. Pour résoudre le problème de sous-titres, aidez-nous en fournissant les informations suivantes : le titre et le numéro de l'épisode du drama concerné.\nCordialement,\nFlareFlow",
+        "id": "Pengguna yang terhormat, terima kasih atas masukan Anda. Kami dengan tulus meminta maaf atas ketidaknyamanannya. Untuk mengatasi masalah subtitle, tolong bantu kami dengan memberikan informasi berikut: judul dan nomor episode drama yang bermasalah.\nHormat kami,\nFlareFlow",
+        "th": "เรียนผู้ใช้ ขอบคุณสำหรับข้อเสนอแนะ เราขออภัยอย่างจริงใจสำหรับความไม่สะดวก เพื่อแก้ไขปัญหาภาษาย่อย กรุณาช่วยเราด้วยการให้ข้อมูลต่อไปนี้: ชื่อเรื่องและหมายเลขตอนของละครที่มีปัญหา\nขอแสดงความนับถือ\nFlareFlow",
+        "ko": "안녕하세요 회원님, 피드백 감사드립니다. 불편을 끼쳐 드려 진심으로 사과드립니다. 자막 문제를 해결하기 위해, 문제가 발생한 드라마의 제목과 에피소드 번호를 알려주시기 바랍니다.\n감사합니다,\nFlareFlow",
+        "ja": "ユーザー各位、フィードバックありがとうございます。ご不便をおかけし誠に申し訳ございません。字幕の問題に対処するため、問題のあるドラマのタイトルとエピソード番号を教えてください。\n敬具\nFlareFlow",
+        "it": "Gentile utente, grazie per il suo feedback. Ci scusiamo sinceramente per l'inconveniente. Per risolvere il problema dei sottotitoli, la preghiamo di aiutarci fornendo le seguenti informazioni: il titolo e il numero dell'episodio della serie con il problema.\nCordiali saluti,\nFlareFlow",
+        "de": "Sehr geehrter Nutzer, vielen Dank für Ihr Feedback. Wir entschuldigen uns aufrichtig für die Unannehmlichkeiten. Um das Untertitelproblem zu beheben, helfen Sie uns bitte, indem Sie die folgenden Informationen mitteilen: den Titel und die Episodennummer der betroffenen Serie.\nMit freundlichen Grüßen,\nFlareFlow",
+        "ms": "Pengguna yang dihormati, terima kasih atas maklum balas anda. Kami memohon maaf atas kesulitan yang dialami. Untuk menangani isu sari kata, tolong bantu kami dengan memberikan maklumat berikut: tajuk dan nombor episod drama yang bermasalah.\nYang ikhlas,\nFlareFlow",
+        "sw": "Mteja mpendwa, asante kwa maoni yako. Tunaomba radhi kwa usumbufu huu. Ili kushughulikia suala la manukuu, tafadhali tusaidie kwa kutoa taarifa zifuatazo: jina na nambari ya sehemu ya mchezo wa kuigwa lenye shida.\nKwa heshima,\nFlareFlow",
+        "nl": "Geachte gebruiker, bedankt voor uw feedback. Onze oprechte excuses voor het ongemak. Om het ondertitelingsprobleem aan te pakken, help ons alstublieft door de volgende informatie te verstrekken: de titel en het afleveringsnummer van de drama met het probleem.\nMet vriendelijke groet,\nFlareFlow",
+        "ar": "عزيزي المستخدم، شكرًا على ملاحظاتك. نعتذر بشدة عن الإزعاج. لمعالجة مشكلة الترجمة، يرجى مساعدتنا من خلال تقديم المعلومات التالية: عنوان ورقم حلقة المسلسل الذي به المشكلة.\nأطيب التحيات،\nFlareFlow",
+        "da": "Kære bruger, tak for din feedback. Vi undskylder oprigtigt for ulejligheden. For at addressere undertekstproblemet, vær venlig at hjælpe os ved at give følgende oplysninger: titlen og episodenummeret på dramaet med problemet.\nMed venlig hilsen,\nFlareFlow"
+      }
+    },
+    {
+      "id": "内容与功能_020",
+      "category": "内容与功能",
+      "scenario": "无字幕",
+      "keywords": [
+        "内容与功能",
+        "无字幕",
+        "feedback"
+      ],
+      "languages": {
+        "en": "Dear user, thank you for your feedback. We sincerely apologize for the inconvenience caused. Could you please tell us which movie and which episode this happened in? It will be very helpful for us.\nRegards,\nFlareFlow",
+        "pt": "Prezado usuário, agradecemos seu feedback. Pedimos sinceras desculpas pelo inconveniente causado. Você poderia nos dizer em qual filme e em qual episódio isso aconteceu? Será muito útil para nós.\nAtenciosamente,\nFlareFlow",
+        "es": "Estimado usuario, gracias por sus comentarios. Lamentamos sinceramente las molestias causadas. ¿Podría decirnos en qué película y en qué episodio ocurrió esto? Será de gran ayuda para nosotros.\nAtentamente,\nFlareFlow",
+        "fr": "Cher utilisateur, merci pour vos commentaires. Nous nous excusons sincèrement pour le désagrément causé. Pourriez-vous nous dire dans quel film et dans quel épisode cela s'est produit ? Cela nous sera très utile.\nCordialement,\nFlareFlow",
+        "id": "Pengguna yang terhormat, terima kasih atas masukan Anda. Kami dengan tulus meminta maaf atas ketidaknyamanan yang ditimbulkan. Bisakah Anda memberi tahu kami film dan episode mana ini terjadi? Itu akan sangat membantu kami.\nHormat kami,\nFlareFlow",
+        "th": "เรียนผู้ใช้ ขอบคุณสำหรับข้อเสนอแนะ เราขออภัยอย่างจริงใจสำหรับความไม่สะดวกที่เกิดขึ้น คุณช่วยบอกเราหน่อยได้ไหมว่ามันเกิดขึ้นในภาพยนตร์เรื่องไหนและตอนไหน? มันจะมีประโยชน์อย่างมากสำหรับเรา\nขอแสดงความนับถือ\nFlareFlow",
+        "ko": "안녕하세요 회원님, 피드백 감사드립니다. 불편을 끼쳐 드려 진심으로 사과드립니다. 어떤 영화의 어떤 에피소드에서 이런 일이 발생했는지 알려주시겠어요? 저희에게 큰 도움이 될 것입니다.\n감사합니다,\nFlareFlow",
+        "ja": "ユーザー各位、フィードバックありがとうございます。ご不便をおかけし誠に申し訳ございません。どの映画のどのエピソードでこれが起きたか教えていただけますか？大変参考になります。\n敬具\nFlareFlow",
+        "it": "Gentile utente, grazie per il suo feedback. Ci scusiamo sinceramente per l'inconveniente causato. Potrebbe dirci in quale film e in quale episodio è successo? Ci sarà molto utile.\nCordiali saluti,\nFlareFlow",
+        "de": "Sehr geehrter Nutzer, vielen Dank für Ihr Feedback. Wir entschuldigen uns aufrichtig für die verursachten Unannehmlichkeiten. Könnten Sie uns bitte mitteilen, in welchem Film und in welcher Folge dies geschah? Das wäre sehr hilfreich für uns.\nMit freundlichen Grüßen,\nFlareFlow",
+        "ms": "Pengguna yang dihormati, terima kasih atas maklum balas anda. Kami memohon maaf atas kesulitan yang disebabkan. Bolehkah anda beritahu kami filem dan episod mana ini berlaku? Ia akan sangat membantu kami.\nYang ikhlas,\nFlareFlow",
+        "sw": "Mteja mpendwa, asante kwa maoni yako. Tunaomba radhi kwa usumbufu uliosababishwa. Je, unaweza kutuambia ni filamu gani na sehemu gani hii ilitokea? Itakuwa muhimu sana kwetu.\nKwa heshima,\nFlareFlow",
+        "nl": "Geachte gebruiker, bedankt voor uw feedback. Onze oprechte excuses voor het veroorzaakte ongemak. Kunt u ons alstublieft vertellen in welke film en in welke aflevering dit gebeurde? Het zal zeer nuttig voor ons zijn.\nMet vriendelijke groet,\nFlareFlow",
+        "ar": "عزيزي المستخدم، شكرًا على ملاحظاتك. نعتذر بشدة عن الإزعاج الذي تسببنا فيه. هل يمكنك إخبارنا في أي فيلم وأي حلقة حدث هذا؟ سيكون مفيدًا جدًا لنا.\nأطيب التحيات،\nFlareFlow",
+        "da": "Kære bruger, tak for din feedback. Vi undskylder oprigtigt for den forårsagede ulejlighed. Kunne du venligst fortælle os, hvilken film og hvilken episode dette skete i? Det vil være meget hjælpsomt for os.\nMed venlig hilsen,\nFlareFlow"
+      }
+    },
+    {
+      "id": "内容与功能_021",
+      "category": "内容与功能",
+      "scenario": "播放剧集没有声音",
+      "keywords": [
+        "内容与功能",
+        "播放剧集没有声音",
+        "settings",
+        "issue"
+      ],
+      "languages": {
+        "en": "Dear user, we apologize for the inconvenience this may have caused you. Please confirm if the issue is with your phone's settings. If not, please provide more specific information, including screen recordings of the episodes without audio and the title of the show you are watching.\nRegards,\nFlareFlow",
+        "pt": "Prezado usuário, pedimos desculpas pelo inconveniente que isso possa ter causado. Confirme se o problema está nas configurações do seu telefone. Caso contrário, forneça informações mais específicas, incluindo gravações de tela dos episódios sem áudio e o título do show que você está assistindo.\nAtenciosamente,\nFlareFlow",
+        "es": "Estimado usuario, le pedimos disculpas por las molestias que esto pueda haberle causado. Confirme si el problema está en la configuración de su teléfono. Si no, proporcione información más específica, incluyendo grabaciones de pantalla de los episodios sin audio y el título del programa que está viendo.\nAtentamente,\nFlareFlow",
+        "fr": "Cher utilisateur, nous nous excusons pour le désagrément que cela a pu vous causer. Veuillez confirmer si le problème vient des paramètres de votre téléphone. Sinon, veuillez fournir des informations plus spécifiques, y compris des enregistrements d'écran des épisodes sans audio et le titre de l'émission que vous regardez.\nCordialement,\nFlareFlow",
+        "id": "Pengguna yang terhormat, kami meminta maaf atas ketidaknyamanan yang mungkin ditimbulkan oleh hal ini. Harap konfirmasi apakah masalahnya ada pada pengaturan ponsel Anda. Jika tidak, berikan informasi yang lebih spesifik, termasuk rekaman layar episode tanpa audio dan judul acara yang Anda tonton.\nHormat kami,\nFlareFlow",
+        "th": "เรียนผู้ใช้ เราขออภัยในความไม่สะดวกที่อาจเกิดขึ้นกับคุณ กรุณายืนยันว่าปัญหาอยู่ที่การตั้งค่าของโทรศัพท์ของคุณหรือไม่ หากไม่ใช่ กรุณาให้ข้อมูลที่เฉพาะเจาะจงมากขึ้น รวมถึงการบันทึกหน้าจอของตอนที่ไม่มีเสียงและชื่อเรื่องของรายการที่คุณกำลังดู\nขอแสดงความนับถือ\nFlareFlow",
+        "ko": "안녕하세요 회원님, 불편을 끼쳐 드려 죄송합니다. 휴대폰 설정에 문제가 있는지 먼저 확인해 주시기 바랍니다. 그렇지 않은 경우, 소리가 나지 않는 에피소드의 화면 녹화 및 시청 중인 프로그램 제목을 포함한 보다 구체적인 정보를 제공해 주시기 바랍니다.\n감사합니다,\nFlareFlow",
+        "ja": "ユーザー各位、ご不便をおかけしたことをお詫び申し上げます。お使いの携帯電話の設定に問題がないかご確認ください。もしそうでなければ、音声の出ないエピソードの画面録画や、ご視聴中の番組のタイトルなど、より具体的な情報をご提供ください。\n敬具\nFlareFlow",
+        "it": "Gentile utente, ci scusiamo per l'inconveniente che ciò potrebbe averle causato. La preghiamo di confermare se il problema è nelle impostazioni del suo telefono. In caso contrario, fornisca informazioni più specifiche, incluse registrazioni dello schermo degli episodi senza audio e il titolo dello show che sta guardando.\nCordiali saluti,\nFlareFlow",
+        "de": "Sehr geehrter Nutzer, wir entschuldigen uns für die Unannehmlichkeiten, die dies verursacht haben könnte. Bitte bestätigen Sie, ob das Problem in den Einstellungen Ihres Telefons liegt. Wenn nicht, teilen Sie uns bitte spezifischere Informationen mit, einschließlich Bildschirmaufzeichnungen der folgen ohne Ton und den Titel der Sendung, die Sie sehen.\nMit freundlichen Grüßen,\nFlareFlow",
+        "ms": "Pengguna yang dihormati, kami memohon maaf atas kesulitan yang mungkin disebabkan oleh ini. Sila sahkan sama ada isu tersebut adalah pada tetapan telefon anda. Jika tidak, berikan maklumat yang lebih spesifik, termasuk rakaman skrin episod tanpa audio dan tajuk rancangan yang anda tonton.\nYang ikhlas,\nFlareFlow",
+        "sw": "Mteja mpendwa, tunaomba radhi kwa usumbufu ambao huu umekusumbua. Tafadhali thibitisha ikiwa tatizo liko kwenye mipangilio ya simu yako. Ikiwa sivyo, tafadhali toa taarifa maalum zaidi, ikiwa ni pamoja na kurekodi skrini za sehemu bila audio na jina la kipindi unachokiangalia.\nKwa heshima,\nFlareFlow",
+        "nl": "Geachte gebruiker, onze excuses voor het ongemak dat dit u heeft bezorgd. Gelieve te bevestigen of het probleem bij de instellingen van uw telefoon ligt. Zo niet, verstrek dan meer specifieke informatie, inclusief schermopnames van de afleveringen zonder audio en de titel van de show die u bekijkt.\nMet vriendelijke groet,\nFlareFlow",
+        "ar": "عزيزي المستخدم، نعتذر عن الإزعاج الذي قد يكون سببه لك. يرجى التأكد مما إذا كانت المشكلة في إعدادات هاتفك. إذا لم يكن الأمر كذلك، يرجى تقديم معلومات أكثر تحديدًا، بما في ذلك تسجيلات الشاشة للحلقات التي لا تحتوي على صوت وعنوان العرض الذي تشاهده.\nأطيب التحيات،\nFlareFlow",
+        "da": "Kære bruger, vi undskylder for den ulejlighed, dette måtte have forårsaget dig. Bekræft venligst, om problemet er med din telefons indstillinger. Hvis ikke, bedes du give mere specifikke oplysninger, herunder skærmoptagelser af episoderne uden lyd og titlen på showet, du ser.\nMed venlig hilsen,\nFlareFlow"
+      }
+    },
+    {
+      "id": "内容与功能_022",
+      "category": "内容与功能",
+      "scenario": "找不到剧集",
+      "keywords": [
+        "内容与功能",
+        "找不到剧集",
+        "account",
+        "profile",
+        "feedback"
+      ],
+      "languages": {
+        "en": "Dear user, thank you for your feedback. We apologize for the inconvenience. You can try to find the episode you want to watch in the following ways:\n1. Check your viewing history for previously watched episodes.\n2. You may have multiple accounts. Try switching accounts to find the episode you watched before.\n3. You can access FlareFlow again through the ads on TikTok/Facebook to view the episode you want to watch.\nIf the above solutions don't help, please send us your FlareFlow UID (found on the Profile page) so we can assist you further. Thank you for your feedback.\nRegards,\nFlareFlow",
+        "pt": "Prezado usuário, agradecemos seu feedback. Pedimos desculpas pelo inconveniente. Você pode tentar encontrar o episódio que deseja assistir das seguintes maneiras:\n1. Verifique seu histórico de visualização para episódios assistidos anteriormente.\n2. Você pode ter várias contas. Tente alternar entre contas para encontrar o episódio que você assistiu antes.\n3. Você pode acessar o FlareFlow novamente através dos anúncios no TikTok/Facebook para visualizar o episódio que deseja assistir.\nSe as soluções acima não ajudarem, envie-nos seu UID do FlareFlow (encontrado na página do Perfil) para que possamos ajudá-lo ainda mais. Obrigado pelo seu feedback.\nAtenciosamente,\nFlareFlow",
+        "es": "Estimado usuario, gracias por sus comentarios. Lamentamos las molestias. Puede intentar encontrar el episodio que desea ver de las siguientes maneras:\n1. Consulte su historial de visualización para ver episodios vistos anteriormente.\n2. Es posible que tenga varias cuentas. Intente cambiar de cuenta para encontrar el episodio que vio antes.\n3. Puede acceder a FlareFlow nuevamente a través de los anuncios en TikTok/Facebook para ver el episodio que desea ver.\nSi las soluciones anteriores no ayudan, envíenos su UID de FlareFlow (encontrado en la página de Perfil) para que podamos ayudarlo mejor. Gracias por sus comentarios.\nAtentamente,\nFlareFlow",
+        "fr": "Cher utilisateur, merci pour vos commentaires. Nous nous excusons pour le désagrément. Vous pouvez essayer de trouver l'épisode que vous souhaitez regarder de les manières suivantes :\n1. Consultez votre historique de visionnage pour les épisodes regardés précédemment.\n2. Vous avez peut-être plusieurs comptes. Essayez de changer de compte pour trouver l'épisode que vous avez regardé auparavant.\n3. Vous pouvez accéder à nouveau à FlareFlow via les publicités sur TikTok/Facebook pour voir l'épisode que vous souhaitez regarder.\nSi les solutions ci-dessus ne vous aident pas, veuillez nous envoyer votre UID FlareFlow (sur la page Profil) afin que nous puissions vous aider davantage. Merci pour vos commentaires.\nCordialement,\nFlareFlow",
+        "id": "Pengguna yang terhormat, terima kasih atas masukan Anda. Kami meminta maaf atas ketidaknyamanannya. Anda dapat mencoba menemukan episode yang ingin ditonton dengan cara berikut:\n1. Periksa riwayat tontonan Anda untuk episode yang ditonton sebelumnya.\n2. Anda mungkin memiliki beberapa akun. Coba beralih akun untuk menemukan episode yang Anda tonton sebelumnya.\n3. Anda dapat mengakses FlareFlow lagi melalui iklan di TikTok/Facebook untuk menonton episode yang ingin Anda tonton.\nJika solusi di atas tidak membantu, kirimkan UID FlareFlow Anda (ditemukan di halaman Profil) kepada kami agar kami dapat membantu Anda lebih lanjut. Terima kasih atas masukan Anda.\nHormat kami,\nFlareFlow",
+        "th": "เรียนผู้ใช้ ขอบคุณสำหรับข้อเสนอแนะ เราขออภัยในความไม่สะดวก คุณสามารถลองหาตอนที่ต้องการดูได้ด้วยวิธีต่อไปนี้:\n1. ตรวจสอบประวัติการดูของคุณสำหรับตอนที่เคยดูมาก่อน\n2. คุณอาจมีหลายบัญชี ลองเปลี่ยนบัญชีเพื่อหาตอนที่คุณเคยดูก่อนหน้านี้\n3. คุณสามารถเข้าใช้ FlareFlow อีกครั้งผ่านโฆษณาบน TikTok/Facebook เพื่อดูตอนที่คุณต้องการดู\nหากวิธีแก้ไขข้างต้นไม่ช่วยเหลือ กรุณาส่ง UID FlareFlow ของคุณ (พบในหน้าโปรไฟล์) ให้เราเพื่อให้เราช่วยเหลือคุณเพิ่มเติม ขอบคุณสำหรับข้อเสนอแนะ\nขอแสดงความนับถือ\nFlareFlow",
+        "ko": "안녕하세요 회원님, 피드백 감사드립니다. 불편을 끼쳐 드려 죄송합니다. 다음과 같은 방법으로 시청하시려는 에피소드를 찾아보실 수 있습니다:\n1. 시청 기록에서 이전에 시청한 에피소드를 확인하세요.\n2. 계정이 여러 개 있을 수 있습니다. 계정을 전환하여 이전에 시청한 에피소드를 찾아보세요.\n3. TikTok/페이스북 광고를 통해 FlareFlow에 다시 접속하여 시청하시려는 에피소드를 볼 수 있습니다.\n위 방법으로 해결이 되지 않으시면, FlareFlow UID(프로필 페이지에서 확인 가능)를 보내주시면 추가로 도움드리겠습니다. 피드백 감사드립니다.\n감사합니다,\nFlareFlow",
+        "ja": "ユーザー各位、フィードバックありがとうございます。ご不便をおかけし申し訳ございません。以下の方法でご覧になりたいエピソードを探してみてください：\n1. 視聴履歴で以前視聴したエピソードを確認する。\n2. 複数のアカウントをお持ちの場合があります。アカウントを切り替えて、以前視聴したエピソードを探してみてください。\n3. TikTok/Facebookの広告からFlareFlowに再度アクセスして、ご覧になりたいエピソードを視聴できます。\n上記の方法で解決しない場合は、FlareFlow UID（プロフィールページで確認可能）をお送りください。さらにサポートいたします。ご意見ありがとうございます。\n敬具\nFlareFlow",
+        "it": "Gentile utente, grazie per il suo feedback. Ci scusiamo per l'inconveniente. Può provare a trovare l'episodio che desidera guardare nei seguenti modi:\n1. Controlli la sua cronologia di visualizzazione per gli episodi guardati in precedenza.\n2. Potrebbe avere più account. Provi a cambiare account per trovare l'episodio che ha guardato prima.\n3. Può accedere di nuovo a FlareFlow attraverso le pubblicità su TikTok/Facebook per visualizzare l'episodio che desidera guardare.\nSe le soluzioni di cui sopra non aiutano, ci invii il suo UID FlareFlow (trovato nella pagina Profilo) in modo che possiamo assisterla ulteriormente. Grazie per il feedback.\nCordiali saluti,\nFlareFlow",
+        "de": "Sehr geehrter Nutzer, vielen Dank für Ihr Feedback. Wir entschuldigen uns für die Unannehmlichkeiten. Sie können versuchen, die gewünschte Folge auf folgende Weise zu finden:\n1. Überprüfen Sie Ihren Wiedergabeverlauf auf zuvor gesehene Folgen.\n2. Möglicherweise haben Sie mehrere Konten. Versuchen Sie, zwischen Konten zu wechseln, um die Folge zu finden, die Sie zuvor gesehen haben.\n3. Sie können FlareFlow erneut über die Anzeigen auf TikTok/Facebook aufrufen, um die gewünschte Folge anzusehen.\nWenn die oben genannten Lösungen nicht helfen, senden Sie uns bitte Ihre FlareFlow-UID (auf der Profilseite zu finden), damit wir Ihnen weiterhelfen können. Vielen Dank für Ihr Feedback.\nMit freundlichen Grüßen,\nFlareFlow",
+        "ms": "Pengguna yang dihormati, terima kasih atas maklum balas anda. Kami memohon maaf atas kesulitan yang dialami. Anda boleh cuba cari episod yang anda ingin tonton dengan cara berikut:\n1. Semak sejarah tontonan anda untuk episod yang ditonton sebelum ini.\n2. Anda mungkin mempunyai berbilang akaun. Cuba tukar akaun untuk cari episod yang anda tonton sebelum ini.\n3. Anda boleh akses FlareFlow sekali lagi melalui iklan di TikTok/Facebook untuk tonton episod yang anda ingin tonton.\nJika penyelesaian di atas tidak membantu, sila hantar UID FlareFlow anda (ditemui di halaman Profil) kepada kami supaya kami boleh bantu anda lagi. Terima kasih atas maklum balas anda.\nYang ikhlas,\nFlareFlow",
+        "sw": "Mteja mpendwa, asante kwa maoni yako. Tunaomba radhi kwa usumbufu. Unaweza kujaribu kupata sehemu unayotaka kuangalia kwa njia zifuatazo:\n1. Angalia historia yako ya kutazama kwa sehemu zilizotazamwa awali.\n2. Unaweza kuwa na akaunti nyingi. Jaribu kubadilisha akaunti ili kupata sehemu uliyoiangalia hapo awali.\n3. Unaweza kuingia kwenye FlareFlow tena kupitia matangazo kwenye TikTok/Facebook ili kutazama sehemu unayotaka kuangalia.\nIkiwa suluhisho hapo juu halisaidii, tafadhali tutumie UID yako ya FlareFlow (inapatikana kwenye ukurasa wa Wasifu) ili tuweze kukusaidia zaidi. Asante kwa maoni yako.\nKwa heshima,\nFlareFlow",
+        "nl": "Geachte gebruiker, bedankt voor uw feedback. Onze excuses voor het ongemak. U kunt proberen de aflevering die u wilt bekijken op de volgende manieren te vinden:\n1. Controleer uw kijkgeschiedenis op eerder bekeken afleveringen.\n2. U heeft mogelijk meerdere accounts. Probeer van account te wisselen om de aflevering te vinden die u eerder heeft bekeken.\n3. U kunt opnieuw toegang krijgen tot FlareFlow via de advertenties op TikTok/Facebook om de aflevering te bekijken die u wilt zien.\nAls bovenstaande oplossingen niet helpen, stuur ons dan uw FlareFlow UID (te vinden op de Profielpagina) zodat wij u verder kunnen helpen. Bedankt voor uw feedback.\nMet vriendelijke groet,\nFlareFlow",
+        "ar": "عزيزي المستخدم، شكرًا على ملاحظاتك. نعتذر عن الإزعاج. يمكنك محاولة العثور على الحلقة التي تريد مشاهدتها بالطرق التالية:\n1. تحقق من سجل المشاهدة الخاص بك للحلقات التي شاهدتها سابقًا.\n2. قد يكون لديك حسابات متعددة. حاول تبديل الحسابات للعثور على الحلقة التي شاهدتها من قبل.\n3. يمكنك الوصول إلى FlareFlow مرة أخرى من خلال الإعلانات على TikTok/Facebook لعرض الحلقة التي تريد مشاهدتها.\nإذا لم تساعد الحلول المذكورة أعلاه، فيرجى إرسال معرف FlareFlow الخاص بك (موجود في صفحة الملف الشخصي) إلينا حتى نتمكن من مساعدتك further. شكرًا على ملاحظاتك.\nأطيب التحيات،\nFlareFlow",
+        "da": "Kære bruger, tak for din feedback. Vi undskylder for ulejligheden. Du kan prøve at finde den episode, du vil se, på følgende måder:\n1. Tjek din visningshistorik for tidligere set episoder.\n2. Du har muligvis flere konti. Prøv at skifte konto for at finde den episode, du så før.\n3. Du kan få adgang til FlareFlow igen gennem annoncerne på TikTok/Facebook for at se den episode, du vil se.\nHvis ovenstående løsninger ikke hjælper, bedes du sende os din FlareFlow UID (findes på Profilsiden), så vi kan hjælpe dig yderligere. Tak for din feedback.\nMed venlig hilsen,\nFlareFlow"
+      }
+    },
+    {
+      "id": "内容与功能_023",
+      "category": "内容与功能",
+      "scenario": "浏览记录问题 (登录账户相关)",
+      "keywords": [
+        "内容与功能",
+        "浏览记录问题 (登录账户相关)",
+        "account",
+        "profile",
+        "issue",
+        "feedback"
+      ],
+      "languages": {
+        "en": "Dear user, \nwe apologize for the inconvenience. Please confirm that you are using the same account for both viewings. If you logged out and switched accounts after viewing, your viewing history will not be synchronized. If you are still experiencing this issue with the same account, please provide your FlareFlow UID (found on the Profile page) so we can troubleshoot. Thank you for your feedback.\nSincerely,\nFlareFlow",
+        "pt": "Prezado usuário, pedimos desculpas pelo inconveniente. Confirme se você está usando a mesma conta para ambas as visualizações. Se você saiu e alternou contas após a visualização, seu histórico de visualização não será sincronizado. Se você ainda estiver enfrentando esse problema com a mesma conta, forneça seu UID do FlareFlow (encontrado na página do Perfil) para que possamos solucionar problemas. Obrigado pelo seu feedback.\nAtenciosamente,\nFlareFlow",
+        "es": "Estimado usuario, lamentamos las molestias. Confirme que está utilizando la misma cuenta para ambas visualizaciones. Si cerró la sesión y cambió de cuenta después de ver, su historial de visualización no se sincronizará. Si sigue experimentando este problema con la misma cuenta, proporcione su UID de FlareFlow (encontrado en la página de Perfil) para que podamos solucionarlo. Gracias por sus comentarios.\nAtentamente,\nFlareFlow",
+        "fr": "Cher utilisateur, nous nous excusons pour le désagrément. Veuillez confirmer que vous utilisez le même compte pour les deux visionnages. Si vous vous êtes déconnecté et avez changé de compte après le visionnage, votre historique de visionnage ne sera pas synchronisé. Si vous rencontrez toujours ce problème avec le même compte, veuillez fournir votre UID FlareFlow (sur la page Profil) afin que nous puissions résoudre le problème. Merci pour vos commentaires.\nCordialement,\nFlareFlow",
+        "id": "Pengguna yang terhormat, kami meminta maaf atas ketidaknyamanannya. Harap konfirmasi bahwa Anda menggunakan akun yang sama untuk kedua penayangan. Jika Anda logout dan beralih akun setelah menonton, riwayat tontonan Anda tidak akan disinkronkan. Jika Anda masih mengalami masalah ini dengan akun yang sama, berikan UID FlareFlow Anda (ditemukan di halaman Profil) agar kami dapat memecahkan masalah. Terima kasih atas masukan Anda.\nHormat kami,\nFlareFlow",
+        "th": "เรียนผู้ใช้ เราขออภัยในความไม่สะดวก กรุณายืนยันว่าคุณใช้บัญชีเดียวกันสำหรับการดูทั้งสองครั้ง หากคุณออกจากระบบและเปลี่ยนบัญชีหลังจากดู ประวัติการดูของคุณจะไม่ถูกซิงค์ หากคุณยังคงประสบกับปัญหานี้ด้วยบัญชีเดียวกัน กรุณาให้ UID FlareFlow ของคุณ (พบในหน้าโปรไฟล์) เพื่อให้เราสามารถแก้ไขปัญหาได้ ขอบคุณสำหรับข้อเสนอแนะ\nขอแสดงความนับถือ\nFlareFlow",
+        "ko": "안녕하세요 회원님, 불편을 끼쳐 드려 죄송합니다. 시청 시 동일한 계정을 사용 중인지 확인해 주시기 바랍니다. 시청 후 로그아웃하고 계정을 전환하셨다면, 시청 기록이 동기화되지 않습니다. 동일한 계정으로도 이 문제가 계속 발생한다면, FlareFlow UID(프로필 페이지에서 확인 가능)를 알려주시면 문제 해결을 도와드리겠습니다. 피드백 감사드립니다.\n감사합니다,\nFlareFlow",
+        "ja": "ユーザー各位、ご不便をおかけし申し訳ございません。両方の視聴で同じアカウントを使用していることを確認してください。視聴後にログアウトしてアカウントを切り替えた場合、視聴履歴は同期されません。同じアカウントでこの問題が引き続き発生する場合は、FlareFlow UID（プロフィールページで確認可能）を提供してください。問題のトラブルシューティングを行います。ご意見ありがとうございます。\n敬具\nFlareFlow",
+        "it": "Gentile utente, ci scusiamo per l'inconveniente. La preghiamo di confermare che sta utilizzando lo stesso account per entrambe le visualizzazioni. Se si è disconnesso e ha cambiato account dopo la visualizzazione, la sua cronologia di visualizzazione non sarà sincronizzata. Se riscontra ancora questo problema con lo stesso account, fornisca il suo UID FlareFlow (trovato nella pagina Profilo) in modo che possiamo risolvere il problema. Grazie per il feedback.\nCordiali saluti,\nFlareFlow",
+        "de": "Sehr geehrter Nutzer, wir entschuldigen uns für die Unannehmlichkeiten. Bitte bestätigen Sie, dass Sie für beide Betrachtungen dasselbe Konto verwenden. Wenn Sie sich nach dem Anschauen abgemeldet und die Konten gewechselt haben, wird Ihr Wiedergabeverlauf nicht synchronisiert. Wenn Sie dieses Problem weiterhin mit demselben Konto haben, teilen Sie uns bitte Ihre FlareFlow-UID (auf der Profilseite zu finden) mit, damit wir die Fehlerbehebung durchführen können. Vielen Dank für Ihr Feedback.\nMit freundlichen Grüßen,\nFlareFlow",
+        "ms": "Pengguna yang dihormati, kami memohon maaf atas kesulitan yang dialami. Sila sahkan bahawa anda menggunakan akaun yang sama untuk kedua-dua tontonan. Jika anda log keluar dan menukar akaun selepas menonton, sejarah tontonan anda tidak akan disegerakkan. Jika anda masih mengalami isu ini dengan akaun yang sama, sila berikan UID FlareFlow anda (ditemui di halaman Profil) supaya kami dapat menyelesaikan masalah. Terima kasih atas maklum balas anda.\nYang ikhlas,\nFlareFlow",
+        "sw": "Mteja mpendwa, tunaomba radhi kwa usumbufu. Tafadhali thibitisha kuwa unatumia akaunti sawa kwa matazamo yote mawili. Ikiwa ulitoka na kubadilisha akaunti baada ya kutazama, historia yako ya kutazama haitasawazishwa. Ikiwa bado unapata shida hii na akaunti ile ile, tafadhali toa UID yako ya FlareFlow (inapatikana kwenye ukurasa wa Wasifu) ili tuweze kutatua tatizo. Asante kwa maoni yako.\nKwa heshima,\nFlareFlow",
+        "nl": "Geachte gebruiker, onze excuses voor het ongemak. Gelieve te bevestigen dat u dezelfde account gebruikt voor beide weergaven. Als u zich na het bekijken heeft afgemeld en van account bent gewisseld, wordt uw kijkgeschiedenis niet gesynchroniseerd. Als u dit probleem nog steeds ondervindt met dezelfde account, verstrek dan uw FlareFlow UID (te vinden op de Profielpagina) zodat wij problemen kunnen oplossen. Bedankt voor uw feedback.\nMet vriendelijke groet,\nFlareFlow",
+        "ar": "عزيزي المستخدم، نعتذر عن الإزعاج. يرجى التأكد من أنك تستخدم نفس الحساب في كلتا المشاهدتين. إذا قمت بتسجيل الخروج وتبديل الحسابات بعد المشاهدة، فل يتم مزامنة سجل المشاهدة الخاص بك. إذا كنت لا تزال تواجه هذه المشكلة مع نفس الحساب، فيرجى تقديم معرف FlareFlow الخاص بك (موجود في صفحة الملف الشخصي) حتى نتمكن من استكشاف الأخطاء وإصلاحها. شكرًا على ملاحظاتك.\nأطيب التحيات،\nFlareFlow",
+        "da": "Kære bruger, vi undskylder for ulejligheden. Bekræft venligst, at du bruger den samme konto til begge visninger. Hvis du loggede ud og skiftede konti efter visning, vil din visningshistorik ikke blive synkroniseret. Hvis du stadig oplever dette problem med den samme konto, bedes du give din FlareFlow UID (findes på Profilsiden), så vi kan fejlfinde. Tak for din feedback.\nMed venlig hilsen,\nFlareFlow"
+      }
+    },
+    {
+      "id": "内容与功能_024",
+      "category": "内容与功能",
+      "scenario": "多语言剧集请求",
+      "keywords": [
+        "内容与功能",
+        "多语言剧集请求",
+        "feedback"
+      ],
+      "languages": {
+        "en": "Dear user, thank you for your feedback. We understand your preference for different types of episodes. We are working hard on filming and production. If you like our app, it would be a great encouragement for us if you could give us a five-star rating in the store.\nRegards,\nFlareFlow",
+        "pt": "Prezado usuário, agradecemos seu feedback. Entendemos sua preferência por diferentes tipos de episódios. Estamos trabalhando duro na filmagem e produção. Se você gosta do nosso aplicativo, seria um grande incentivo para nós se você pudesse nos dar uma classificação de cinco estrelas na loja.\nAtenciosamente,\nFlareFlow",
+        "es": "Estimado usuario, gracias por sus comentarios. Entendemos su preferencia por diferentes tipos de episodios. Estamos trabajando arduamente en el rodaje y la producción. Si le gusta nuestra aplicación, sería un gran aliento para nosotros si pudiera darnos una calificación de cinco estrellas en la tienda.\nAtentamente,\nFlareFlow",
+        "fr": "Cher utilisateur, merci pour vos commentaires. Nous comprenons votre préférence pour différents types d'épisodes. Nous travaillons dur sur le tournage et la production. Si vous aimez notre application, ce serait un grand encouragement pour nous si vous pouviez nous donner une note de cinq étoiles dans le magasin.\nCordialement,\nFlareFlow",
+        "id": "Pengguna yang terhormat, terima kasih atas masukan Anda. Kami memahami preferensi Anda untuk berbagai jenis episode. Kami bekerja keras dalam pembuatan film dan produksi. Jika Anda menyukai aplikasi kami, itu akan menjadi dorongan besar bagi kami jika Anda dapat memberi kami peringkat bintang lima di toko.\nHormat kami,\nFlareFlow",
+        "th": "เรียนผู้ใช้ ขอบคุณสำหรับข้อเสนอแนะ เราเข้าใจความชอบของคุณสำหรับตอนประเภทต่างๆ เรากำลังทำงานอย่างหนักในการถ่ายทำและผลิต หากคุณชอบแอปของเรา การให้คะแนนห้าดาวในสโตร์จะเป็นกำลังใจอย่างมากสำหรับเรา\nขอแสดงความนับถือ\nFlareFlow",
+        "ko": "안녕하세요 회원님, 피드백 감사드립니다. 다양한 유형의 에피소드에 대한 선호도를 이해합니다. 촬영과 제작에 열심히 임하고 있습니다. 저희 앱을 좋아하신다면, 스토어에서 별 5개 평점을 주시면 큰 격려가 됩니다.\n감사합니다,\nFlareFlow",
+        "ja": "ユーザー各位、フィードバックありがとうございます。様々なタイプのエピソードへのご要望を承りました。撮影と制作に尽力しております。当社のアプリをご気に入りいただけましたら、ストアで5つ星の評価をいただけますと大変励みになります。\n敬具\nFlareFlow",
+        "it": "Gentile utente, grazie per il suo feedback. Comprendiamo la sua preferenza per diversi tipi di episodi. Stiamo lavorando sodo sulle riprese e sulla produzione. Se le piace la nostra app, sarebbe un grande incoraggiamento per noi se potesse darci una valutazione a cinque stelle nel negozio.\nCordiali saluti,\nFlareFlow",
+        "de": "Sehr geehrter Nutzer, vielen Dank für Ihr Feedback. Wir verstehen Ihre Vorliebe für verschiedene Episodentypen. Wir arbeiten hart an den Dreharbeiten und der Produktion. Wenn Sie unsere App mögen, wäre es eine große Ermutigung für uns, wenn Sie uns eine Fünf-Sterne-Bewertung im Store geben könnten.\nMit freundlichen Grüßen,\nFlareFlow",
+        "ms": "Pengguna yang dihormati, terima kasih atas maklum balas anda. Kami memahami keutamaan anda untuk episod jenis berbeza. Kami bekerja keras pada penggambaran dan produksi. Jika anda suka apl kami, ia akan menjadi galakan yang besar untuk kami jika anda boleh beri kami penarafan lima bintang di kedai.\nYang ikhlas,\nFlareFlow",
+        "sw": "Mteja mpendwa, asante kwa maoni yako. Tunaelewa upendeleo wako kwa aina tofauti za sehemu. Tunafanya kazi kwa bidii kwenye upigaji picha na utayarishaji. Ikiwa unapenda programu yetu, itakuwa ni msukumo mkubwa kwetu kama ungetupa ukadiriaji wa nyota tano kwenye duka.\nKwa heshima,\nFlareFlow",
+        "nl": "Geachte gebruiker, bedankt voor uw feedback. Wij begrijpen uw voorkeur voor verschillende soorten afleveringen. Wij werken hard aan de opnames en productie. Als u onze app leuk vindt, zou het een grote aanmoediging voor ons zijn als u ons een vijfsterrenbeoordeling in de winkel zou kunnen geven.\nMet vriendelijke groet,\nFlareFlow",
+        "ar": "عزيزي المستخدم، شكرًا على ملاحظاتك. نحن نتفهم تفضيلك لأنواع مختلفة من الحلقات. نحن نعمل بجد على التصوير والإنتاج. إذا أعجبك تطبيقنا، فسيكون تشجيعًا كبيرًا لنا إذا could تمنحنا تقييمًا بخمس نجوم في المتجر.\nأطيب التحيات،\nFlareFlow",
+        "da": "Kære bruger, tak for din feedback. Vi forstår din præference for forskellige typer af episoder. Vi arbejder hårdt på optagelse og produktion. Hvis du kan lide vores app, ville det være en stor opmuntring for os, hvis du kunne give os en fem-stjernet vurdering i butikken.\nMed venlig hilsen,\nFlareFlow"
+      }
+    },
+    {
+      "id": "技术问题_025",
+      "category": "技术问题",
+      "scenario": "升级到最新版本",
+      "keywords": [
+        "技术问题",
+        "升级到最新版本",
+        "issue",
+        "problem",
+        "feedback",
+        "update"
+      ],
+      "languages": {
+        "en": "Dear user, thank you for your feedback. We sincerely apologize for the inconvenience caused. Please try to update your app to the latest version. We are working hard to investigate the issue. Thank you for your patience. If the problem still exists after updating, please contact us via email.\nRegards,\nFlareFlow",
+        "pt": "Prezado usuário, agradecemos seu feedback. Pedimos sinceras desculpas pelo inconveniente causado. Tente atualizar seu aplicativo para a versão mais recente. Estamos trabalhando duro para investigar o problema. Agradecemos sua paciência. Se o problema persistir após a atualização, entre em contato conosco por e-mail.\nAtenciosamente,\nFlareFlow",
+        "es": "Estimado usuario, gracias por sus comentarios. Lamentamos sinceramente las molestias causadas. Intente actualizar su aplicación a la versión más reciente. Estamos trabajando arduamente para investigar el problema. Gracias por su paciencia. Si el problema persiste después de la actualización, contáctenos por correo electrónico.\nAtentamente,\nFlareFlow",
+        "fr": "Cher utilisateur, merci pour vos commentaires. Nous nous excusons sincèrement pour le désagrément causé. Veuillez essayer de mettre à jour votre application vers la dernière version. Nous travaillons dur pour enquêter sur le problème. Merci pour votre patience. Si le problème persiste après la mise à jour, veuillez nous contacter par e-mail.\nCordialement,\nFlareFlow",
+        "id": "Pengguna yang terhormat, terima kasih atas masukan Anda. Kami dengan tulus meminta maaf atas ketidaknyamanan yang ditimbulkan. Silakan coba perbarui aplikasi Anda ke versi terbaru. Kami bekerja keras untuk menyelidiki masalahnya. Terima kasih atas kesabaran Anda. Jika masalah masih berlanjut setelah pembaruan, hubungi kami via email.\nHormat kami,\nFlareFlow",
+        "th": "เรียนผู้ใช้ ขอบคุณสำหรับข้อเสนอแนะ เราขออภัยอย่างจริงใจสำหรับความไม่สะดวกที่เกิดขึ้น กรุณาลองอัปเดตแอปของคุณเป็นเวอร์ชันล่าสุด เรากำลังทำงานอย่างหนักเพื่อตรวจสอบปัญหา ขอบคุณสำหรับความอดทนของคุณ หากปัญหายังคง存在หลังอัปเดต กรุณาติดต่อเราทางอีเมล\nขอแสดงความนับถือ\nFlareFlow",
+        "ko": "안녕하세요 회원님, 피드백 감사드립니다. 불편을 끼쳐 드려 진심으로 사과드립니다. 앱을 최신 버전으로 업데이트해 보시기 바랍니다. 문제를 열심히 조사하고 있습니다. 양해해 주셔서 감사합니다. 업데이트 후에도 문제가 지속되면 이메일을 통해 문의해 주시기 바랍니다.\n감사합니다,\nFlareFlow",
+        "ja": "ユーザー各位、フィードバックありがとうございます。ご不便をおかけし誠に申し訳ございません。アプリを最新バージョンに更新してみてください。問題を調査中です。ご理解いただきありがとうございます。更新後も問題が解決しない場合は、メールでお問い合わせください。\n敬具\nFlareFlow",
+        "it": "Gentile utente, grazie per il suo feedback. Ci scusiamo sinceramente per l'inconveniente causato. La preghiamo di provare ad aggiornare la sua app all'ultima versione. Stiamo lavorando sodo per investigare sul problema. Grazie per la sua pazienza. Se il problema persiste dopo l'aggiornamento, la preghiamo di contattarci via email.\nCordiali saluti,\nFlareFlow",
+        "de": "Sehr geehrter Nutzer, vielen Dank für Ihr Feedback. Wir entschuldigen uns aufrichtig für die verursachten Unannehmlichkeiten. Bitte versuchen Sie, Ihre App auf die neueste Version zu aktualisieren. Wir arbeiten hart daran, das Problem zu untersuchen. Vielen Dank für Ihre Geduld. Wenn das Problem nach dem Update weiterhin besteht, kontaktieren Sie uns bitte per E-Mail.\nMit freundlichen Grüßen,\nFlareFlow",
+        "ms": "Pengguna yang dihormati, terima kasih atas maklum balas anda. Kami memohon maaf atas kesulitan yang disebabkan. Sila cuba kemas kini apl anda ke versi terkini. Kami bekerja keras untuk menyiasat isu tersebut. Terima kasih atas kesabaran anda. Jika masalah masih wujud selepas kemas kini, sila hubungi kami melalui e-mel.\nYang ikhlas,\nFlareFlow",
+        "sw": "Mteja mpendwa, asante kwa maoni yako. Tunaomba radhi kwa usumbufu uliosababishwa. Tafadhali jaribu kusasisha programu yako kwa toleo la hivi karibuni. Tunafanya kazi kwa bidii kuchunguza suala hilo. Asante kwa subira yako. Ikiwa shida bado ipo baada ya usasishaji, tafadhali wasiliana nasi kupitia barua pepe.\nKwa heshima,\nFlareFlow",
+        "nl": "Geachte gebruiker, bedankt voor uw feedback. Onze oprechte excuses voor het veroorzaakte ongemak. Probeer alstublieft uw app bij te werken naar de nieuwste versie. Wij werken hard om het probleem te onderzoeken. Dank u voor uw geduld. Als het probleem zich na de update nog steeds voordoet, neem dan contact met ons op via e-mail.\nMet vriendelijke groet,\nFlareFlow",
+        "ar": "عزيزي المستخدم، شكرًا على ملاحظاتك. نعتذر بشدة عن الإزعاج الذي تسببنا فيه. يرجى محاولة تحديث تطبيقك إلى أحدث إصدار. نحن نعمل بجد للتحقيق في المشكلة. شكرًا لك على صبرك. إذا كانت المشكلة لا تزال قائمة بعد التحديث، فيرجى الاتصال بنا عبر البريد الإلكتروني.\nأطيب التحيات،\nFlareFlow",
+        "da": "Kære bruger, tak for din feedback. Vi undskylder oprigtigt for den forårsagede ulejlighed. Prøv venligst at opdatere din app til den nyeste version. Vi arbejder hårdt på at undersøge problemet. Tak for din tålmodighed. Hvis problemet stadig eksisterer efter opdateringen, bedes du kontakte os via e-mail.\nMed venlig hilsen,\nFlareFlow"
+      }
+    },
+    {
+      "id": "技术问题_026",
+      "category": "技术问题",
+      "scenario": "最新版本会修复",
+      "keywords": [
+        "技术问题",
+        "最新版本会修复",
+        "issue",
+        "feedback"
+      ],
+      "languages": {
+        "en": "Dear user, we are sorry for the inconvenience. We have acknowledged this issue and it will be solved in the latest version. Thank you for your feedback.\nRegards,\nFlareFlow",
+        "pt": "Prezado usuário, lamentamos o inconveniente. Estamos cientes deste problema e ele será resolvido na versão mais recente. Obrigado pelo seu feedback.\nAtenciosamente,\nFlareFlow",
+        "es": "Estimado usuario, lamentamos las molestias. Hemos reconocido este problema y se resolverá en la última versión. Gracias por sus comentarios.\nAtentamente,\nFlareFlow",
+        "fr": "Cher utilisateur, nous sommes désolés pour le désagrément. Nous avons pris note de ce problème et il sera résolu dans la dernière version. Merci pour vos commentaires.\nCordialement,\nFlareFlow",
+        "id": "Pengguna yang terhormat, kami minta maaf atas ketidaknyamanannya. Kami telah mengetahui masalah ini dan akan diselesaikan dalam versi terbaru. Terima kasih atas masukan Anda.\nHormat kami,\nFlareFlow",
+        "th": "เรียนผู้ใช้ เราขออภัยในความไม่สะดวก เราได้รับทราบปัญหานี้แล้วและจะแก้ไขในเวอร์ชันล่าสุด ขอบคุณสำหรับข้อเสนอแนะ\nขอแสดงความนับถือ\nFlareFlow",
+        "ko": "안녕하세요 회원님, 불편을 끼쳐 드려 죄송합니다. 이 문제를 인지했으며 최신 버전에서 해결될 예정입니다. 피드백 감사드립니다.\n감사합니다,\nFlareFlow",
+        "ja": "ユーザー各位、ご不便をおかけし申し訳ございません。この問題を認識しており、最新バージョンで解決されます。ご意見ありがとうございます。\n敬具\nFlareFlow",
+        "it": "Gentile utente, ci scusiamo per l'inconveniente. Abbiamo preso atto di questo problema e sarà risolto nell'ultima versione. Grazie per il feedback.\nCordiali saluti,\nFlareFlow",
+        "de": "Sehr geehrter Nutzer, wir entschuldigen uns für die Unannehmlichkeiten. Wir haben dieses Problem zur Kenntnis genommen und es wird in der neuesten Version behoben. Vielen Dank für Ihr Feedback.\nMit freundlichen Grüßen,\nFlareFlow",
+        "ms": "Pengguna yang dihormati, kami memohon maaf atas kesulitan yang dialami. Kami telah mengetahui isu ini dan ia akan diselesaikan dalam versi terkini. Terima kasih atas maklum balas anda.\nYang ikhlas,\nFlareFlow",
+        "sw": "Mteja mpendwa, tunaomba radhi kwa usumbufu. Tumetambua suala hili na litatatuliwa kwenye toleo la hivi karibuni. Asante kwa maoni yako.\nKwa heshima,\nFlareFlow",
+        "nl": "Geachte gebruiker, het spijt ons voor het ongemak. Wij hebben dit probleem erkend en het zal worden opgelost in de nieuwste versie. Bedankt voor uw feedback.\nMet vriendelijke groet,\nFlareFlow",
+        "ar": "عزيزي المستخدم، نحن آسفون للإزعاج. لقد اعترفنا بهذه المشكلة وسيتم حلها في أحدث إصدار. شكرًا على ملاحظاتك.\nأطيب التحيات،\nFlareFlow",
+        "da": "Kære bruger, vi beklager ulejligheden. Vi har anerkendt dette problem, og det vil blive løst i den nyeste version. Tak for din feedback.\nMed venlig hilsen,\nFlareFlow"
+      }
+    },
+    {
+      "id": "技术问题_027",
+      "category": "技术问题",
+      "scenario": "等待或改善网络环境",
+      "keywords": [
+        "技术问题",
+        "等待或改善网络环境",
+        "feedback"
+      ],
+      "languages": {
+        "en": "Dear user, thank you for your feedback. Please be patient and wait for the page to load, or try improving your network environment. If you have any questions, you can continue to contact us via email.\nSincerely,\nFlareFlow",
+        "pt": "Prezado usuário, agradecemos seu feedback. Por favor, seja paciente e aguarde o carregamento da página ou tente melhorar seu ambiente de rede. Se você tiver alguma dúvida, pode continuar nos contatando por e-mail.\nAtenciosamente,\nFlareFlow",
+        "es": "Estimado usuario, gracias por sus comentarios. Por favor, sea paciente y espere a que la página se cargue, o intente mejorar su entorno de red. Si tiene alguna pregunta, puede continuar contactándonos por correo electrónico.\nAtentamente,\nFlareFlow",
+        "fr": "Cher utilisateur, merci pour vos commentaires. Veuillez patienter et attendre le chargement de la page, ou essayez d'améliorer votre environnement réseau. Si vous avez des questions, vous pouvez continuer à nous contacter par e-mail.\nCordialement,\nFlareFlow",
+        "id": "Pengguna yang terhormat, terima kasih atas masukan Anda. Harap bersabar dan tunggu halaman dimuat, atau coba perbaiki lingkungan jaringan Anda. Jika Anda memiliki pertanyaan, Anda dapat terus menghubungi kami via email.\nHormat kami,\nFlareFlow",
+        "th": "เรียนผู้ใช้ ขอบคุณสำหรับข้อเสนอแนะ กรุณาอดทนและรอให้โหลดหน้าเว็บ หรือลองปรับปรุงสภาพแวดล้อมเครือข่ายของคุณ หากคุณมีคำถามใดๆ คุณสามารถติดต่อเราต่อไปทางอีเมล\nขอแสดงความนับถือ\nFlareFlow",
+        "ko": "안녕하세요 회원님, 피드백 감사드립니다. 페이지가 로드될 때까지 잠시 기다려 주시거나, 네트워크 환경을 개선해 보시기 바랍니다. 궁금한 점이 있으시면 이메일을 통해 계속 문의해 주시기 바랍니다.\n감사합니다,\nFlareFlow",
+        "ja": "ユーザー各位、フィードバックありがとうございます。ページが読み込まれるまでしばらくお待ちいただくか、ネットワーク環境を改善してみてください。ご質問がございましたら、引き続きメールでお問い合わせください。\n敬具\nFlareFlow",
+        "it": "Gentile utente, grazie per il suo feedback. La preghiamo di pazientare e attendere il caricamento della pagina, o di provare a migliorare il suo ambiente di rete. Se ha domande, può continuare a contattarci via email.\nCordiali saluti,\nFlareFlow",
+        "de": "Sehr geehrter Nutzer, vielen Dank für Ihr Feedback. Bitte haben Sie Geduld und warten Sie, bis die Seite geladen ist, oder versuchen Sie, Ihre Netzwerkumgebung zu verbessern. Wenn Sie Fragen haben, können Sie uns weiterhin per E-Mail kontaktieren.\nMit freundlichen Grüßen,\nFlareFlow",
+        "ms": "Pengguna yang dihormati, terima kasih atas maklum balas anda. Sila bersabar dan tunggu halaman dimuat, atau cuba baiki persekitaran rangkaian anda. Jika anda mempunyai sebarang pertanyaan, anda boleh terus hubungi kami melalui e-mel.\nYang ikhlas,\nFlareFlow",
+        "sw": "Mteja mpendwa, asante kwa maoni yako. Tafadhali kuwa na subira na subiri ukurasa upakie, au jaribu kuboresha mazingira yako ya mtandao. Ikiwa una maswali, unaweza kuendelea kuwasiliana nasi kupitia barua pepe.\nKwa heshima,\nFlareFlow",
+        "nl": "Geachte gebruiker, bedankt voor uw feedback. Wees alstublieft geduldig en wacht tot de pagina is geladen, of probeer uw netwerkomgeving te verbeteren. Als u vragen heeft, kunt u contact met ons opnemen via e-mail.\nMet vriendelijke groet,\nFlareFlow",
+        "ar": "عزيزي المستخدم، شكرًا على ملاحظاتك. يرجى التحلي بالصبر وانتظار تحميل الصفحة، أو محاولة تحسين بيئة الشبكة الخاصة بك. إذا كان لديك أي أسئلة، يمكنك متابعة الاتصال بنا عبر البريد الإلكتروني.\nأطيب التحيات،\nFlareFlow",
+        "da": "Kære bruger, tak for din feedback. Vær venligst tålmodig og vent på, at siden indlæses, eller prøv at forbedre dit netværksmiljø. Hvis du har spørgsmål, kan du fortsætte med at kontakte os via e-mail.\nMed venlig hilsen,\nFlareFlow"
+      }
+    },
+    {
+      "id": "技术问题_028",
+      "category": "技术问题",
+      "scenario": "关闭通知(Push)",
+      "keywords": [
+        "技术问题",
+        "关闭通知(push)",
+        "settings"
+      ],
+      "languages": {
+        "en": "Dear user, we apologize for the bad experience. Here are the steps to disable FlareFlow's notifications on your phone:\n1. Click [Settings] on your phone system.\n2. Click [Notifications].\n3. Find [FlareFlow] and click on it.\n4. Disable the notification.\nIf you have any queries, please feel free to reach out to us via email. Thank you for your support!\nBest Regards,\nFlareFlow",
+        "pt": "Prezado usuário, pedimos desculpas pela má experiência. Aqui estão as etapas para desativar as notificações do FlareFlow no seu telefone:\n1. Clique em [Configurações] no sistema do seu telefone.\n2. Clique em [Notificações].\n3. Encontre [FlareFlow] e clique nele.\n4. Desative a notificação.\nSe você tiver alguma dúvida, sinta-se à vontade para entrar em contato conosco por e-mail. Agradecemos seu apoio!\nAtenciosamente,\nFlareFlow",
+        "es": "Estimado usuario, le pedimos disculpas por la mala experiencia. Aquí tiene los pasos para desactivar las notificaciones de FlareFlow en su teléfono:\n1. Haga clic en [Ajustes] en el sistema de su teléfono.\n2. Haga clic en [Notificaciones].\n3. Busque [FlareFlow] y haga clic en él.\n4. Desactive la notificación.\nSi tiene alguna consulta, no dude en ponerse en contacto con nosotros por correo electrónico. ¡Gracias por su apoyo!\nAtentamente,\nFlareFlow",
+        "fr": "Cher utilisateur, nous nous excusons pour la mauvaise expérience. Voici les étapes pour désactiver les notifications de FlareFlow sur votre téléphone :\n1. Cliquez sur [Paramètres] dans le système de votre téléphone.\n2. Cliquez sur [Notifications].\n3. Trouvez [FlareFlow] et cliquez dessus.\n4. Désactivez la notification.\nSi vous avez des questions, n'hésitez pas à nous contacter par e-mail. Merci de votre soutien !\nCordialement,\nFlareFlow",
+        "id": "Pengguna yang terhormat, kami meminta maaf atas pengalaman buruknya. Berikut adalah langkah-langkah untuk menonaktifkan notifikasi FlareFlow di ponsel Anda:\n1. Klik [Pengaturan] pada sistem ponsel Anda.\n2. Klik [Notifikasi].\n3. Temukan [FlareFlow] dan klik.\n4. Nonaktifkan notifikasi.\nJika Anda memiliki pertanyaan, jangan ragu untuk menghubungi kami via email. Terima kasih atas dukungan Anda!\nHormat kami,\nFlareFlow",
+        "th": "เรียนผู้ใช้ เราขออภัยในประสบการณ์ที่ไม่ดี นี่คือขั้นตอนในการปิดการแจ้งเตือนของ FlareFlow บนโทรศัพท์ของคุณ:\n1. คลิก [การตั้งค่า] ในระบบโทรศัพท์ของคุณ\n2. คลิก [การแจ้งเตือน]\n3. ค้นหา [FlareFlow] และคลิก\n4. ปิดการแจ้งเตือน\nหากคุณมีข้อสงสัยใดๆ กรุณาติดต่อเราทางอีเมล ขอบคุณสำหรับการสนับสนุนของคุณ!\nขอแสดงความนับถือ\nFlareFlow",
+        "ko": "안녕하세요 회원님, 불편한 점 양해 부탁드립니다. 휴대폰에서 FlareFlow 알림을 끄는 방법은 다음과 같습니다:\n1. 휴대폰 시스템에서 [설정]을 클릭합니다.\n2. [알림]을 클릭합니다.\n3. [FlareFlow]를 찾아 클릭합니다.\n4. 알림을 비활성화합니다.\n궁금한 점이 있으시면 이메일을 통해 언제든지 문의해 주시기 바랍니다. 지원해 주셔서 감사합니다!\n감사합니다,\nFlareFlow",
+        "ja": "ユーザー各位、ご不便をおかけし申し訳ございません。お使いの携帯電話でFlareFlowの通知を無効にする手順は以下のとおりです：\n1. 携帯電話のシステムで［設定］をクリックします。\n2. ［通知］をクリックします。\n3. ［FlareFlow］を見つけてクリックします。\n4. 通知を無効にします。\nご質問がございましたら、メールでお気軽にお問い合わせください。ご支援ありがとうございます！\n敬具\nFlareFlow",
+        "it": "Gentile utente, ci scusiamo per la cattiva esperienza. Ecco i passaggi per disabilitare le notifiche di FlareFlow sul suo telefono:\n1. Clicchi [Impostazioni] sul sistema del suo telefono.\n2. Clicchi [Notifiche].\n3. Trovi [FlareFlow] e ci clicchi sopra.\n4. Disabiliti la notifica.\nSe ha domande, non esiti a contattarci via email. Grazie per il suo supporto!\nCordiali saluti,\nFlareFlow",
+        "de": "Sehr geehrter Nutzer, wir entschuldigen uns für die schlechte Erfahrung. Hier sind die Schritte, um die Benachrichtigungen von FlareFlow auf Ihrem Telefon zu deaktivieren:\n1. Tippen Sie auf [Einstellungen] in Ihrem Telefonsystem.\n2. Tippen Sie auf [Benachrichtigungen].\n3. Suchen Sie [FlareFlow] und tippen Sie darauf.\n4. Deaktivieren Sie die Benachrichtigung.\nWenn Sie Fragen haben, können Sie uns gerne per E-Mail kontaktieren. Vielen Dank für Ihre Unterstützung!\nMit freundlichen Grüßen,\nFlareFlow",
+        "ms": "Pengguna yang dihormati, kami memohon maaf atas pengalaman tidak memuaskan. Berikut adalah langkah-langkah untuk menyahdayakan pemberitahuan FlareFlow pada telefon anda:\n1. Klik [Tetapan] pada sistem telefon anda.\n2. Klik [Pemberitahuan].\n3. Cari [FlareFlow] dan klik padanya.\n4. Nyahdayakan pemberitahuan.\nJika anda mempunyai sebarang pertanyaan, sila hubungi kami melalui e-mel. Terima kasih atas sokongan anda!\nYang ikhlas,\nFlareFlow",
+        "sw": "Mteja mpendwa, tunaomba radhi kwa uzoefu mbovu. Hapa hatua za kulemaza arifa za FlareFlow kwenye simu yako:\n1. Bonyeza [Mipangilio] kwenye mfumo wa simu yako.\n2. Bonyeza [Arifa].\n3. Tafuta [FlareFlow] na ubonyeze.\n4. Lemaza arifa.\nIkiwa una maswali yoyote, jisikie huru kutufikia kupitia barua pepe. Asante kwa msaada wako!\nKwa heshima,\nFlareFlow",
+        "nl": "Geachte gebruiker, onze excuses voor het slechte ervaring. Hier zijn de stappen om de meldingen van FlareFlow op uw telefoon uit te schakelen:\n1. Klik op [Instellingen] in het systeem van uw telefoon.\n2. Klik op [Meldingen].\n3. Zoek [FlareFlow] en klik erop.\n4. Schakel de melding uit.\nAls u vragen heeft, aarzel dan niet om contact met ons op te nemen via e-mail. Bedankt voor uw steun!\nMet vriendelijke groet,\nFlareFlow",
+        "ar": "عزيزي المستخدم، نعتذر عن التجربة السيئة. فيما يلي الخطوات لتعطيل إشعارات FlareFlow على هاتفك:\n1. انقر على [الإعدادات] في نظام هاتفك.\n2. انقر على [الإشعارات].\n3. ابحث عن [FlareFlow] وانقر عليه.\n4. قم بتعطيل الإشعار.\nإذا كان لديك أي استفسارات، فلا تتردد في الاتصال بنا عبر البريد الإلكتروني. شكرًا لدعمك!\nأطيب التحيات،\nFlareFlow",
+        "da": "Kære bruger, vi undskylder for den dårlige oplevelse. Her er trinene til at deaktivere FlareFlows notifikationer på din telefon:\n1. Klik på [Indstillinger] på din telefons system.\n2. Klik på [Notifikationer].\n3. Find [FlareFlow] og klik på den.\n4. Deaktivér notifikationen.\nHvis du har spørgsmål, er du velkommen til at kontakte os via e-mail. Tak for din støtte!\nMed venlig hilsen,\nFlareFlow"
+      }
+    },
+    {
+      "id": "账户与登录_029",
+      "category": "账户与登录",
+      "scenario": "订阅(登录问题)",
+      "keywords": [
+        "账户与登录",
+        "订阅(登录问题)",
+        "subscription",
+        "account",
+        "problem",
+        "feedback"
+      ],
+      "languages": {
+        "en": "Dear user, we are sorry for the inconvenience. You can try to view your subscription by logging in with the account you used when you first subscribed. When you log in for the first time, your guest account is automatically bound to that account. Thank you for your feedback. If the above reply does not solve your problem, you can continue to contact us by email.\nSincerely,\nFlareFlow",
+        "pt": "Prezado usuário, lamentamos o inconveniente. Você pode tentar visualizar sua assinatura fazendo login com a conta que usou quando assinou pela primeira vez. Quando você faz login pela primeira vez, sua conta de convidado é automaticamente vinculada a essa conta. Obrigado pelo seu feedback. Se a resposta acima não resolver seu problema, você pode continuar nos contatando por e-mail.\nAtenciosamente,\nFlareFlow",
+        "es": "Estimado usuario, lamentamos las molestias. Puede intentar ver su suscripción iniciando sesión con la cuenta que utilizó cuando se suscribió por primera vez. Cuando inicia sesión por primera vez, su cuenta de invitado se vincula automáticamente a esa cuenta. Gracias por sus comentarios. Si la respuesta anterior no resuelve su problema, puede continuar contactándonos por correo electrónico.\nAtentamente,\nFlareFlow",
+        "fr": "Cher utilisateur, nous sommes désolés pour le désagrément. Vous pouvez essayer de visualiser votre abonnement en vous connectant avec le compte que vous avez utilisé lors de votre premier abonnement. Lorsque vous vous connectez pour la première fois, votre compte invité est automatiquement lié à ce compte. Merci pour vos commentaires. Si la réponse ci-dessus ne résout pas votre problème, vous pouvez continuer à nous contacter par e-mail.\nCordialement,\nFlareFlow",
+        "id": "Pengguna yang terhormat, kami minta maaf atas ketidaknyamanannya. Anda dapat mencoba melihat langganan Anda dengan login menggunakan akun yang Anda gunakan saat pertama kali berlangganan. Saat Anda login untuk pertama kalinya, akun tamu Anda secara otomatis terikat ke akun tersebut. Terima kasih atas masukan Anda. Jika balasan di atas tidak menyelesaikan masalah Anda, Anda dapat terus menghubungi kami melalui email.\nHormat kami,\nFlareFlow",
+        "th": "เรียนผู้ใช้ เราขออภัยในความไม่สะดวก คุณสามารถลองดูการสมัครสมาชิกของคุณโดยเข้าสู่ระบบด้วยบัญชีที่คุณใช้เมื่อสมัครสมาชิกครั้งแรก เมื่อคุณเข้าสู่ระบบครั้งแรก บัญชีผู้ใช้ guest ของคุณจะถูกผูกกับบัญชีนั้นโดยอัตโนมัติ ขอบคุณสำหรับข้อเสนอแนะ หากคำตอบข้างต้นไม่สามารถแก้ปัญหาของคุณได้ คุณสามารถติดต่อเราต่อไปทางอีเมล\nขอแสดงความนับถือ\nFlareFlow",
+        "ko": "안녕하세요 회원님, 불편을 끼쳐 드려 죄송합니다. 처음 구독할 때 사용한 계정으로 로그인하여 구독 내역을 확인해 보시기 바랍니다. 처음 로그인할 때 게스트 계정이 해당 계정에 자동으로 연결됩니다. 피드백 감사드립니다. 위 답변으로 문제가 해결되지 않으면 이메일을 통해 계속 문의해 주시기 바랍니다.\n감사합니다,\nFlareFlow",
+        "ja": "ユーザー各位、ご不便をおかけし申し訳ございません。初回登録時に使用したアカウントでログインして、サブスクリプションを確認してみてください。初回ログイン時、ゲストアカウントは自動的にそのアカウントに紐付けられます。ご意見ありがとうございます。上記の返信で問題が解決しない場合は、メールで引き続きお問い合わせください。\n敬具\nFlareFlow",
+        "it": "Gentile utente, ci scusiamo per l'inconveniente. Può provare a visualizzare il suo abbonamento accedendo con l'account che ha utilizzato quando si è iscritto per la prima volta. Quando accede per la prima volta, il suo account ospite viene automaticamente collegato a quell'account. Grazie per il feedback. Se la risposta di cui sopra non risolve il suo problema, può continuare a contattarci via email.\nCordiali saluti,\nFlareFlow",
+        "de": "Sehr geehrter Nutzer, wir entschuldigen uns für die Unannehmlichkeiten. Sie können versuchen, Ihr Abonnement anzuzeigen, indem Sie sich mit dem Konto anmelden, das Sie bei der erstmaligen Anmeldung verwendet haben. Wenn Sie sich zum ersten Mal anmelden, wird Ihr Gastkonto automatisch an dieses Konto gebunden. Vielen Dank für Ihr Feedback. Wenn die obige Antwort Ihr Problem nicht löst, können Sie uns weiterhin per E-Mail kontaktieren.\nMit freundlichen Grüßen,\nFlareFlow",
+        "ms": "Pengguna yang dihormati, kami memohon maaf atas kesulitan yang dialami. Anda boleh cuba lihat langganan anda dengan log masuk menggunakan akaun yang anda gunakan semasa langganan pertama. Apabila anda log masuk buat pertama kali, akaun tetamu anda secara automatik terikat kepada akaun tersebut. Terima kasih atas maklum balas anda. Jika balasan di atas tidak menyelesaikan masalah anda, anda boleh terus hubungi kami melalui e-mel.\nYang ikhlas,\nFlareFlow",
+        "sw": "Mteja mpendwa, tunaomba radhi kwa usumbufu. Unaweza kujaribu kutazama usajili wako kwa kuingia kwa kutumia akaunti uliyotumia wakati wa kujiunga kwa mara ya kwanza. Unapoingia kwa mara ya kwanza, akaunti yako ya mgeni inafungwa moja kwa moja kwa akaunti hiyo. Asante kwa maoni yako. Ikiwa jibu hapo juu halitatua shida yako, unaweza kuendelea kuwasiliana nasi kupitia barua pepe.\nKwa heshima,\nFlareFlow",
+        "nl": "Geachte gebruiker, het spijt ons voor het ongemak. U kunt proberen uw abonnement te bekijken door in te loggen met het account dat u gebruikte toen u zich voor het eerst abonneerde. Wanneer u voor de eerste keer inlogt, wordt uw gastaccount automatisch aan dat account gekoppeld. Bedankt voor uw feedback. Als het bovenstaande antwoord uw probleem niet oplost, kunt u contact met ons opnemen via e-mail.\nMet vriendelijke groet,\nFlareFlow",
+        "ar": "عزيزي المستخدم، نحن آسفون للإزعاج. يمكنك محاولة عرض اشتراكك عن طريق تسجيل الدخول باستخدام الحساب الذي استخدمته عند الاشتراك لأول مرة. عند تسجيل الدخول لأول مرة، يتم ربط حساب الضيف الخاص بك تلقائيًا بهذا الحساب. شكرًا على ملاحظاتك. إذا لم يحل الرد أعلاه مشكلتك، يمكنك متابعة الاتصال بنا عبر البريد الإلكتروني.\nأطيب التحيات،\nFlareFlow",
+        "da": "Kære bruger, vi beklager ulejligheden. Du kan prøve at se dit abonnement ved at logge ind med den konto, du brugte, da du første gang abonnerede. Når du logger ind for første gang, bliver din gæstekonto automatisk bundet til den konto. Tak for din feedback. Hvis ovenstående svar ikke løser dit problem, kan du fortsætte med at kontakte os via e-mail.\nMed venlig hilsen,\nFlareFlow"
+      }
+    },
+    {
+      "id": "账户与登录_030",
+      "category": "账户与登录",
+      "scenario": "绑定Facebook",
+      "keywords": [
+        "账户与登录",
+        "绑定facebook",
+        "account",
+        "feedback"
+      ],
+      "languages": {
+        "en": "Dear user, thank you for your feedback. After checking, you have not bound your Facebook account yet and need to rebind it. If you have any questions, you can continue to contact us via email.\nRegards,\nFlareFlow",
+        "pt": "Prezado usuário, agradecemos seu feedback. Após verificação, você ainda não vinculou sua conta do Facebook e precisa vinculá-la novamente. Se você tiver alguma dúvida, pode continuar nos contatando por e-mail.\nAtenciosamente,\nFlareFlow",
+        "es": "Estimado usuario, gracias por sus comentarios. Después de comprobarlo, aún no ha vinculado su cuenta de Facebook y necesita volver a vincularla. Si tiene alguna pregunta, puede continuar contactándonos por correo electrónico.\nAtentamente,\nFlareFlow",
+        "fr": "Cher utilisateur, merci pour vos commentaires. Après vérification, vous n'avez pas encore lié votre compte Facebook et devez le relier. Si vous avez des questions, vous pouvez continuer à nous contacter par e-mail.\nCordialement,\nFlareFlow",
+        "id": "Pengguna yang terhormat, terima kasih atas masukan Anda. Setelah diperiksa, Anda belum mengikat akun Facebook Anda dan perlu mengikatnya kembali. Jika Anda memiliki pertanyaan, Anda dapat terus menghubungi kami via email.\nHormat kami,\nFlareFlow",
+        "th": "เรียนผู้ใช้ ขอบคุณสำหรับข้อเสนอแนะ หลังจากตรวจสอบแล้ว คุณยังไม่ได้ผูกบัญชี Facebook และจำเป็นต้องผูกใหม่ หากคุณมีคำถามใดๆ คุณสามารถติดต่อเราต่อไปทางอีเมล\nขอแสดงความนับถือ\nFlareFlow",
+        "ko": "안녕하세요 회원님, 피드백 감사드립니다. 확인 결과, 아직 Facebook 계정을 연동하지 않으셨으며 재연동이 필요합니다. 궁금한 점이 있으시면 이메일을 통해 계속 문의해 주시기 바랍니다.\n감사합니다,\nFlareFlow",
+        "ja": "ユーザー各位、フィードバックありがとうございます。確認したところ、まだFacebookアカウントを連携しておらず、再連携が必要です。ご質問がございましたら、引き続きメールでお問い合わせください。\n敬具\nFlareFlow",
+        "it": "Gentile utente, grazie per il suo feedback. Dopo aver verificato, non ha ancora collegato il suo account Facebook e deve ricollocarlo. Se ha domande, può continuare a contattarci via email.\nCordiali saluti,\nFlareFlow",
+        "de": "Sehr geehrter Nutzer, vielen Dank für Ihr Feedback. Nach der Überprüfung haben Sie Ihr Facebook-Konto noch nicht gebunden und müssen es erneut binden. Wenn Sie Fragen haben, können Sie uns weiterhin per E-Mail kontaktieren.\nMit freundlichen Grüßen,\nFlareFlow",
+        "ms": "Pengguna yang dihormati, terima kasih atas maklum balas anda. Selepas disemak, anda belum mengikat akaun Facebook anda dan perlu mengikat semula. Jika anda mempunyai sebarang pertanyaan, anda boleh terus hubungi kami melalui e-mel.\nYang ikhlas,\nFlareFlow",
+        "sw": "Mteja mpendwa, asante kwa maoni yako. Baada ya kuangalia, haujafunga akaunti yako ya Facebook bado na unahitaji kufunga tena. Ikiwa una maswali, unaweza kuendelea kuwasiliana nasi kupitia barua pepe.\nKwa heshima,\nFlareFlow",
+        "nl": "Geachte gebruiker, bedankt voor uw feedback. Na controle blijkt dat u uw Facebook-account nog niet heeft gebonden en deze opnieuw moet binden. Als u vragen heeft, kunt u contact met ons opnemen via e-mail.\nMet vriendelijke groet,\nFlareFlow",
+        "ar": "عزيزي المستخدم، شكرًا على ملاحظاتك. بعد التحقق، لم تقم بربط حساب Facebook الخاص بك بعد وتحتاج إلى إعادة ربطه. إذا كان لديك أي أسئلة، يمكنك متابعة الاتصال بنا عبر البريد الإلكتروني.\nأطيب التحيات،\nFlareFlow",
+        "da": "Kære bruger, tak for din feedback. Efter tjek har du ikke bundet din Facebook-konto endnu og har brug for at genbindе den. Hvis du har spørgsmål, kan du fortsætte med at kontakte os via e-mail.\nMed venlig hilsen,\nFlareFlow"
+      }
+    },
+    {
+      "id": "账户与登录_031",
+      "category": "账户与登录",
+      "scenario": "谷歌登录而非Facebook",
+      "keywords": [
+        "账户与登录",
+        "谷歌登录而非facebook",
+        "account",
+        "login",
+        "feedback"
+      ],
+      "languages": {
+        "en": "Dear user, thank you for your feedback. After checking, you are logged in through a Google account, not a Facebook login. If you have any questions, you can continue to contact us via email.\nRegards,\nFlareFlow",
+        "pt": "Prezado usuário, agradecemos seu feedback. Após verificação, você está conectado através de uma conta do Google, não de um login do Facebook. Se você tiver alguma dúvida, pode continuar nos contatando por e-mail.\nAtenciosamente,\nFlareFlow",
+        "es": "Estimado usuario, gracias por sus comentarios. Después de comprobarlo, ha iniciado sesión a través de una cuenta de Google, no a través de Facebook. Si tiene alguna pregunta, puede continuar contactándonos por correo electrónico.\nAtentamente,\nFlareFlow",
+        "fr": "Cher utilisateur, merci pour vos commentaires. Après vérification, vous êtes connecté via un compte Google, et non via une connexion Facebook. Si vous avez des questions, vous pouvez continuer à nous contacter par e-mail.\nCordialement,\nFlareFlow",
+        "id": "Pengguna yang terhormat, terima kasih atas masukan Anda. Setelah diperiksa, Anda login melalui akun Google, bukan login Facebook. Jika Anda memiliki pertanyaan, Anda dapat terus menghubungi kami via email.\nHormat kami,\nFlareFlow",
+        "th": "เรียนผู้ใช้ ขอบคุณสำหรับข้อเสนอแนะ หลังจากตรวจสอบแล้ว คุณเข้าสู่ระบบผ่านบัญชี Google ไม่ใช่การเข้าสู่ระบบ Facebook หากคุณมีคำถามใดๆ คุณสามารถติดต่อเราต่อไปทางอีเมล\nขอแสดงความนับถือ\nFlareFlow",
+        "ko": "안녕하세요 회원님, 피드백 감사드립니다. 확인 결과, Facebook 로그인이 아닌 Google 계정을 통해 로그인되어 있습니다. 궁금한 점이 있으시면 이메일을 통해 계속 문의해 주시기 바랍니다.\n감사합니다,\nFlareFlow",
+        "ja": "ユーザー各位、フィードバックありがとうございます。確認したところ、Facebookログインではなく、Googleアカウントを通じてログインされています。ご質問がございましたら、引き続きメールでお問い合わせください。\n敬具\nFlareFlow",
+        "it": "Gentile utente, grazie per il suo feedback. Dopo aver verificato, ha effettuato l'accesso tramite un account Google, non tramite un accesso Facebook. Se ha domande, può continuare a contattarci via email.\nCordiali saluti,\nFlareFlow",
+        "de": "Sehr geehrter Nutzer, vielen Dank für Ihr Feedback. Nach der Überprüfung sind Sie über ein Google-Konto angemeldet, nicht über Facebook. Wenn Sie Fragen haben, können Sie uns weiterhin per E-Mail kontaktieren.\nMit freundlichen Grüßen,\nFlareFlow",
+        "ms": "Pengguna yang dihormati, terima kasih atas maklum balas anda. Selepas disemak, anda log masuk melalui akaun Google, bukan log masuk Facebook. Jika anda mempunyai sebarang pertanyaan, anda boleh terus hubungi kami melalui e-mel.\nYang ikhlas,\nFlareFlow",
+        "sw": "Mteja mpendwa, asante kwa maoni yako. Baada ya kuangalia, umeingia kupitia akaunti ya Google, sio kuingia kwa Facebook. Ikiwa una maswali, unaweza kuendelea kuwasiliana nasi kupitia barua pepe.\nKwa heshima,\nFlareFlow",
+        "nl": "Geachte gebruiker, bedankt voor uw feedback. Na controle blijkt dat u bent ingelogd via een Google-account, niet via Facebook. Als u vragen heeft, kunt u contact met ons opnemen via e-mail.\nMet vriendelijke groet,\nFlareFlow",
+        "ar": "عزيزي المستخدم، شكرًا على ملاحظاتك. بعد التحقق، أنت مسجل الدخول عبر حساب Google، وليس تسجيل الدخول عبر Facebook. إذا كان لديك أي أسئلة، يمكنك متابعة الاتصال بنا عبر البريد الإلكتروني.\nأطيب التحيات،\nFlareFlow",
+        "da": "Kære bruger, tak for din feedback. Efter tjek er du logget ind via en Google-konto, ikke en Facebook-login. Hvis du har spørgsmål, kan du fortsætte med at kontakte os via e-mail.\nMed venlig hilsen,\nFlareFlow"
+      }
+    },
+    {
+      "id": "功能与活动_032",
+      "category": "功能与活动",
+      "scenario": "优惠活动已结束",
+      "keywords": [
+        "功能与活动",
+        "优惠活动已结束",
+        "feedback"
+      ],
+      "languages": {
+        "en": "Dear User, thank you for your feedback. The limited-time promotion has ended. Prices have returned to normal. If you have any questions, please continue to send us your feedback via email.\nRegards,\nFlareFlow",
+        "pt": "Prezado Usuário, agradecemos seu feedback. A promoção por tempo limitado terminou. Os preços voltaram ao normal. Se você tiver alguma dúvida, continue nos enviando seu feedback por e-mail.\nAtenciosamente,\nFlareFlow",
+        "es": "Estimado Usuario, gracias por sus comentarios. La promoción por tiempo limitado ha terminado. Los precios han vuelto a la normalidad. Si tiene alguna pregunta, continúe enviándonos sus comentarios por correo electrónico.\nAtentamente,\nFlareFlow",
+        "fr": "Cher Utilisateur, merci pour vos commentaires. La promotion à durée limitée est terminée. Les prix sont revenus à la normale. Si vous avez des questions, veuillez continuer à nous envoyer vos commentaires par e-mail.\nCordialement,\nFlareFlow",
+        "id": "Yang Terhormat, terima kasih atas masukan Anda. Promo terbatas telah berakhir. Harga telah kembali normal. Jika Anda memiliki pertanyaan, silakan terus kirimkan masukan Anda kepada kami via email.\nHormat kami,\nFlareFlow",
+        "th": "เรียนผู้ใช้ ขอบคุณสำหรับข้อเสนอแนะ โปรโมชั่นช่วงเวลาจำกัดได้สิ้นสุดลงแล้ว ราคาได้กลับสู่ปกติแล้ว หากคุณมีคำถามใดๆ กรุณาส่งข้อเสนอแนะของคุณต่อให้เราทางอีเมล\nขอแสดงความนับถือ\nFlareFlow",
+        "ko": "안녕하세요 회원님, 피드백 감사드립니다. 한정판 프로모션이 종료되었습니다. 가격이 정상으로 돌아왔습니다. 궁금한 점이 있으시면 이메일을 통해 계속 피드백을 보내주시기 바랍니다.\n감사합니다,\nFlareFlow",
+        "ja": "ユーザー各位、フィードバックありがとうございます。期間限定プロモーションは終了しました。価格は通常に戻りました。ご質問がございましたら、引き続きメールでフィードバックをお送りください。\n敬具\nFlareFlow",
+        "it": "Gentile Utente, grazie per il suo feedback. La promozione a tempo limitato è terminata. I prezzi sono tornati alla normalità. Se ha domande, continui a inviarci il suo feedback via email.\nCordiali saluti,\nFlareFlow",
+        "de": "Sehr geehrter Benutzer, vielen Dank für Ihr Feedback. Die zeitlich begrenzte Aktion ist beendet. Die Preise sind wieder normal. Wenn Sie Fragen haben, senden Sie uns bitte weiterhin Ihr Feedback per E-Mail.\nMit freundlichen Grüßen,\nFlareFlow",
+        "ms": "Pengguna yang dihormati, terima kasih atas maklum balas anda. Promosi terhad telah tamat. Harga telah kembali normal. Jika anda mempunyai sebarang pertanyaan, sila terus hantar maklum balas anda kepada kami melalui e-mel.\nYang ikhlas,\nFlareFlow",
+        "sw": "Mteja Mpendwa, asante kwa maoni yako. Ufadhili wa muda mwepesi umekwisha. Bei zimerudi kawaida. Ikiwa una maswali, tafadhali endelea kututumia maoni yako kupitia barua pepe.\nKwa heshima,\nFlareFlow",
+        "nl": "Geachte Gebruiker, bedankt voor uw feedback. De limited-time promotie is afgelopen. De prijzen zijn weer normaal. Als u vragen heeft, blijf ons dan uw feedback sturen via e-mail.\nMet vriendelijke groet,\nFlareFlow",
+        "ar": "عزيزي المستخدم، شكرًا على ملاحظاتك. انتهت الترويج المحدود الوقت. عادت الأسعار إلى وضعها الطبيعي. إذا كان لديك أي أسئلة، يرجى متابعة إرسال ملاحظاتك إلينا عبر البريد الإلكتروني.\nأطيب التحيات،\nFlareFlow",
+        "da": "Kære Bruger, tak for din feedback. Den tidsbegrænsede kampagne er afsluttet. Priserne er vendt tilbage til normalen. Hvis du har spørgsmål, bedes du fortsætte med at sende os din feedback via e-mail.\nMed venlig hilsen,\nFlareFlow"
+      }
+    },
+    {
+      "id": "功能与活动_033",
+      "category": "功能与活动",
+      "scenario": "太贵了",
+      "keywords": [
+        "功能与活动",
+        "太贵了",
+        "feedback"
+      ],
+      "languages": {
+        "en": "Dear user, thank you for your feedback. We truly appreciate your interest in our product and understand that cost is an important factor in your decision-making. We will consider running promotion or discount campaigns in the future.\nRegards,\nFlareFlow",
+        "pt": "Prezado usuário, agradecemos seu feedback. Nós realmente apreciamos seu interesse em nosso produto e entendemos que o custo é um fator importante em sua decisão. Consideraremos realizar campanhas promocionais ou de desconto no futuro.\nAtenciosamente,\nFlareFlow",
+        "es": "Estimado usuario, gracias por sus comentarios. Realmente apreciamos su interés en nuestro producto y entendemos que el costo es un factor importante en su toma de decisiones. Consideraremos realizar campañas de promoción o descuento en el futuro.\nAtentamente,\nFlareFlow",
+        "fr": "Cher utilisateur, merci pour vos commentaires. Nous apprécions vraiment votre intérêt pour notre produit et comprenons que le coût est un facteur important dans votre prise de décision. Nous envisagerons d'organiser des campagnes de promotion ou de réduction à l'avenir.\nCordialement,\nFlareFlow",
+        "id": "Pengguna yang terhormat, terima kasih atas masukan Anda. Kami sangat menghargai minat Anda pada produk kami dan memahami bahwa biaya adalah faktor penting dalam pengambilan keputusan Anda. Kami akan mempertimbangkan untuk menjalankan kampanye promosi atau diskon di masa depan.\nHormat kami,\nFlareFlow",
+        "th": "เรียนผู้ใช้ ขอบคุณสำหรับข้อเสนอแนะ เราขอขอบคุณอย่างจริงใจสำหรับความสนใจในผลิตภัณฑ์ของเราและเข้าใจว่าค่าใช้จ่ายเป็นปัจจัยสำคัญในการตัดสินใจของคุณ เราจะพิจารณาจัดแคมเปญโปรโมชั่นหรือส่วนลดในอนาคต\nขอแสดงความนับถือ\nFlareFlow",
+        "ko": "안녕하세요 회원님, 피드백 감사드립니다. 저희 제품에 대한 관심을 가져주셔서 진심으로 감사드리며, 비용이 의사 결정에 중요한 요소라는 점을 이해합니다. 향후 프로모션 또는 할인 캠페인을 실시하는 것을 고려하겠습니다.\n감사합니다,\nFlareFlow",
+        "ja": "ユーザー各位、フィードバックありがとうございます。当社製品にご関心をお持ちいただき誠にありがとうございます。また、コストが意思決定における重要な要素であることを理解しております。今後のプロモーションや割引キャンペーンの実施を検討してまいります。\n敬具\nFlareFlow",
+        "it": "Gentile utente, grazie per il suo feedback. Apprezziamo molto il suo interesse per il nostro prodotto e comprendiamo che il costo è un fattore importante nella sua decisione. Valuteremo di eseguire campagne promozionali o sconti in futuro.\nCordiali saluti,\nFlareFlow",
+        "de": "Sehr geehrter Nutzer, vielen Dank für Ihr Feedback. Wir schätzen Ihr Interesse an unserem Produkt sehr und verstehen, dass die Kosten ein wichtiger Faktor bei Ihrer Entscheidung sind. Wir werden in Erwägung ziehen, in Zukunft Werbe- oder Rabattaktionen durchzuführen.\nMit freundlichen Grüßen,\nFlareFlow",
+        "ms": "Pengguna yang dihormati, terima kasih atas maklum balas anda. Kami sangat menghargai minat anda terhadap produk kami dan memahami bahawa kos adalah faktor penting dalam pembuatan keputusan anda. Kami akan pertimbangkan untuk menjalankan kempen promosi atau diskaun pada masa hadapan.\nYang ikhlas,\nFlareFlow",
+        "sw": "Mteja mpendwa, asante kwa maoni yako. Tunathamini sana nia yako kwa bidhaa yetu na kuelewa kuwa gharama ni jambo muhimu katika uamuzi wako. Tutazingatia kuendesha kampeni za promosheni au punguzo la bei baadaye.\nKwa heshima,\nFlareFlow",
+        "nl": "Geachte gebruiker, bedankt voor uw feedback. Wij waarderen uw interesse in ons product zeer en begrijpen dat kosten een belangrijke factor zijn in uw besluitvorming. Wij zullen overwegen in de toekomst promotie- of kortingscampagnes uit te voeren.\nMet vriendelijke groet,\nFlareFlow",
+        "ar": "عزيزي المستخدم، شكرًا على ملاحظاتك. نحن نقدر حقًا اهتمامك بمنتجنا ونفهم أن التكلفة عامل مهم في قرارك. سنفكر في تشغيل حملات ترويجية أو خصم في المستقبل.\nأطيب التحيات،\nFlareFlow",
+        "da": "Kære bruger, tak for din feedback. Vi værdsætter virkelig din interesse for vores produkt og forstår, at omkostninger er en vigtig faktor i din beslutningstagning. Vi vil overveje at køre kampagner eller rabatkampagner i fremtiden.\nMed venlig hilsen,\nFlareFlow"
+      }
+    },
+    {
+      "id": "功能与活动_034",
+      "category": "功能与活动",
+      "scenario": "用户询问其他支付方式",
+      "keywords": [
+        "功能与活动",
+        "用户询问其他支付方式",
+        "payment"
+      ],
+      "languages": {
+        "en": "Dear user, we are sorry for the bad experience. Currently, you can only pay through Apple Pay and Google Pay. We will try to further extend the payment selection in future versions. We apologize for the inconvenience caused.\nRegards,\nFlareFlow",
+        "pt": "Prezado usuário, lamentamos pela má experiência. Atualmente, você só pode pagar através do Apple Pay e Google Pay. Tentaremos estender ainda mais a seleção de pagamento em versões futuras. Pedimos desculpas pelo inconveniente causado.\nAtenciosamente,\nFlareFlow",
+        "es": "Estimado usuario, lamentamos la mala experiencia. Actualmente, solo puede pagar a través de Apple Pay y Google Pay. Intentaremos ampliar aún más la selección de pagos en versiones futuras. Nos disculpamos por las molestias causadas.\nAtentamente,\nFlareFlow",
+        "fr": "Cher utilisateur, nous sommes désolés pour la mauvaise expérience. Actuellement, vous ne pouvez payer qu'via Apple Pay et Google Pay. Nous essaierons d'étendre davantage la sélection de paiement dans les versions futures. Nous nous excusons pour le désagrément causé.\nCordialement,\nFlareFlow",
+        "id": "Pengguna yang terhormat, kami minta maaf atas pengalaman buruknya. Saat ini, Anda hanya dapat membayar melalui Apple Pay dan Google Pay. Kami akan mencoba untuk lebih memperluas pilihan pembayaran di versi mendatang. Kami meminta maaf atas ketidaknyamanan yang ditimbulkan.\nHormat kami,\nFlareFlow",
+        "th": "เรียนผู้ใช้ เราขออภัยในประสบการณ์ที่ไม่ดี ในปัจจุบัน คุณสามารถชำระเงินผ่าน Apple Pay และ Google Pay เท่านั้น เราจะพยายามขยายการเลือกการชำระเงินเพิ่มเติมในเวอร์ชันอนาคต ขออภัยในความไม่สะดวกที่เกิดขึ้น\nขอแสดงความนับถือ\nFlareFlow",
+        "ko": "안녕하세요 회원님, 불편한 점 양해 부탁드립니다. 현재는 Apple Pay와 Google Pay를 통해서만 결제가 가능합니다. 향후 버전에서는 결제 수단을 더 확대해 나가도록 하겠습니다. 불편을 끼쳐 드려 죄송합니다.\n감사합니다,\nFlareFlow",
+        "ja": "ユーザー各位、ご不便をおかけし申し訳ございません。現在、お支払いはApple PayとGoogle Payのみご利用いただけます。今後のバージョンで決済方法の拡充を図ってまいります。ご不便をおかけして申し訳ございません。\n敬具\nFlareFlow",
+        "it": "Gentile utente, ci scusiamo per la cattiva esperienza. Attualmente, è possibile pagare solo tramite Apple Pay e Google Pay. Cercheremo di estendere ulteriormente la selezione di pagamento nelle versioni future. Ci scusiamo per l'inconveniente causato.\nCordiali saluti,\nFlareFlow",
+        "de": "Sehr geehrter Nutzer, wir entschuldigen uns für die schlechte Erfahrung. Derzeit können Sie nur mit Apple Pay und Google Pay bezahlen. Wir werden versuchen, die Auswahl der Zahlungsmöglichkeiten in zukünftigen Versionen weiter auszubauen. Wir entschuldigen uns für die verursachten Unannehmlichkeiten.\nMit freundlichen Grüßen,\nFlareFlow",
+        "ms": "Pengguna yang dihormati, kami memohon maaf atas pengalaman tidak memuaskan. Buat masa ini, anda hanya boleh bayar melalui Apple Pay dan Google Pay. Kami akan cuba tambah lagi pilihan pembayaran dalam versi akan datang. Kami memohon maaf atas kesulitan yang disebabkan.\nYang ikhlas,\nFlareFlow",
+        "sw": "Mteja mpendwa, tunaomba radhi kwa uzoefu mbovu. Kwa sasa, unaweza kulipa tu kupitia Apple Pay na Google Pay. Tutajaribu kupanua zaidi uteuzi wa malipo katika matoleo ya baadaye. Tunaomba radhi kwa usumbufu uliosababishwa.\nKwa heshima,\nFlareFlow",
+        "nl": "Geachte gebruiker, het spijt ons voor het slechte ervaring. Momenteel kunt u alleen betalen via Apple Pay en Google Pay. We zullen proberen de betalingskeuze in toekomstige versies verder uit te breiden. Onze excuses voor het veroorzaakte ongemak.\nMet vriendelijke groet,\nFlareFlow",
+        "ar": "عزيزي المستخدم، نحن آسفون للتجربة السيئة. حاليًا، يمكنك الدفع فقط through Apple Pay وGoogle Pay. سنحاول توسيع خيارات الدفع further في الإصدارات المستقبلية. نعتذر عن الإزعاج الذي تسببنا فيه.\nأطيب التحيات،\nFlareFlow",
+        "da": "Kære bruger, vi beklager den dårlige oplevelse. I øjeblikket kan du kun betale via Apple Pay og Google Pay. Vi vil forsøge at udvide betalingsudvalget yderligere i fremtidige versioner. Vi undskylder for den forårsagede ulejlighed.\nMed venlig hilsen,\nFlareFlow"
+      }
+    },
+    {
+      "id": "查询与状态确认_035",
+      "category": "查询与状态确认",
+      "scenario": "金币已使用(示例，需更改日期)",
+      "keywords": [
+        "查询与状态确认",
+        "金币已使用(示例，需更改日期)",
+        "feedback"
+      ],
+      "languages": {
+        "en": "Dear user, thank you for your feedback. After checking, your currency has been used on May 5. If you still have questions, you can continue to contact us.\nBest wishes,\nFlareFlow",
+        "pt": "Prezado usuário, agradecemos seu feedback. Após verificação, sua moeda foi usada em 5 de maio. Se você ainda tiver dúvidas, pode continuar nos contatando.\nMelhores cumprimentos,\nFlareFlow",
+        "es": "Estimado usuario, gracias por sus comentarios. Después de comprobarlo, su moneda se utilizó el 5 de mayo. Si todavía tiene preguntas, puede continuar contactándonos.\nMis mejores deseos,\nFlareFlow",
+        "fr": "Cher utilisateur, merci pour vos commentaires. Après vérification, votre monnaie a été utilisée le 5 mai. Si vous avez encore des questions, vous pouvez continuer à nous contacter.\nMeilleures salutations,\nFlareFlow",
+        "id": "Pengguna yang terhormat, terima kasih atas masukan Anda. Setelah diperiksa, mata uang Anda telah digunakan pada 5 Mei. Jika Anda masih memiliki pertanyaan, Anda dapat terus menghubungi kami.\nSalam hangat,\nFlareFlow",
+        "th": "เรียนผู้ใช้ ขอบคุณสำหรับข้อเสนอแนะ หลังจากตรวจสอบแล้ว สกุลเงินของคุณถูกใช้เมื่อวันที่ 5 พฤษภาคม หากคุณยังมีคำถาม คุณสามารถติดต่อเราต่อไป\nด้วยความปรารถนาดี\nFlareFlow",
+        "ko": "안녕하세요 회원님, 피드백 감사드립니다. 확인 결과, 5월 5일에 코인이 사용되었습니다. 추가 문의사항이 있으시면 계속 연락 주시기 바랍니다.\n감사합니다,\nFlareFlow",
+        "ja": "ユーザー各位、フィードバックありがとうございます。確認したところ、5月5日にコインが使用されました。ご質問がまだございましたら、引き続きご連絡ください。\n敬具\nFlareFlow",
+        "it": "Gentile utente, grazie per il suo feedback. Dopo aver verificato, la sua valuta è stata utilizzata il 5 maggio. Se ha ancora domande, può continuare a contattarci.\nI migliori saluti,\nFlareFlow",
+        "de": "Sehr geehrter Nutzer, vielen Dank für Ihr Feedback. Nach Überprüfung wurde Ihre Währung am 5. Mai verwendet. Wenn Sie noch Fragen haben, können Sie uns weiterhin kontaktieren.\nMit freundlichen Grüßen,\nFlareFlow",
+        "ms": "Pengguna yang dihormati, terima kasih atas maklum balas anda. Selepas disemak, mata wang anda telah digunakan pada 5 Mei. Jika anda masih mempunyai soalan, anda boleh terus hubungi kami.\nDengan harapan yang terbaik,\nFlareFlow",
+        "sw": "Mteja mpendwa, asante kwa maoni yako. Baada ya kuangalia, sarafu yako imetumika tarehe 5 Mei. Ikiwa bado una maswali, unaweza kuendelea kuwasiliana nasi.\nKwa heri njema,\nFlareFlow",
+        "nl": "Geachte gebruiker, bedankt voor uw feedback. Na controle is gebleken dat uw valuta op 5 mei is gebruikt. Als u nog vragen heeft, kunt u contact met ons opnemen.\nMet vriendelijke groet,\nFlareFlow",
+        "ar": "عزيزي المستخدم، شكرًا على ملاحظاتك. بعد التحقق، تم استخدام عملتك في 5 مايو. إذا كان لديك still أسئلة، يمكنك متابعة الاتصال بنا.\nأطيب التحيات،\nFlareFlow",
+        "da": "Kære bruger, tak for din feedback. Efter tjek kan vi oplyse, at din valuta er blevet brugt den 5. maj. Hvis du stadig har spørgsmål, kan du fortsætte med at kontakte os.\nMed venlig hilsen,\nFlareFlow"
+      }
+    }
+  ]
+}
