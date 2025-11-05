@@ -52,7 +52,8 @@ Thanks`,
     const analysis = await zhipuAI.analyzeEmail(subscriptionEmail);
     console.log(`Category:   ${analysis.category}`);
     console.log(`Sentiment:  ${analysis.sentiment}`);
-    console.log(`Priority:   ${analysis.priority}\n`);
+    console.log(`Priority:   ${analysis.priority}`);
+    console.log(`Important:  ${analysis.isImportant ? '✅ Needs Reply' : '❌ Skip'}\n`);
 
     // Generate response with templates
     console.log('💬 Step 2: Generating response with template matching...\n');

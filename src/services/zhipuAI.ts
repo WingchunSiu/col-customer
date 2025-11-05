@@ -125,11 +125,7 @@ export class ZhipuAIService {
 
 1. Keeping the template structure and main content EXACTLY as is
 2. Only fill in or adjust user-specific details like:
-   - User name (if available): ${email.from.name || 'user'}
-   - Order ID: ${email.orderId || 'N/A'}
-   - Device info: ${email.deviceInfo || 'N/A'}
-   - App version: ${email.appVersion || 'N/A'}
-   - Subject: ${email.subject}
+ 
 3. If the template asks for information the user already provided, acknowledge it
 4. Keep the same tone, structure, and language (${language})
 
@@ -155,23 +151,47 @@ Personalized Response:`;
     sentiment: string;
     priority: 'low' | 'medium' | 'high' | 'urgent';
     suggestedActions: string[];
+    isImportant: boolean;
   }> {
+    // Get available categories from template retriever
+    const availableCategories = this.templateRetriever?.getCategories() || [
+      '充值与订阅',
+      '退款相关',
+      '技术问题',
+      '账户与登录',
+      '内容与功能',
+      '信息收集与跟进',
+      '功能与活动',
+      '查询与状态确认',
+      '问题解决与关闭'
+    ];
+
     const prompt = `Analyze this customer support email and provide:
-1. Category (bug report, feature request, billing issue, general inquiry, etc.)
-2. Sentiment (positive, neutral, negative, frustrated)
-3. Priority (low, medium, high, urgent)
-4. Suggested actions (as a JSON array)
+
+1. Category: Choose EXACTLY ONE from this list (must match exactly):
+   ${availableCategories.map(c => `- ${c}`).join('\n   ')}
+
+2. Sentiment: positive, neutral, negative, or frustrated
+
+3. Priority: low, medium, high, or urgent
+
+4. Is Important: true if this requires a response, false if it's spam/irrelevant/unimportant feedback
+
+5. Suggested actions (as a JSON array)
 
 Email Details:
-From: ${email.from}
+From: ${email.from.address}
 Subject: ${email.subject}
 Content: ${email.text}
+
+IMPORTANT: The category MUST be one of the exact values from the list above.
 
 Respond in JSON format only:
 {
   "category": "...",
   "sentiment": "...",
   "priority": "...",
+  "isImportant": true/false,
   "suggestedActions": ["..."]
 }`;
 
@@ -191,9 +211,10 @@ Respond in JSON format only:
     } catch (error) {
       console.error('Failed to parse AI analysis:', error);
       return {
-        category: 'general inquiry',
+        category: '信息收集与跟进',
         sentiment: 'neutral',
         priority: 'medium',
+        isImportant: true,
         suggestedActions: ['Review manually'],
       };
     }
@@ -228,6 +249,11 @@ Respond in JSON format only:
 
     if (!data.choices || data.choices.length === 0) {
       throw new Error('No response from Zhipu AI');
+    }
+
+    // Log token usage if available
+    if (data.usage) {
+      console.log(`[Zhipu AI] Tokens - Input: ${data.usage.prompt_tokens}, Output: ${data.usage.completion_tokens}, Total: ${data.usage.total_tokens}`);
     }
 
     return data.choices[0].message.content;

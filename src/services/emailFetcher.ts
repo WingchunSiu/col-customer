@@ -191,6 +191,125 @@ export class EmailFetcher {
   }
 
   /**
+   * Fetch all emails (including read ones) from INBOX
+   * @param limit Maximum number of emails to fetch
+   * @param filter Optional date-based filter
+   * @returns Array of parsed email messages
+   */
+  async fetchAllEmails(
+    limit: number = 50,
+    filter?: Date | EmailDateFilter
+  ): Promise<EmailMessage[]> {
+    if (!this.connected) {
+      throw new Error('IMAP not connected. Call connect() first.');
+    }
+
+    const dateFilter = this.normalizeDateFilter(filter);
+
+    return new Promise((resolve, reject) => {
+      this.imap.openBox('INBOX', false, (err, box) => {
+        if (err) {
+          reject(err);
+          return;
+        }
+
+        // Build search criteria: ALL (no UNSEEN filter) + optional date filter
+        const searchCriteria: any[] = ['ALL'];
+        if (dateFilter) {
+          if (dateFilter.on) {
+            searchCriteria.push(['ON', dateFilter.on]);
+          } else {
+            if (dateFilter.since) {
+              searchCriteria.push(['SINCE', dateFilter.since]);
+            }
+            if (dateFilter.before) {
+              searchCriteria.push(['BEFORE', dateFilter.before]);
+            }
+          }
+        }
+
+        this.imap.search(searchCriteria, (searchErr, results) => {
+          if (searchErr) {
+            reject(searchErr);
+            return;
+          }
+
+          if (!results || results.length === 0) {
+            console.log('📭 No emails found.');
+            resolve([]);
+            return;
+          }
+
+          // Limit results and get most recent
+          const limitedResults = results.slice(-limit);
+          console.log(`📬 Found ${results.length} email(s), fetching last ${limitedResults.length}...`);
+
+          const fetch = this.imap.fetch(limitedResults, { bodies: '' });
+          const parsePromises: Promise<EmailMessage>[] = [];
+
+          fetch.on('message', (msg, seqno) => {
+            let uid: number;
+            const parsePromise = new Promise<EmailMessage>((resolveEmail, rejectEmail) => {
+              msg.on('attributes', (attrs) => {
+                uid = attrs.uid;
+              });
+
+              msg.on('body', (stream) => {
+                simpleParser(stream, (parseErr, parsed) => {
+                  if (parseErr) {
+                    console.error(`❌ Error parsing email UID ${uid}:`, parseErr.message);
+                    rejectEmail(parseErr);
+                    return;
+                  }
+
+                  const email: EmailMessage = {
+                    uid,
+                    messageId: parsed.messageId || `uid-${uid}`,
+                    from: {
+                      address: parsed.from?.value[0]?.address || 'unknown',
+                      name: parsed.from?.value[0]?.name,
+                    },
+                    to: parsed.to?.value.map((t) => t.address || '') || [],
+                    subject: parsed.subject || '(No Subject)',
+                    text: parsed.text || '',
+                    html: typeof parsed.html === 'string' ? parsed.html : undefined,
+                    date: parsed.date || new Date(),
+                    headers: parsed.headers as unknown as Record<string, string | string[]>,
+                    attachments: parsed.attachments?.map((att) => ({
+                      filename: att.filename || 'unknown',
+                      contentType: att.contentType,
+                      size: att.size,
+                    })),
+                  };
+
+                  console.log(`  ✓ Parsed email UID ${uid}: ${email.subject}`);
+                  resolveEmail(email);
+                });
+              });
+            });
+
+            parsePromises.push(parsePromise);
+          });
+
+          fetch.once('error', (fetchErr) => {
+            reject(fetchErr);
+          });
+
+          fetch.once('end', async () => {
+            try {
+              const emails = await Promise.all(parsePromises);
+              console.log(`✅ Successfully fetched and parsed ${emails.length} email(s)`);
+              resolve(emails);
+            } catch (error) {
+              reject(error);
+            }
+          });
+        });
+      });
+    });
+  }
+
+  /**
    * Fetch today's unread emails (from midnight today)
    * @param limit Maximum number of emails to fetch
    * @returns Array of parsed email messages
