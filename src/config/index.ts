@@ -32,6 +32,9 @@ export const emailConfig: EmailConfig = {
   user: process.env.IMAP_USER || '',
   password: process.env.IMAP_PASSWORD || '',
   tls: process.env.IMAP_TLS === 'true',
+  draftsMailbox: process.env.DRAFTS_MAILBOX || 'Drafts',
+  senderAddress: process.env.REPLY_FROM_ADDRESS || process.env.IMAP_USER || '',
+  senderName: process.env.REPLY_FROM_NAME || 'FlareFlow Support',
 };
 
 const dateFilterConfig = parseDateFilter(process.env.FETCH_DATE);
@@ -42,6 +45,7 @@ export const processingConfig = {
   markAsRead: process.env.MARK_AS_READ === 'true',
   dateFilter: dateFilterConfig.date,
   dateFilterSource: dateFilterConfig.source,
+  saveDrafts: process.env.SAVE_DRAFTS === 'true',
 };
 
 export function validateConfig(): void {

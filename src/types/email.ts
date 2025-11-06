@@ -4,6 +4,9 @@ export interface EmailConfig {
   user: string;
   password: string;
   tls: boolean;
+  draftsMailbox?: string;
+  senderAddress?: string;
+  senderName?: string;
 }
 
 export interface EmailMessage {

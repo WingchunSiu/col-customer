@@ -1,3 +1,4 @@
+import { randomUUID } from 'crypto';
 import Imap from 'imap';
 import { simpleParser } from 'mailparser';
 import { EmailConfig, EmailMessage } from '../types/email.js';
@@ -6,6 +7,17 @@ export interface EmailDateFilter {
   on?: Date;
   since?: Date;
   before?: Date;
+}
+
+export interface DraftOptions {
+  to: string | string[];
+  subject: string;
+  body: string;
+  inReplyTo?: string;
+  references?: string | string[];
+  fromAddress?: string;
+  fromName?: string;
+  mailbox?: string;
 }
 
 export class EmailFetcher {
@@ -60,6 +72,91 @@ export class EmailFetcher {
     if (this.connected) {
       this.imap.end();
     }
+  }
+
+  /**
+   * Append a draft message to the configured mailbox.
+   * Returns the generated Message-ID for logging/reference.
+   */
+  async appendDraft(options: DraftOptions): Promise<string> {
+    if (!this.connected) {
+      throw new Error('IMAP not connected. Call connect() first.');
+    }
+
+    const { rawMessage, messageId } = this.buildDraftMessage(options);
+    const mailbox = options.mailbox || this.config.draftsMailbox || 'Drafts';
+
+    await new Promise<void>((resolve, reject) => {
+      this.imap.append(
+        rawMessage,
+        { mailbox, flags: ['\\Draft'] },
+        (err) => {
+          if (err) {
+            reject(err);
+            return;
+          }
+          resolve();
+        }
+      );
+    });
+
+    return messageId;
+  }
+
+  /**
+   * Construct a MIME-formatted draft compatible with most providers.
+   */
+  private buildDraftMessage(options: DraftOptions): { rawMessage: string; messageId: string } {
+    const fromAddress = options.fromAddress || this.config.senderAddress || this.config.user;
+    if (!fromAddress) {
+      throw new Error('Unable to determine sender address for draft message.');
+    }
+
+    // Sanitize header values to prevent injection
+    const sanitizeHeader = (value: string): string => {
+      return value.replace(/[\r\n\x00-\x1F\x7F]/g, ' ').trim();
+    };
+
+    const domain = fromAddress.includes('@') ? fromAddress.split('@')[1] : 'localhost';
+    const messageId = `<${randomUUID()}@${sanitizeHeader(domain)}>`;
+    const toHeader = Array.isArray(options.to)
+      ? options.to.map(sanitizeHeader).join(', ')
+      : sanitizeHeader(options.to);
+    const referencesHeader = Array.isArray(options.references)
+      ? options.references.map(sanitizeHeader).join(' ')
+      : options.references ? sanitizeHeader(options.references) : undefined;
+    const subject = sanitizeHeader(options.subject || '(no subject)');
+
+    const headers: string[] = [];
+    const fromName = options.fromName ?? this.config.senderName;
+    const sanitizedFromAddress = sanitizeHeader(fromAddress);
+    const sanitizedFromName = fromName ? sanitizeHeader(fromName) : undefined;
+    headers.push(sanitizedFromName ? `From: ${sanitizedFromName} <${sanitizedFromAddress}>` : `From: ${sanitizedFromAddress}`);
+    headers.push(`To: ${toHeader}`);
+    headers.push(`Subject: ${subject}`);
+    headers.push(`Date: ${new Date().toUTCString()}`);
+    headers.push(`Message-ID: ${messageId}`);
+
+    if (options.inReplyTo) {
+      headers.push(`In-Reply-To: ${sanitizeHeader(options.inReplyTo)}`);
+    }
+
+    if (referencesHeader) {
+      headers.push(`References: ${referencesHeader}`);
+    }
+
+    headers.push('MIME-Version: 1.0');
+    headers.push('Content-Type: text/plain; charset="UTF-8"');
+    headers.push('Content-Transfer-Encoding: base64');
+
+    // Encode body as base64 for safe UTF-8 handling
+    const bodyWithCRLF = options.body.replace(/\r?\n/g, '\r\n');
+    const bodyBase64 = Buffer.from(bodyWithCRLF, 'utf-8').toString('base64');
+    // Split base64 into 76-character lines per RFC 2045
+    const bodyLines = bodyBase64.match(/.{1,76}/g)?.join('\r\n') || '';
+    const rawMessage = `${headers.join('\r\n')}\r\n\r\n${bodyLines}\r\n`;
+
+    return { rawMessage, messageId };
   }
 
   /**

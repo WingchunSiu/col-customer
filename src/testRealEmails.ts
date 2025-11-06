@@ -1,7 +1,7 @@
 import { EmailFetcher } from './services/emailFetcher.js';
 import { EmailProcessor } from './services/emailProcessor.js';
 import { ZhipuAIService } from './services/zhipuAI.js';
-import { emailConfig, validateConfig } from './config/index.js';
+import { emailConfig, processingConfig, validateConfig } from './config/index.js';
 import { config } from 'dotenv';
 
 config();
@@ -9,22 +9,29 @@ config();
 async function testRealEmails() {
   console.log('🚀 Testing with REAL emails from inbox...\n');
 
+  let fetcher: EmailFetcher | null = null;
+  let runCompleted = false;
+
+  // Validate configuration
+  validateConfig();
+  console.log('✅ Configuration validated\n');
+
+  // Initialize services
+  fetcher = new EmailFetcher(emailConfig);
+  const processor = new EmailProcessor();
+
+  const shouldSaveDrafts = processingConfig.saveDrafts;
+  if (shouldSaveDrafts) {
+    console.log('💾 Draft saving is ENABLED. Generated replies will be stored as email drafts.\n');
+  }
+
+  const zhipuApiKey = process.env.ZHIPU_API_KEY;
+  if (!zhipuApiKey) {
+    throw new Error('ZHIPU_API_KEY not found');
+  }
+  const zhipuAI = new ZhipuAIService(zhipuApiKey, './templates.json');
+
   try {
-    // Validate configuration
-    validateConfig();
-    console.log('✅ Configuration validated\n');
-
-    // Initialize services
-    const fetcher = new EmailFetcher(emailConfig);
-    const processor = new EmailProcessor();
-
-    const zhipuApiKey = process.env.ZHIPU_API_KEY;
-    if (!zhipuApiKey) {
-      console.error('❌ ZHIPU_API_KEY not found');
-      process.exit(1);
-    }
-    const zhipuAI = new ZhipuAIService(zhipuApiKey, './templates.json');
-
     // Connect to IMAP
     console.log('🔌 Connecting to IMAP server...');
     await fetcher.connect();
@@ -38,7 +45,6 @@ async function testRealEmails() {
 
     if (emails.length === 0) {
       console.log('📭 No emails found.');
-      fetcher.disconnect();
       return;
     }
 
@@ -107,11 +113,41 @@ async function testRealEmails() {
 
       console.log('\n🤖 Generated Response:');
       console.log('─────────────────────────────────────────────────');
-      console.log(result.response.substring(0, 400));
-      if (result.response.length > 400) {
-        console.log('...\n[Response truncated for display]');
-      }
+      console.log(result.response);
       console.log('─────────────────────────────────────────────────\n');
+
+      if (shouldSaveDrafts) {
+        const replySubject = email.subject.toLowerCase().startsWith('re:')
+          ? email.subject
+          : `Re: ${email.subject}`;
+        const referencesHeaderEntry = Object.entries(email.headers || {}).find(
+          ([key]) => key.toLowerCase() === 'references'
+        );
+        const referencesHeader = referencesHeaderEntry ? referencesHeaderEntry[1] : undefined;
+        const references = Array.isArray(referencesHeader)
+          ? [...referencesHeader]
+          : referencesHeader
+            ? [referencesHeader]
+            : [];
+
+        if (email.messageId && !references.includes(email.messageId)) {
+          references.push(email.messageId);
+        }
+
+        try {
+          console.log('📨 Saving draft to mailbox...');
+          const messageId = await fetcher.appendDraft({
+            to: email.from.address,
+            subject: replySubject,
+            body: result.response,
+            inReplyTo: email.messageId,
+            references,
+          });
+          console.log(`✅ Draft stored (Message-ID: ${messageId})\n`);
+        } catch (draftError) {
+          console.error('⚠️ Failed to save draft:', draftError);
+        }
+      }
     }
 
     // Summary
@@ -124,13 +160,14 @@ async function testRealEmails() {
     console.log(`Avg Tokens/Email: Check logs above`);
     console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n');
 
-    // Disconnect
-    fetcher.disconnect();
-    console.log('✅ Test completed! Disconnected from IMAP server.');
-
-  } catch (error) {
-    console.error('\n❌ Test failed:', error);
-    process.exit(1);
+    runCompleted = true;
+  } finally {
+    if (fetcher) {
+      fetcher.disconnect();
+      if (runCompleted) {
+        console.log('✅ Test completed! Disconnected from IMAP server.');
+      }
+    }
   }
 }
 
