@@ -166,7 +166,14 @@ Personalized Response:`;
       '问题解决与关闭'
     ];
 
-    const prompt = `Analyze this customer support email and provide:
+    const prompt = `Analyze this customer support email and determine if it requires a response from Flareflow support team.
+
+Email Details:
+From: ${email.from.address}
+Subject: ${email.subject}
+Content: ${email.text}
+
+Tasks:
 
 1. Category: Choose EXACTLY ONE from this list (must match exactly):
    ${availableCategories.map(c => `- ${c}`).join('\n   ')}
@@ -175,16 +182,27 @@ Personalized Response:`;
 
 3. Priority: low, medium, high, or urgent
 
-4. Is Important: true if this requires a response, false if it's spam/irrelevant/unimportant feedback
+4. Is Important - Mark as FALSE (skip) if the email is:
+   - System notifications from other platforms (e.g., Dailymotion, TikTok, copyright notices)
+   - Marketing emails or newsletters
+   - Automated replies or confirmations
+   - Internal company emails
+   - Spam or promotional content
+   - NOT from actual Flareflow app users
+
+   Mark as TRUE (needs reply) if:
+   - From a real user/customer asking for help
+   - User feedback about Flareflow app/service
+   - User reporting bugs or issues
+   - Subscription/payment questions from users
+   - Feature requests or complaints
 
 5. Suggested actions (as a JSON array)
 
-Email Details:
-From: ${email.from.address}
-Subject: ${email.subject}
-Content: ${email.text}
-
-IMPORTANT: The category MUST be one of the exact values from the list above.
+IMPORTANT:
+- The category MUST be one of the exact values from the list above
+- Most emails from other platforms (Dailymotion, TikTok, etc.) should be marked isImportant: false
+- Only mark isImportant: true for actual customer support requests
 
 Respond in JSON format only:
 {
@@ -221,9 +239,9 @@ Respond in JSON format only:
   }
 
   /**
-   * Make chat completion request to Zhipu AI
+   * Make chat completion request to Zhipu AI with retry logic
    */
-  private async chat(messages: ZhipuMessage[], temperature = 0.7): Promise<string> {
+  private async chat(messages: ZhipuMessage[], temperature = 0.7, retries = 2): Promise<string> {
     const request: ZhipuRequest = {
       model: 'glm-4.6',
       messages,
@@ -231,32 +249,56 @@ Respond in JSON format only:
       stream: false,
     };
 
-    const response = await fetch(`${this.baseUrl}/chat/completions`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        Authorization: `Bearer ${this.apiKey}`,
-      },
-      body: JSON.stringify(request),
-    });
+    for (let attempt = 0; attempt <= retries; attempt++) {
+      try {
+        const controller = new AbortController();
+        const timeoutId = setTimeout(() => controller.abort(), 90000); // 90 second timeout
 
-    if (!response.ok) {
-      const error = await response.text();
-      throw new Error(`Zhipu AI API error: ${response.status} - ${error}`);
+        const response = await fetch(`${this.baseUrl}/chat/completions`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            Authorization: `Bearer ${this.apiKey}`,
+          },
+          body: JSON.stringify(request),
+          signal: controller.signal,
+        });
+
+        clearTimeout(timeoutId);
+
+        if (!response.ok) {
+          const error = await response.text();
+          throw new Error(`Zhipu AI API error: ${response.status} - ${error}`);
+        }
+
+        const data = (await response.json()) as ZhipuResponse;
+
+        if (!data.choices || data.choices.length === 0) {
+          throw new Error('No response from Zhipu AI');
+        }
+
+        // Log token usage if available
+        if (data.usage) {
+          console.log(`[Zhipu AI] Tokens - Input: ${data.usage.prompt_tokens}, Output: ${data.usage.completion_tokens}, Total: ${data.usage.total_tokens}`);
+        }
+
+        return data.choices[0].message.content;
+
+      } catch (error: any) {
+        const isTimeout = error.name === 'AbortError' || error.name === 'TimeoutError';
+
+        if (attempt < retries && isTimeout) {
+          console.log(`[Zhipu AI] Timeout on attempt ${attempt + 1}, retrying...`);
+          await new Promise(resolve => setTimeout(resolve, 2000)); // Wait 2s before retry
+          continue;
+        }
+
+        // Last attempt or non-timeout error
+        throw error;
+      }
     }
 
-    const data = (await response.json()) as ZhipuResponse;
-
-    if (!data.choices || data.choices.length === 0) {
-      throw new Error('No response from Zhipu AI');
-    }
-
-    // Log token usage if available
-    if (data.usage) {
-      console.log(`[Zhipu AI] Tokens - Input: ${data.usage.prompt_tokens}, Output: ${data.usage.completion_tokens}, Total: ${data.usage.total_tokens}`);
-    }
-
-    return data.choices[0].message.content;
+    throw new Error('Failed after all retries');
   }
 
   /**

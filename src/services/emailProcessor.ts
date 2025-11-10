@@ -20,10 +20,32 @@ export class EmailProcessor {
    * Clean HTML and normalize text
    */
   private cleanText(text: string): string {
-    return text
-      .replace(/\r\n/g, '\n') // Normalize line breaks
-      .replace(/\n{3,}/g, '\n\n') // Remove excessive line breaks
-      .trim();
+    let cleaned = text;
+
+    // Remove common email system metadata
+    cleaned = cleaned.replace(/^##.*Reply above this line.*##/gim, '');
+    cleaned = cleaned.replace(/^.*Répondre au dessus de cette ligne.*$/gim, '');
+
+    // Remove HTML tags (basic cleanup)
+    cleaned = cleaned.replace(/<[^>]*>/g, ' ');
+
+    // Decode HTML entities
+    cleaned = cleaned
+      .replace(/&nbsp;/g, ' ')
+      .replace(/&lt;/g, '<')
+      .replace(/&gt;/g, '>')
+      .replace(/&amp;/g, '&')
+      .replace(/&quot;/g, '"')
+      .replace(/&#39;/g, "'");
+
+    // Normalize line breaks
+    cleaned = cleaned.replace(/\r\n/g, '\n');
+
+    // Remove excessive whitespace
+    cleaned = cleaned.replace(/[ \t]+/g, ' '); // Multiple spaces to single
+    cleaned = cleaned.replace(/\n{3,}/g, '\n\n'); // Multiple newlines to double
+
+    return cleaned.trim();
   }
 
   /**
