@@ -37,11 +37,11 @@ async function testRealEmails() {
     await fetcher.connect();
     console.log('✅ Connected\n');
 
-    // Fetch 10 recent emails from the past day
+    // Fetch 20 recent emails from the past day
     const yesterday = new Date();
     yesterday.setDate(yesterday.getDate() - 1);
     console.log(`📥 Fetching emails from the past day (since ${yesterday.toLocaleDateString()})...\n`);
-    const emails = await fetcher.fetchAllEmails(10, yesterday);
+    const emails = await fetcher.fetchAllEmails(20, yesterday);
 
     if (emails.length === 0) {
       console.log('📭 No emails found.');
@@ -51,6 +51,7 @@ async function testRealEmails() {
     console.log(`Found ${emails.length} email(s). Processing...\n`);
 
     // Process each email
+    // Note: IMAP may timeout during AI processing, but will auto-reconnect when saving drafts
     const processedEmails = processor.processMany(emails);
 
     let totalTokens = 0;

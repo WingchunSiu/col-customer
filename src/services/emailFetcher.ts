@@ -43,7 +43,7 @@ export class EmailFetcher {
       this.connected = true;
     });
 
-    this.imap.once('error', (err: Error) => {
+    this.imap.on('error', (err: Error) => {
       console.error('❌ IMAP connection error:', err.message);
       this.connected = false;
     });
@@ -58,6 +58,24 @@ export class EmailFetcher {
    * Connect to IMAP server
    */
   async connect(): Promise<void> {
+    // If already connected, do nothing
+    if (this.connected) {
+      return;
+    }
+
+    // If connection was closed, create new IMAP instance
+    if (this.imap.state === 'disconnected') {
+      this.imap = new Imap({
+        user: this.config.user,
+        password: this.config.password,
+        host: this.config.host,
+        port: this.config.port,
+        tls: this.config.tls,
+        tlsOptions: { rejectUnauthorized: false },
+      });
+      this.setupEventHandlers();
+    }
+
     return new Promise((resolve, reject) => {
       this.imap.once('ready', () => resolve());
       this.imap.once('error', reject);
@@ -79,8 +97,10 @@ export class EmailFetcher {
    * Returns the generated Message-ID for logging/reference.
    */
   async appendDraft(options: DraftOptions): Promise<string> {
+    // Reconnect if connection was lost
     if (!this.connected) {
-      throw new Error('IMAP not connected. Call connect() first.');
+      console.log('⚠️  IMAP connection lost, reconnecting...');
+      await this.connect();
     }
 
     const { rawMessage, messageId } = this.buildDraftMessage(options);

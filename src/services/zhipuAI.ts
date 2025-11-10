@@ -121,13 +121,22 @@ export class ZhipuAIService {
     email: ProcessedEmail,
     language: string
   ): Promise<string> {
+    const isChinese = language === 'zh' || language === 'zh-CN';
+
     const prompt = `You are a customer support assistant. You have a pre-approved response template below. Your task is to personalize it by:
 
 1. Keeping the template structure and main content EXACTLY as is
 2. Only fill in or adjust user-specific details like:
- 
+
 3. If the template asks for information the user already provided, acknowledge it
 4. Keep the same tone, structure, and language (${language})
+
+${!isChinese ? `
+5. IMPORTANT: After the personalized response in ${language}, add a Chinese translation for internal review:
+   - Add a separator line: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   - Add the label: 📝 中文翻译（仅供内部参考）：
+   - Provide a natural Chinese translation of the response
+` : ''}
 
 IMPORTANT: Do NOT rewrite or change the template significantly. Only make minimal adjustments to personalize it.
 
@@ -302,6 +311,28 @@ Respond in JSON format only:
   }
 
   /**
+   * Translate text to Chinese for internal review
+   */
+  async translateToChinese(text: string): Promise<string> {
+    const messages: ZhipuMessage[] = [
+      {
+        role: 'user',
+        content: `Translate the following customer support email to Chinese. Keep the translation natural and professional. Only output the translation, no explanations.
+
+Text to translate:
+${text}`,
+      },
+    ];
+
+    try {
+      return await this.chat(messages, 0.3);
+    } catch (error) {
+      console.error('Translation failed:', error);
+      return '[Translation failed]';
+    }
+  }
+
+  /**
    * Build system prompt for customer support
    */
   private buildSystemPrompt(context?: string): string {
@@ -344,6 +375,8 @@ Language code:`;
    * Build user prompt from email
    */
   private buildUserPrompt(email: ProcessedEmail, language: string = 'en'): string {
+    const isChinese = language === 'zh' || language === 'zh-CN';
+
     let prompt = `Please draft a response to this customer support email:\n\n`;
     prompt += `From: ${email.from.address}\n`;
     prompt += `Subject: ${email.subject}\n`;
@@ -361,6 +394,13 @@ Language code:`;
     prompt += `\nMessage:\n${email.text}\n`;
     prompt += `\nDetected Language: ${language}\n`;
     prompt += `\nPlease respond in ${language} language.`;
+
+    if (!isChinese) {
+      prompt += `\n\nIMPORTANT: After your response in ${language}, add:
+- A separator line: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+- The label: 📝 中文翻译（仅供内部参考）：
+- A natural Chinese translation of your response`;
+    }
 
     return prompt;
   }
