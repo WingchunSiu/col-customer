@@ -137,6 +137,18 @@ export class EmailFetcher {
       return value.replace(/[\r\n\x00-\x1F\x7F]/g, ' ').trim();
     };
 
+    // RFC 2047 encoding for non-ASCII characters in headers
+    const encodeHeaderValue = (value: string): string => {
+      const sanitized = sanitizeHeader(value);
+      // Check if the value contains non-ASCII characters
+      if (/[^\x00-\x7F]/.test(sanitized)) {
+        // Encode as UTF-8 Base64 per RFC 2047
+        const encoded = Buffer.from(sanitized, 'utf-8').toString('base64');
+        return `=?UTF-8?B?${encoded}?=`;
+      }
+      return sanitized;
+    };
+
     const domain = fromAddress.includes('@') ? fromAddress.split('@')[1] : 'localhost';
     const messageId = `<${randomUUID()}@${sanitizeHeader(domain)}>`;
     const toHeader = Array.isArray(options.to)
@@ -145,13 +157,13 @@ export class EmailFetcher {
     const referencesHeader = Array.isArray(options.references)
       ? options.references.map(sanitizeHeader).join(' ')
       : options.references ? sanitizeHeader(options.references) : undefined;
-    const subject = sanitizeHeader(options.subject || '(no subject)');
+    const subject = encodeHeaderValue(options.subject || '(no subject)');
 
     const headers: string[] = [];
     const fromName = options.fromName ?? this.config.senderName;
     const sanitizedFromAddress = sanitizeHeader(fromAddress);
-    const sanitizedFromName = fromName ? sanitizeHeader(fromName) : undefined;
-    headers.push(sanitizedFromName ? `From: ${sanitizedFromName} <${sanitizedFromAddress}>` : `From: ${sanitizedFromAddress}`);
+    const encodedFromName = fromName ? encodeHeaderValue(fromName) : undefined;
+    headers.push(encodedFromName ? `From: ${encodedFromName} <${sanitizedFromAddress}>` : `From: ${sanitizedFromAddress}`);
     headers.push(`To: ${toHeader}`);
     headers.push(`Subject: ${subject}`);
     headers.push(`Date: ${new Date().toUTCString()}`);
