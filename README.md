@@ -18,14 +18,14 @@ AI-powered automated email response system using Zhipu AI. Processes unread emai
 Go to your repository's **Settings → Secrets and variables → Actions** and add these secrets:
 
 #### Email Configuration
-- `EMAIL_USER`: Your email address (e.g., `support@example.com`)
-- `EMAIL_PASSWORD`: Your email password or app-specific password
-- `EMAIL_HOST`: IMAP server host (e.g., `imap.gmail.com`)
-- `EMAIL_PORT`: IMAP port (e.g., `993`)
-- `EMAIL_TLS`: Use TLS (`true` or `false`)
-- `EMAIL_SENDER_ADDRESS`: Reply-from address (usually same as `EMAIL_USER`)
-- `EMAIL_SENDER_NAME`: Your name or company name
-- `EMAIL_DRAFTS_MAILBOX`: Drafts folder name (default: `Drafts`)
+- `IMAP_HOST`: IMAP server host (e.g., `imap.gmail.com`, `imap.secureserver.net`)
+- `IMAP_PORT`: IMAP port (e.g., `993`)
+- `IMAP_USER`: Your email address (e.g., `support@example.com`)
+- `IMAP_PASSWORD`: Your email password or app-specific password
+- `IMAP_TLS`: Use TLS (`true`)
+- `DRAFTS_MAILBOX`: Drafts folder name (default: `Drafts`)
+- `REPLY_FROM_ADDRESS`: Reply-from address (usually same as `IMAP_USER`)
+- `REPLY_FROM_NAME`: Your name or company name (e.g., `Support Team`)
 
 #### AI Configuration
 - `ZHIPU_API_KEY`: Your Zhipu AI API key
@@ -47,14 +47,14 @@ npm install
 #### Create `.env` File
 ```bash
 # Email Configuration
-EMAIL_USER=your-email@example.com
-EMAIL_PASSWORD=your-password
-EMAIL_HOST=imap.gmail.com
-EMAIL_PORT=993
-EMAIL_TLS=true
-EMAIL_SENDER_ADDRESS=your-email@example.com
-EMAIL_SENDER_NAME=Your Name
-EMAIL_DRAFTS_MAILBOX=Drafts
+IMAP_HOST=imap.gmail.com
+IMAP_PORT=993
+IMAP_USER=your-email@example.com
+IMAP_PASSWORD=your-password
+IMAP_TLS=true
+DRAFTS_MAILBOX=Drafts
+REPLY_FROM_ADDRESS=your-email@example.com
+REPLY_FROM_NAME=Your Name
 
 # AI Configuration
 ZHIPU_API_KEY=your-zhipu-api-key
@@ -126,10 +126,7 @@ npx tsx src/testDraft.ts
 - Go to **Actions** tab in your repository
 - Click on the latest "Process Unread Emails" workflow run
 - View detailed logs of email processing
-
-### Artifacts
-- Processing logs are saved as artifacts for 7 days
-- Download from the workflow run page
+- All logs are displayed directly in the workflow console
 
 ## Security Notes
 
