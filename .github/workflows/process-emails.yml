@@ -1,0 +1,55 @@
+name: Process Unread Emails
+
+on:
+  schedule:
+    # Run every hour at minute 0
+    - cron: '0 * * * *'
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  process-emails:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build project
+        run: npm run build
+
+      - name: Process unread emails
+        env:
+          # Email configuration
+          EMAIL_USER: ${{ secrets.EMAIL_USER }}
+          EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
+          EMAIL_HOST: ${{ secrets.EMAIL_HOST }}
+          EMAIL_PORT: ${{ secrets.EMAIL_PORT }}
+          EMAIL_TLS: ${{ secrets.EMAIL_TLS }}
+          EMAIL_SENDER_ADDRESS: ${{ secrets.EMAIL_SENDER_ADDRESS }}
+          EMAIL_SENDER_NAME: ${{ secrets.EMAIL_SENDER_NAME }}
+          EMAIL_DRAFTS_MAILBOX: ${{ secrets.EMAIL_DRAFTS_MAILBOX }}
+
+          # AI configuration
+          ZHIPU_API_KEY: ${{ secrets.ZHIPU_API_KEY }}
+
+          # Processing configuration
+          SAVE_DRAFTS: 'true'
+          MARK_AS_READ: 'true'
+        run: node dist/index.js
+
+      - name: Upload logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: email-processing-logs-${{ github.run_number }}
+          path: logs/
+          retention-days: 7
