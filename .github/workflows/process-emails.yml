@@ -45,11 +45,3 @@ jobs:
           SAVE_DRAFTS: 'true'
           MARK_AS_READ: 'true'
         run: node dist/index.js
-
-      - name: Upload logs
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: email-processing-logs-${{ github.run_number }}
-          path: logs/
-          retention-days: 7
