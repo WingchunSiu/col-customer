@@ -29,14 +29,14 @@ jobs:
       - name: Process unread emails
         env:
           # Email configuration
-          EMAIL_USER: ${{ secrets.EMAIL_USER }}
-          EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
-          EMAIL_HOST: ${{ secrets.EMAIL_HOST }}
-          EMAIL_PORT: ${{ secrets.EMAIL_PORT }}
-          EMAIL_TLS: ${{ secrets.EMAIL_TLS }}
-          EMAIL_SENDER_ADDRESS: ${{ secrets.EMAIL_SENDER_ADDRESS }}
-          EMAIL_SENDER_NAME: ${{ secrets.EMAIL_SENDER_NAME }}
-          EMAIL_DRAFTS_MAILBOX: ${{ secrets.EMAIL_DRAFTS_MAILBOX }}
+          IMAP_HOST: ${{ secrets.IMAP_HOST }}
+          IMAP_PORT: ${{ secrets.IMAP_PORT }}
+          IMAP_USER: ${{ secrets.IMAP_USER }}
+          IMAP_PASSWORD: ${{ secrets.IMAP_PASSWORD }}
+          IMAP_TLS: ${{ secrets.IMAP_TLS }}
+          DRAFTS_MAILBOX: ${{ secrets.DRAFTS_MAILBOX }}
+          REPLY_FROM_ADDRESS: ${{ secrets.REPLY_FROM_ADDRESS }}
+          REPLY_FROM_NAME: ${{ secrets.REPLY_FROM_NAME }}
 
           # AI configuration
           ZHIPU_API_KEY: ${{ secrets.ZHIPU_API_KEY }}
