@@ -22,11 +22,12 @@ async function testZhipuAI() {
     // Create a mock email for testing
     const mockEmail: ProcessedEmail = {
       uid: 12345,
+      messageId: 'msg-12345',
       from: {
         name: 'Test User',
         address: 'testuser@example.com',
       },
-      to: [{ name: 'Support', address: 'support@flareflow.tv' }],
+      to: ['support@flareflow.tv'],
       subject: 'Cannot play videos on iPhone',
       date: new Date(),
       text: `Hi support team,
@@ -41,6 +42,7 @@ Can you please help?
 
 Thanks,
 Test User`,
+      headers: {},
       appVersion: '2.1.3',
       deviceInfo: 'iPhone 14 Pro',
       orderId: 'ORD-2024-1234',

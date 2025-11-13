@@ -19,30 +19,36 @@ async function testVagueEmails() {
   const vagueEmail1: ProcessedEmail = {
     uid: 2001,
     from: { name: 'User', address: 'user@example.com' },
-    to: [{ name: 'Support', address: 'support@flareflow.tv' }],
+    to: ['support@flareflow.tv'],
     subject: 'Help',
     date: new Date(),
     text: 'Something is not working. Please help.',
+    messageId: 'msg-2001',
+    headers: {},
   };
 
   // Test Case 2: Emotional but vague
   const vagueEmail2: ProcessedEmail = {
     uid: 2002,
     from: { name: 'User', address: 'user@example.com' },
-    to: [{ name: 'Support', address: 'support@flareflow.tv' }],
+    to: ['support@flareflow.tv'],
     subject: 'This is frustrating',
     date: new Date(),
     text: "I'm really frustrated. Things don't work as expected.",
+    messageId: 'msg-2002',
+    headers: {},
   };
 
   // Test Case 3: Generic problem
   const vagueEmail3: ProcessedEmail = {
     uid: 2003,
     from: { name: 'User', address: 'user@example.com' },
-    to: [{ name: 'Support', address: 'support@flareflow.tv' }],
+    to: ['support@flareflow.tv'],
     subject: 'Problem',
     date: new Date(),
     text: 'I have a problem with my account.',
+    messageId: 'msg-2003',
+    headers: {},
   };
 
   const testCases = [

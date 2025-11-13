@@ -25,11 +25,12 @@ async function testWithTemplates() {
 
     const subscriptionEmail: ProcessedEmail = {
       uid: 1001,
+      messageId: 'msg-1001',
       from: {
         name: 'John Doe',
         address: 'john.doe@example.com',
       },
-      to: [{ name: 'Support', address: 'support@flareflow.tv' }],
+      to: ['support@flareflow.tv'],
       subject: 'My subscription is not working after restore',
       date: new Date(),
       text: `Hello,
@@ -41,6 +42,7 @@ My Google Pay order number is GPA-1234-5678-9012.
 Please help!
 
 Thanks`,
+      headers: {},
       orderId: 'GPA-1234-5678-9012',
     };
 
@@ -83,11 +85,12 @@ Thanks`,
 
     const refundEmail: ProcessedEmail = {
       uid: 1002,
+      messageId: 'msg-1002',
       from: {
         name: '张三',
         address: 'zhangsan@example.com',
       },
-      to: [{ name: 'Support', address: 'support@flareflow.tv' }],
+      to: ['support@flareflow.tv'],
       subject: '申请退款',
       date: new Date(),
       text: `你好，
@@ -98,6 +101,7 @@ Thanks`,
 支付方式：微信支付
 
 谢谢！`,
+      headers: {},
       orderId: 'ORD-2024-5678',
     };
 
@@ -135,11 +139,12 @@ Thanks`,
 
     const techEmail: ProcessedEmail = {
       uid: 1003,
+      messageId: 'msg-1003',
       from: {
         name: 'Maria Silva',
         address: 'maria@example.com',
       },
-      to: [{ name: 'Support', address: 'support@flareflow.tv' }],
+      to: ['support@flareflow.tv'],
       subject: 'Videos not loading',
       date: new Date(),
       text: `Hi,
@@ -150,6 +155,7 @@ Device: Samsung Galaxy S23
 App version: 2.5.1
 
 Please help fix this issue.`,
+      headers: {},
       deviceInfo: 'Samsung Galaxy S23',
       appVersion: '2.5.1',
     };

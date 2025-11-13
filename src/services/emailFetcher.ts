@@ -251,7 +251,7 @@ export class EmailFetcher {
               uid = attrs.uid;
             });
 
-            msg.on('body', (stream) => {
+            msg.on('body', (stream: any) => {
               const parsePromise = new Promise<EmailMessage>((resolveEmail, rejectEmail) => {
                 simpleParser(stream, (parseErr, parsed) => {
                   if (parseErr) {
@@ -260,14 +260,28 @@ export class EmailFetcher {
                     return;
                   }
 
+                  // Helper to safely extract address array
+                  const getAddresses = (addressObj: any): string[] => {
+                    if (!addressObj) return [];
+                    const valueArray = Array.isArray(addressObj.value) ? addressObj.value : [addressObj.value];
+                    return valueArray.map((t: any) => t?.address || '').filter(Boolean);
+                  };
+
+                  // Helper to safely extract first address
+                  const getFirstAddress = (addressObj: any): { address: string; name?: string } => {
+                    if (!addressObj || !addressObj.value) return { address: 'unknown' };
+                    const first = Array.isArray(addressObj.value) ? addressObj.value[0] : addressObj.value;
+                    return {
+                      address: first?.address || 'unknown',
+                      name: first?.name,
+                    };
+                  };
+
                   const email: EmailMessage = {
                     uid,
                     messageId: parsed.messageId || `uid-${uid}`,
-                    from: {
-                      address: parsed.from?.value[0]?.address || 'unknown',
-                      name: parsed.from?.value[0]?.name,
-                    },
-                    to: parsed.to?.value.map((t) => t.address || '') || [],
+                    from: getFirstAddress(parsed.from),
+                    to: getAddresses(parsed.to),
                     subject: parsed.subject || '(No Subject)',
                     text: parsed.text || '',
                     html: typeof parsed.html === 'string' ? parsed.html : undefined,
@@ -371,7 +385,7 @@ export class EmailFetcher {
                 uid = attrs.uid;
               });
 
-              msg.on('body', (stream) => {
+              msg.on('body', (stream: any) => {
                 simpleParser(stream, (parseErr, parsed) => {
                   if (parseErr) {
                     console.error(`❌ Error parsing email UID ${uid}:`, parseErr.message);
@@ -379,14 +393,28 @@ export class EmailFetcher {
                     return;
                   }
 
+                  // Helper to safely extract address array
+                  const getAddresses = (addressObj: any): string[] => {
+                    if (!addressObj) return [];
+                    const valueArray = Array.isArray(addressObj.value) ? addressObj.value : [addressObj.value];
+                    return valueArray.map((t: any) => t?.address || '').filter(Boolean);
+                  };
+
+                  // Helper to safely extract first address
+                  const getFirstAddress = (addressObj: any): { address: string; name?: string } => {
+                    if (!addressObj || !addressObj.value) return { address: 'unknown' };
+                    const first = Array.isArray(addressObj.value) ? addressObj.value[0] : addressObj.value;
+                    return {
+                      address: first?.address || 'unknown',
+                      name: first?.name,
+                    };
+                  };
+
                   const email: EmailMessage = {
                     uid,
                     messageId: parsed.messageId || `uid-${uid}`,
-                    from: {
-                      address: parsed.from?.value[0]?.address || 'unknown',
-                      name: parsed.from?.value[0]?.name,
-                    },
-                    to: parsed.to?.value.map((t) => t.address || '') || [],
+                    from: getFirstAddress(parsed.from),
+                    to: getAddresses(parsed.to),
                     subject: parsed.subject || '(No Subject)',
                     text: parsed.text || '',
                     html: typeof parsed.html === 'string' ? parsed.html : undefined,
