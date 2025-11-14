@@ -1,10 +1,7 @@
 name: Process Unread Emails
 
 on:
-  schedule:
-    # Run every hour at minute 5 to avoid top-of-hour congestion
-    - cron: '5 * * * *'
-  workflow_dispatch: # Also allow manual trigger
+  workflow_dispatch: # Manual trigger only while Zhipu credits are replenished
 
 jobs:
   process-emails:
