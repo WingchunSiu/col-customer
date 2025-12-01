@@ -39,6 +39,8 @@ export const emailConfig: EmailConfig = {
 
 const dateFilterConfig = parseDateFilter(process.env.FETCH_DATE);
 
+export type LogLevel = 'minimal' | 'info' | 'debug';
+
 export const processingConfig = {
   fetchIntervalMinutes: parseInt(process.env.FETCH_INTERVAL_MINUTES || '5'),
   maxEmailsPerFetch: parseInt(process.env.MAX_EMAILS_PER_FETCH || '50'),
@@ -46,6 +48,8 @@ export const processingConfig = {
   dateFilter: dateFilterConfig.date,
   dateFilterSource: dateFilterConfig.source,
   saveDrafts: process.env.SAVE_DRAFTS === 'true',
+  logLevel: (process.env.LOG_LEVEL || 'info') as LogLevel,
+  redactPII: process.env.REDACT_PII !== 'false',
 };
 
 export function validateConfig(): void {

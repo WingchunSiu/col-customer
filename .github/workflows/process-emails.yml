@@ -41,4 +41,6 @@ jobs:
           # Processing configuration
           SAVE_DRAFTS: 'true'
           MARK_AS_READ: 'true'
+          LOG_LEVEL: 'minimal'
+          REDACT_PII: 'true'
         run: node dist/index.js

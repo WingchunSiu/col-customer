@@ -65,23 +65,35 @@ async function main() {
     // Process each email
     const processedEmails = processor.processMany(emails);
 
+    const logLevel = processingConfig.logLevel;
+
     for (let i = 0; i < processedEmails.length; i++) {
       const email = processedEmails[i];
 
       console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
-      console.log(`📧 Email ${i + 1}/${processedEmails.length}`);
+      console.log(`📧 Email ${i + 1}/${processedEmails.length} (UID: ${email.uid})`);
       console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
-      console.log(`From:    ${email.from.name || ''} <${email.from.address}>`);
-      console.log(`Subject: ${email.subject}`);
-      console.log(`Date:    ${email.date.toISOString()}`);
-      console.log(`UID:     ${email.uid}`);
 
-      if (email.appVersion) console.log(`App Ver: ${email.appVersion}`);
-      if (email.deviceInfo) console.log(`Device:  ${email.deviceInfo}`);
-      if (email.orderId) console.log(`Order:   ${email.orderId}`);
+      // Show details only in info/debug mode
+      if (logLevel !== 'minimal') {
+        const maskEmail = (addr: string) => {
+          if (!processingConfig.redactPII) return addr;
+          const [local, domain] = addr.split('@');
+          return domain ? `${local.substring(0, 2)}***@${domain}` : '***';
+        };
 
-      console.log(`\n📝 Content Preview:`);
-      console.log(email.text.substring(0, 200).replace(/\n/g, ' ') + '...\n');
+        console.log(`From:    ${maskEmail(email.from.address)}`);
+        console.log(`Subject: ${logLevel === 'debug' ? email.subject : email.subject.substring(0, 30) + '...'}`);
+
+        if (logLevel === 'debug') {
+          console.log(`Date:    ${email.date.toISOString()}`);
+          if (email.appVersion) console.log(`App Ver: ${email.appVersion}`);
+          if (email.deviceInfo) console.log(`Device:  ${email.deviceInfo}`);
+          if (email.orderId) console.log(`Order:   ${email.orderId}`);
+          console.log(`\n📝 Content Preview:`);
+          console.log(email.text.substring(0, 200).replace(/\n/g, ' ') + '...\n');
+        }
+      }
 
       try {
         // Analyze email
@@ -89,9 +101,23 @@ async function main() {
         const analysis = await zhipuAI.analyzeEmail(email);
 
         console.log(`Category:  ${analysis.category}`);
-        console.log(`Sentiment: ${analysis.sentiment}`);
+        console.log(`Intent:    ${analysis.intent}`);
         console.log(`Priority:  ${analysis.priority}`);
         console.log(`Important: ${analysis.isImportant ? '✅ Needs Reply' : '❌ Skip'}`);
+
+        // Show detailed analysis only in debug mode
+        if (logLevel === 'debug') {
+          if (analysis.keywords.length > 0) {
+            console.log(`Keywords:  ${analysis.keywords.slice(0, 3).join(', ')}`);
+          }
+          console.log(`Sentiment: ${analysis.sentiment}`);
+          if (analysis.suggestedTemplate) {
+            console.log(`Suggested: ${analysis.suggestedTemplate}`);
+          }
+          if (analysis.reasoning) {
+            console.log(`Reasoning: ${analysis.reasoning.substring(0, 100)}...`);
+          }
+        }
 
         if (analysis.suggestedActions.length > 0) {
           console.log(`Actions:   ${analysis.suggestedActions.slice(0, 2).join(', ')}`);
@@ -111,7 +137,12 @@ async function main() {
         console.log('\n💬 Generating response...');
         const result = await zhipuAI.generateResponse(
           email,
-          analysis.category,
+          {
+            category: analysis.category,
+            intent: analysis.intent,
+            keywords: analysis.keywords,
+            suggestedTemplate: analysis.suggestedTemplate,
+          },
           true
         );
 
@@ -123,10 +154,13 @@ async function main() {
           console.log(`Template:  ⚠️  No template matched - free-form response`);
         }
 
-        console.log('\n🤖 Generated Response:');
-        console.log('─────────────────────────────────────────────────');
-        console.log(result.response.substring(0, 300) + '...');
-        console.log('─────────────────────────────────────────────────\n');
+        // Show response preview only in debug mode
+        if (logLevel === 'debug') {
+          console.log('\n🤖 Generated Response:');
+          console.log('─────────────────────────────────────────────────');
+          console.log(result.response.substring(0, 300) + '...');
+          console.log('─────────────────────────────────────────────────\n');
+        }
 
         // Save draft
         if (shouldSaveDrafts) {
