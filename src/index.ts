@@ -67,12 +67,27 @@ async function main() {
 
     const logLevel = processingConfig.logLevel;
 
+    // Blacklist of sender addresses to automatically skip
+    const senderBlacklist = [
+      'feedback@dailymotion.com',
+      'noreply@dailymotion.com',
+    ];
+
     for (let i = 0; i < processedEmails.length; i++) {
       const email = processedEmails[i];
 
       console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
       console.log(`📧 Email ${i + 1}/${processedEmails.length} (UID: ${email.uid})`);
       console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
+
+      // Check if sender is in blacklist
+      if (senderBlacklist.includes(email.from.address.toLowerCase())) {
+        console.log(`⛔ Auto-skipped: Blacklisted sender (${email.from.address})`);
+        console.log('   This sender is on the auto-skip list.\n');
+        skippedCount++;
+        uidsToMarkAsRead.push(email.uid);
+        continue;
+      }
 
       // Show details only in info/debug mode
       if (logLevel !== 'minimal') {
