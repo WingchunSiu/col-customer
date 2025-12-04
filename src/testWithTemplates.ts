@@ -61,7 +61,12 @@ Thanks`,
     console.log('💬 Step 2: Generating response with template matching...\n');
     const result = await zhipuAI.generateResponse(
       subscriptionEmail,
-      analysis.category,
+      {
+        category: analysis.category,
+        intent: analysis.intent,
+        keywords: analysis.keywords,
+        suggestedTemplate: analysis.suggestedTemplate,
+      },
       true
     );
 
@@ -115,7 +120,12 @@ Thanks`,
 
     const result2 = await zhipuAI.generateResponse(
       refundEmail,
-      analysis2.category,
+      {
+        category: analysis2.category,
+        intent: analysis2.intent,
+        keywords: analysis2.keywords,
+        suggestedTemplate: analysis2.suggestedTemplate,
+      },
       true
     );
 
@@ -171,7 +181,12 @@ Please help fix this issue.`,
 
     const result3 = await zhipuAI.generateResponse(
       techEmail,
-      analysis3.category,
+      {
+        category: analysis3.category,
+        intent: analysis3.intent,
+        keywords: analysis3.keywords,
+        suggestedTemplate: analysis3.suggestedTemplate,
+      },
       true
     );
 
