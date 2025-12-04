@@ -100,7 +100,12 @@ async function testRealEmails() {
       console.log('\n💬 Generating response...');
       const result = await zhipuAI.generateResponse(
         email,
-        analysis.category,
+        {
+          category: analysis.category,
+          intent: analysis.intent,
+          keywords: analysis.keywords,
+          suggestedTemplate: analysis.suggestedTemplate,
+        },
         true
       );
 

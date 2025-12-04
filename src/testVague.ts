@@ -73,7 +73,12 @@ async function testVagueEmails() {
       // Generate response
       const result = await zhipuAI.generateResponse(
         testCase.email,
-        analysis.category,
+        {
+          category: analysis.category,
+          intent: analysis.intent,
+          keywords: analysis.keywords,
+          suggestedTemplate: analysis.suggestedTemplate,
+        },
         true
       );
 

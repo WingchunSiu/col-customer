@@ -15,9 +15,9 @@ async function testZhipuAI() {
   }
 
   try {
-    // Initialize Zhipu AI service
-    const zhipuAI = new ZhipuAIService(apiKey);
-    console.log('✅ Zhipu AI service initialized\n');
+    // Initialize Zhipu AI service with templates
+    const zhipuAI = new ZhipuAIService(apiKey, './templates.json');
+    console.log('✅ Zhipu AI service initialized with templates\n');
 
     // Create a mock email for testing
     const mockEmail: ProcessedEmail = {
@@ -63,20 +63,30 @@ Test User`,
     const analysis = await zhipuAI.analyzeEmail(mockEmail);
 
     console.log('📊 Analysis Results:');
-    console.log(`Category:   ${analysis.category}`);
-    console.log(`Sentiment:  ${analysis.sentiment}`);
-    console.log(`Priority:   ${analysis.priority}`);
-    console.log(`Actions:    ${analysis.suggestedActions.join(', ')}`);
+    console.log(`Category:         ${analysis.category}`);
+    console.log(`Intent:           ${analysis.intent}`);
+    console.log(`Keywords:         ${analysis.keywords.join(', ')}`);
+    console.log(`Suggested Templ:  ${analysis.suggestedTemplate || 'None'}`);
+    console.log(`Sentiment:        ${analysis.sentiment}`);
+    console.log(`Priority:         ${analysis.priority}`);
+    console.log(`Important:        ${analysis.isImportant}`);
+    console.log(`Reasoning:        ${analysis.reasoning}`);
+    console.log(`Actions:          ${analysis.suggestedActions.join(', ')}`);
 
     // Test 2: Generate response
     console.log('\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
     console.log('💬 Test 2: Generating AI response...\n');
 
-    const response = await zhipuAI.generateResponse(mockEmail);
+    const result = await zhipuAI.generateResponse(mockEmail, {
+      category: analysis.category,
+      intent: analysis.intent,
+      keywords: analysis.keywords,
+      suggestedTemplate: analysis.suggestedTemplate,
+    });
 
     console.log('🤖 Generated Response:');
     console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
-    console.log(response);
+    console.log(result.response);
     console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n');
 
     console.log('✅ All tests completed successfully!');
