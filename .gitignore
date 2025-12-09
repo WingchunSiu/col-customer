@@ -4,3 +4,7 @@ dist/
 .env.local
 *.log
 .DS_Store
+
+# Test outputs
+test-output-*.json
+*.bak
