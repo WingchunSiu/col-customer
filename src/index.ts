@@ -73,9 +73,7 @@ async function main() {
       'noreply@dailymotion.com',
     ];
 
-    // Process emails in batches with concurrency limit
-    const CONCURRENCY_LIMIT = 3; // Zhipu AI concurrent request limit (reduced from 5 due to rate limits)
-
+    // Process emails sequentially
     const processEmail = async (email: typeof processedEmails[0], index: number) => {
       console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
       console.log(`📧 Email ${index + 1}/${processedEmails.length} (UID: ${email.uid})`);
@@ -221,23 +219,11 @@ async function main() {
       }
     };
 
-    // Process emails with concurrency control
+    // Process emails sequentially
     const results = [];
-    for (let i = 0; i < processedEmails.length; i += CONCURRENCY_LIMIT) {
-      const batch = processedEmails.slice(i, i + CONCURRENCY_LIMIT);
-      console.log(`\n🔄 Processing batch ${Math.floor(i / CONCURRENCY_LIMIT) + 1}/${Math.ceil(processedEmails.length / CONCURRENCY_LIMIT)} (${batch.length} emails in parallel)...\n`);
-
-      const batchResults = await Promise.all(
-        batch.map((email, batchIndex) => processEmail(email, i + batchIndex))
-      );
-
-      results.push(...batchResults);
-
-      // Add a small delay between batches to avoid rate limits
-      if (i + CONCURRENCY_LIMIT < processedEmails.length) {
-        console.log('⏸️  Waiting 2s before next batch...\n');
-        await new Promise(resolve => setTimeout(resolve, 2000));
-      }
+    for (let i = 0; i < processedEmails.length; i++) {
+      const result = await processEmail(processedEmails[i], i);
+      results.push(result);
     }
 
     // Collect statistics
