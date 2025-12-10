@@ -1,13 +1,14 @@
 import { EmailFetcher } from './services/emailFetcher.js';
 import { EmailProcessor } from './services/emailProcessor.js';
 import { ZhipuAIService } from './services/zhipuAI.js';
-import { emailConfig, processingConfig, validateConfig } from './config/index.js';
+import { emailConfig, validateConfig } from './config/index.js';
 import { config } from 'dotenv';
 
 config();
 
 async function testRealEmails() {
   console.log('🚀 Testing with REAL emails from inbox...\n');
+  console.log('⚠️  Draft saving is DISABLED for testing\n');
 
   let fetcher: EmailFetcher | null = null;
   let runCompleted = false;
@@ -20,10 +21,7 @@ async function testRealEmails() {
   fetcher = new EmailFetcher(emailConfig);
   const processor = new EmailProcessor();
 
-  const shouldSaveDrafts = processingConfig.saveDrafts;
-  if (shouldSaveDrafts) {
-    console.log('💾 Draft saving is ENABLED. Generated replies will be stored as email drafts.\n');
-  }
+  const shouldSaveDrafts = false; // DISABLED for testing
 
   const zhipuApiKey = process.env.ZHIPU_API_KEY;
   if (!zhipuApiKey) {
@@ -37,11 +35,11 @@ async function testRealEmails() {
     await fetcher.connect();
     console.log('✅ Connected\n');
 
-    // Fetch 20 recent emails from the past day
+    // Fetch 5 recent emails from the past day
     const yesterday = new Date();
     yesterday.setDate(yesterday.getDate() - 1);
-    console.log(`📥 Fetching emails from the past day (since ${yesterday.toLocaleDateString()})...\n`);
-    const emails = await fetcher.fetchAllEmails(20, yesterday);
+    console.log(`📥 Fetching 5 emails from the past day (since ${yesterday.toLocaleDateString()})...\n`);
+    const emails = await fetcher.fetchAllEmails(5, yesterday);
 
     if (emails.length === 0) {
       console.log('📭 No emails found.');
@@ -105,6 +103,7 @@ async function testRealEmails() {
           intent: analysis.intent,
           keywords: analysis.keywords,
           suggestedTemplate: analysis.suggestedTemplate,
+          language: analysis.language,
         },
         true
       );

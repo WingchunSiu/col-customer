@@ -55,6 +55,7 @@ export class ZhipuAIService {
       intent?: string;
       keywords?: string[];
       suggestedTemplate?: string;
+      language?: string;
     },
     useTemplates: boolean = true
   ): Promise<{
@@ -62,13 +63,10 @@ export class ZhipuAIService {
     language: string;
     matchedTemplates?: Array<{ id: string; scenario: string; score: number }>;
   }> {
-    const { category, intent, keywords, suggestedTemplate } = analysisResult;
+    const { category, intent, keywords, suggestedTemplate, language } = analysisResult;
     let templateContext = '';
     let matchedTemplates: Array<{ id: string; scenario: string; score: number }> = [];
-    let detectedLanguage = 'en';
-
-    // Detect language first using AI
-    detectedLanguage = await this.detectLanguage(email);
+    const detectedLanguage = language || 'en';
 
     // Try to use templates if available and requested
     if (useTemplates && this.templateRetriever && category) {
@@ -342,6 +340,7 @@ Personalized Response:`;
     suggestedTemplate?: string;
     reasoning: string;
     isImportant: boolean;
+    language: string;
   }> {
     // Get available categories from template retriever
     const availableCategories = this.templateRetriever?.getCategories() || [
@@ -362,6 +361,9 @@ Email Details:
 From: ${email.from.address}
 Subject: ${email.subject}
 Content: ${email.text}
+
+STEP 0: LANGUAGE DETECTION
+First, identify the primary language of this email. Use two-letter ISO 639-1 language codes (e.g., "en" for English, "zh" for Chinese, "es" for Spanish, "pt" for Portuguese, etc.).
 
 STEP 1: INTENT RECOGNITION (Most Critical)
 Identify the user's primary intent by looking for these specific patterns:
@@ -422,6 +424,7 @@ CRITICAL RULES:
 
 Respond in JSON format only:
 {
+  "language": "...",
   "category": "...",
   "intent": "...",
   "keywords": ["keyword1", "keyword2", ...],
@@ -450,6 +453,7 @@ Respond in JSON format only:
       console.error('Failed to parse AI analysis:', error);
       console.error('Raw response:', response);
       return {
+        language: 'en',
         category: '信息收集与跟进',
         intent: 'UNKNOWN',
         keywords: [],

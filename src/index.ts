@@ -73,20 +73,19 @@ async function main() {
       'noreply@dailymotion.com',
     ];
 
-    for (let i = 0; i < processedEmails.length; i++) {
-      const email = processedEmails[i];
+    // Process emails in batches with concurrency limit
+    const CONCURRENCY_LIMIT = 3; // Zhipu AI concurrent request limit (reduced from 5 due to rate limits)
 
+    const processEmail = async (email: typeof processedEmails[0], index: number) => {
       console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
-      console.log(`📧 Email ${i + 1}/${processedEmails.length} (UID: ${email.uid})`);
+      console.log(`📧 Email ${index + 1}/${processedEmails.length} (UID: ${email.uid})`);
       console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
 
       // Check if sender is in blacklist
       if (senderBlacklist.includes(email.from.address.toLowerCase())) {
         console.log(`⛔ Auto-skipped: Blacklisted sender (${email.from.address})`);
         console.log('   This sender is on the auto-skip list.\n');
-        skippedCount++;
-        uidsToMarkAsRead.push(email.uid);
-        continue;
+        return { type: 'skipped' as const, uid: email.uid };
       }
 
       // Show details only in info/debug mode
@@ -140,13 +139,8 @@ async function main() {
 
         if (!analysis.isImportant) {
           console.log('\n⏭️  Skipping this email (not important)\n');
-          skippedCount++;
-          // Still mark as read since we've processed it
-          uidsToMarkAsRead.push(email.uid);
-          continue;
+          return { type: 'skipped' as const, uid: email.uid };
         }
-
-        processedCount++;
 
         // Generate response
         console.log('\n💬 Generating response...');
@@ -157,6 +151,7 @@ async function main() {
             intent: analysis.intent,
             keywords: analysis.keywords,
             suggestedTemplate: analysis.suggestedTemplate,
+            language: analysis.language,
           },
           true
         );
@@ -178,7 +173,8 @@ async function main() {
         }
 
         // Save draft
-        if (shouldSaveDrafts) {
+        let messageId: string | undefined;
+        if (shouldSaveDrafts && fetcher) {
           const replySubject = email.subject.toLowerCase().startsWith('re:')
             ? email.subject
             : `Re: ${email.subject}`;
@@ -199,7 +195,7 @@ async function main() {
 
           try {
             console.log('📨 Saving draft to mailbox...');
-            const messageId = await fetcher.appendDraft({
+            messageId = await fetcher.appendDraft({
               to: email.from.address,
               subject: replySubject,
               body: result.response,
@@ -207,20 +203,56 @@ async function main() {
               references,
             });
             console.log(`✅ Draft saved (Message-ID: ${messageId})\n`);
-            draftsSaved++;
           } catch (draftError) {
             console.error('⚠️ Failed to save draft:', draftError);
           }
         }
 
-        // Mark for reading after successful processing
-        uidsToMarkAsRead.push(email.uid);
+        return {
+          type: 'processed' as const,
+          uid: email.uid,
+          messageId,
+        };
 
       } catch (error) {
         console.error(`❌ Error processing email UID ${email.uid}:`, error);
         console.log('   Continuing to next email...\n');
-        // Don't mark as read if processing failed
+        return { type: 'error' as const, uid: email.uid };
       }
+    };
+
+    // Process emails with concurrency control
+    const results = [];
+    for (let i = 0; i < processedEmails.length; i += CONCURRENCY_LIMIT) {
+      const batch = processedEmails.slice(i, i + CONCURRENCY_LIMIT);
+      console.log(`\n🔄 Processing batch ${Math.floor(i / CONCURRENCY_LIMIT) + 1}/${Math.ceil(processedEmails.length / CONCURRENCY_LIMIT)} (${batch.length} emails in parallel)...\n`);
+
+      const batchResults = await Promise.all(
+        batch.map((email, batchIndex) => processEmail(email, i + batchIndex))
+      );
+
+      results.push(...batchResults);
+
+      // Add a small delay between batches to avoid rate limits
+      if (i + CONCURRENCY_LIMIT < processedEmails.length) {
+        console.log('⏸️  Waiting 2s before next batch...\n');
+        await new Promise(resolve => setTimeout(resolve, 2000));
+      }
+    }
+
+    // Collect statistics
+    for (const result of results) {
+      if (result.type === 'skipped') {
+        skippedCount++;
+        uidsToMarkAsRead.push(result.uid);
+      } else if (result.type === 'processed') {
+        processedCount++;
+        if (result.messageId) {
+          draftsSaved++;
+        }
+        uidsToMarkAsRead.push(result.uid);
+      }
+      // Errors don't get marked as read
     }
 
     // Mark all processed emails as read

@@ -63,6 +63,7 @@ Test User`,
     const analysis = await zhipuAI.analyzeEmail(mockEmail);
 
     console.log('📊 Analysis Results:');
+    console.log(`Language:         ${analysis.language}`);
     console.log(`Category:         ${analysis.category}`);
     console.log(`Intent:           ${analysis.intent}`);
     console.log(`Keywords:         ${analysis.keywords.join(', ')}`);
@@ -82,6 +83,7 @@ Test User`,
       intent: analysis.intent,
       keywords: analysis.keywords,
       suggestedTemplate: analysis.suggestedTemplate,
+      language: analysis.language,
     });
 
     console.log('🤖 Generated Response:');

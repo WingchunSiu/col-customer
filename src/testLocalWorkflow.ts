@@ -143,6 +143,7 @@ async function testLocalWorkflow() {
             intent: analysis.intent,
             keywords: analysis.keywords,
             suggestedTemplate: analysis.suggestedTemplate,
+            language: analysis.language,
           },
           true
         );

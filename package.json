@@ -10,8 +10,10 @@
     "start": "node dist/index.js",
     "test": "jest",
     "test:local": "tsx src/testLocalWorkflow.ts",
-    "test:templates": "tsx src/testWithTemplates.ts",
-    "test:real": "tsx src/testRealEmails.ts"
+    "test:real": "tsx src/testRealEmails.ts",
+    "test:concurrency": "tsx src/testConcurrency.ts",
+    "test:zhipu": "tsx src/testZhipu.ts",
+    "stats": "tsx src/checkEmailStats.ts"
   },
   "keywords": [
     "email",
