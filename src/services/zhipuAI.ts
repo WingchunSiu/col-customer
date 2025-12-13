@@ -112,21 +112,16 @@ export class ZhipuAIService {
       } else {
         // No suitable template found - return a message for manual review
         console.log('⚠️  No suitable template found - flagging for manual review');
-        const manualReviewMessage = `[MANUAL REVIEW REQUIRED]
+        const manualReviewMessage = `📝 需要人工审核
 
-This email has been analyzed and categorized as "${category}" with intent "${intent}", but no suitable pre-approved template was found that fits this specific case.
+该邮件已被分析为"${category}"类别，意图为"${intent}"，但未找到合适的预设模板。
 
-Email Summary:
-- From: ${email.from.address}
-- Subject: ${email.subject}
-- Key Issues: ${keywords?.join(', ') || 'N/A'}
+邮件信息：
+- 发件人: ${email.from.address}
+- 主题: ${email.subject}
+- 关键问题: ${keywords?.join(', ') || '无'}
 
-Please review this email manually and provide an appropriate response.
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📝 此邮件需要人工审核
-
-该邮件已被分析为"${category}"类别，意图为"${intent}"，但未找到合适的预设模板。请人工审核并回复。`;
+请人工审核并提供适当的回复。`;
 
         return {
           response: manualReviewMessage,
@@ -274,8 +269,6 @@ If no template fits, use:
     intent?: string,
     keywords?: string[]
   ): Promise<string> {
-    const isChinese = language === 'zh' || language === 'zh-CN';
-
     // Build intent context for better personalization
     let intentContext = '';
     if (intent) {
@@ -304,13 +297,6 @@ ${intentContext ? `
    - If intent is RESTORE_PURCHASE: DO NOT suggest refund/cancellation
    - If intent is AD_REWARDS_ISSUE: DO NOT ask for payment proof or order numbers
    - Stay consistent with the identified user intent
-` : ''}
-
-${!isChinese ? `
-6. IMPORTANT: After the personalized response in ${language}, add a Chinese translation for internal review:
-   - Add a separator line: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   - Add the label: 📝 中文翻译（仅供内部参考）：
-   - Provide a natural Chinese translation of the response
 ` : ''}
 
 IMPORTANT: Do NOT rewrite or change the template significantly. Only make minimal adjustments to personalize it.
@@ -612,13 +598,11 @@ Language code:`;
 
     prompt += `\nMessage:\n${email.text}\n`;
     prompt += `\nDetected Language: ${language}\n`;
-    prompt += `\nPlease respond in ${language} language.`;
 
-    if (!isChinese) {
-      prompt += `\n\nIMPORTANT: After your response in ${language}, add:
-- A separator line: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-- The label: 📝 中文翻译（仅供内部参考）：
-- A natural Chinese translation of your response`;
+    if (isChinese) {
+      prompt += `\nPlease respond in Chinese.`;
+    } else {
+      prompt += `\nPlease respond in ${language} language.`;
     }
 
     return prompt;
