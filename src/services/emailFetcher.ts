@@ -32,6 +32,8 @@ export class EmailFetcher {
       port: config.port,
       tls: config.tls,
       tlsOptions: { rejectUnauthorized: false },
+      connTimeout: 60000, // 60 second connection timeout
+      authTimeout: 30000, // 30 second auth timeout
     });
 
     this.setupEventHandlers();
@@ -72,6 +74,8 @@ export class EmailFetcher {
         port: this.config.port,
         tls: this.config.tls,
         tlsOptions: { rejectUnauthorized: false },
+        connTimeout: 60000, // 60 second connection timeout
+        authTimeout: 30000, // 30 second auth timeout
       });
       this.setupEventHandlers();
     }
