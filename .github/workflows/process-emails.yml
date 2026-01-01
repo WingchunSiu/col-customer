@@ -1,7 +1,8 @@
 name: Process Unread Emails
 
 on:
-  # Temporarily paused scheduled runs; use manual trigger below.
+  schedule:
+    - cron: '0 */2 * * *' # Run every 2 hours
   workflow_dispatch: # Also allow manual trigger
 
 jobs:
